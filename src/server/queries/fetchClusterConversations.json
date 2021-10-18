@@ -1,0 +1,79 @@
+{
+  "index": "idt_cluster",
+  "body": {
+    "size": 1000,
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "bool": {
+              "must": [
+                {
+                  "term": {
+                    "project_id": {
+                      "value": "Project-Test",
+                      "boost": 1.0
+                    }
+                  }
+                },
+                {
+                  "term": {
+                    "run_id": {
+                      "value": "R-ts-01",
+                      "boost": 1.0
+                    }
+                  }
+                },
+                {
+                  "term": {
+                    "cluster_id": {
+                      "value": "clust-0",
+                      "boost": 1.0
+                    }
+                  }
+                }
+              ],
+              "adjust_pure_negative": true,
+              "boost": 1.0
+            }
+          }
+        ],
+        "adjust_pure_negative": true,
+        "boost": 1.0
+      }
+    },
+    "_source": {
+      "includes": [
+        "assigned_faq",
+        "assigned_intent",
+        "processed_body",
+        "similarity",
+        "modified_at"
+      ],
+      "excludes": []
+    },
+    "docvalue_fields": [
+      {
+        "field": "interaction_id"
+      },
+      {
+        "field": "entire_cluster_label"
+      },
+      {
+        "field": "original_granular_intent"
+      },
+      {
+        "field": "modified_by"
+      }
+    ],
+    "sort": [
+      {
+        "similarity": {
+          "order": "asc",
+          "missing": "_last",
+          "unmapped_type": "float"
+        }
+      }
+    ]
+  }
+}

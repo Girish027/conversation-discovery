@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar /> Snapshots renders correctly when information is not yet available 1`] = `
+<div>
+  <withTheme(MultiLevelPickerDialog)
+    config={
+      Object {
+        "items": Array [],
+        "title": "Choose Workspace",
+      }
+    }
+    isCloseDisabled={true}
+    maxDepth={2}
+    onCancel={[Function]}
+    onSelect={[Function]}
+    selection={Object {}}
+    shouldAutoSelect={true}
+    shouldRetainState={true}
+    show={false}
+  />
+  <withTheme(NavBar)
+    clientValues={Array []}
+    defaultClientLabel="CHOOSE APP"
+    docLink=""
+    homeLink="?clientid="
+    onClickClient={[Function]}
+    onClickProductName={[Function]}
+    productName="INTENT DISCOVERY"
+    userInfo={
+      Object {
+        "accountLink": undefined,
+        "email": "email",
+        "name": "Username",
+        "onSignOut": [Function],
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<NavBar /> Snapshots renders correctly when there is information 1`] = `
+<div>
+  <withTheme(MultiLevelPickerDialog)
+    config={
+      Object {
+        "items": Array [
+          Object {
+            "data": Object {
+              "clientId": "assurant",
+            },
+            "field": "clientId",
+            "items": Array [
+              Object {
+                "data": Object {
+                  "appId": "pyb",
+                },
+                "field": "appId",
+                "title": "pyb",
+              },
+            ],
+            "title": undefined,
+          },
+          Object {
+            "data": Object {
+              "clientId": "capitalone",
+            },
+            "field": "clientId",
+            "items": Array [
+              Object {
+                "data": Object {
+                  "appId": "chatbot",
+                },
+                "field": "appId",
+                "title": "chatbot",
+              },
+            ],
+            "title": undefined,
+          },
+          Object {
+            "data": Object {
+              "clientId": "ebay",
+            },
+            "field": "clientId",
+            "items": Array [
+              Object {
+                "data": Object {
+                  "appId": "uk",
+                },
+                "field": "appId",
+                "title": "uk",
+              },
+              Object {
+                "data": Object {
+                  "appId": "de",
+                },
+                "field": "appId",
+                "title": "de",
+              },
+            ],
+            "title": undefined,
+          },
+          Object {
+            "data": Object {
+              "clientId": "sirius",
+            },
+            "field": "clientId",
+            "items": Array [
+              Object {
+                "data": Object {
+                  "appId": "chatbot",
+                },
+                "field": "appId",
+                "title": "chatbot",
+              },
+            ],
+            "title": undefined,
+          },
+        ],
+        "title": "Choose Workspace",
+      }
+    }
+    isCloseDisabled={true}
+    maxDepth={2}
+    onCancel={[Function]}
+    onSelect={[Function]}
+    selection={Object {}}
+    shouldAutoSelect={true}
+    shouldRetainState={true}
+    show={false}
+  />
+  <withTheme(NavBar)
+    clientValues={
+      Array [
+        undefined,
+        "Pyb",
+      ]
+    }
+    defaultClientLabel="CHOOSE APP"
+    docLink=""
+    homeLink="?clientid=assurant"
+    onClickClient={[Function]}
+    onClickProductName={[Function]}
+    productName="INTENT DISCOVERY"
+    userInfo={
+      Object {
+        "accountLink": undefined,
+        "email": "email",
+        "name": "Abc Def",
+        "onSignOut": [Function],
+      }
+    }
+  />
+</div>
+`;

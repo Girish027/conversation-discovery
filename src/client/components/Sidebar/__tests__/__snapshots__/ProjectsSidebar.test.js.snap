@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProjectsSidebar /> Functionality: onClickCreateProject should dispatch action to open create propject modal 1`] = `
+Array [
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "modalName": "CreateProjectModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`<ProjectsSidebar /> Functionality: onSelectProject should dispatch action to select the project 1`] = `
+Array [
+  Object {
+    "activeProjectId": "pro-123",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247inc&accountid=referencebot&appid=referencebot&componentClientId=undefined&project=pro-123",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+]
+`;
+
+exports[`<ProjectsSidebar /> Snapshots renders correctly when there are no projects yet 1`] = `
+<div>
+  <div
+    className="sidebar-project"
+  >
+    <div
+      className="title sticky"
+    >
+      <span
+        className="float-left-project"
+      >
+        Manual Discovery
+      </span>
+      <span
+        className="float-right"
+      />
+      <span
+        className="float-clear"
+      />
+    </div>
+    <div
+      className="project-list project-list-height"
+      onMouseLeave={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<ProjectsSidebar /> Snapshots renders correctly when there are projects 1`] = `
+<div>
+  <div
+    className="sidebar-project"
+  >
+    <div
+      className="title sticky"
+    >
+      <span
+        className="float-left-project"
+      >
+        Manual Discovery
+      </span>
+      <span
+        className="float-right"
+      />
+      <span
+        className="float-clear"
+      />
+    </div>
+    <div
+      className="project-list project-list-height"
+      onMouseLeave={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<ProjectsSidebar /> Snapshots renders correctly when there are projects and one is focused 1`] = `
+<div>
+  <div
+    className="sidebar-project"
+  >
+    <div
+      className="title sticky"
+    >
+      <span
+        className="float-left-project"
+      >
+        Manual Discovery
+      </span>
+      <span
+        className="float-right"
+      />
+      <span
+        className="float-clear"
+      />
+    </div>
+    <div
+      className="project-list project-list-height"
+      onMouseLeave={[Function]}
+    />
+  </div>
+</div>
+`;

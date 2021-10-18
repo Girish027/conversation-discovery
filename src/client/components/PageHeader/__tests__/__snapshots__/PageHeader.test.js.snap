@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageHeader /> Snapshots renders correctly with correct title and breadcrumbs - dicoverIntent 1`] = `
+<withTheme(PageHeader)
+  breadcrumb={Array []}
+  styleOverride={
+    Object {
+      "secondaryNavBar": Object {
+        "paddingLeft": "30px",
+      },
+    }
+  }
+  title="Discover Intents"
+/>
+`;
+
+exports[`<PageHeader /> Snapshots renders correctly with correct title and breadcrumbs - run overview 1`] = `
+<withTheme(PageHeader)
+  breadcrumb={
+    Array [
+      Object {
+        "label": "Discover Intents",
+        "onClick": undefined,
+        "readOnly": true,
+        "value": "Discover Intents",
+      },
+      Object {
+        "accountId": "referencebot",
+        "appId": "referencebot",
+        "clientId": "247inc",
+        "itsBaseUrl": "http://its.com",
+        "label": "Project ABC",
+        "onClick": [Function],
+        "projectId": "pro-abc",
+        "projectName": "Project ABC",
+        "projectType": undefined,
+        "readOnly": false,
+        "routeName": "/conversationdiscovery/ui/run-overview",
+        "runId": "run-abc",
+        "runName": "run ABC",
+        "value": "projectProject ABC",
+      },
+    ]
+  }
+  styleOverride={
+    Object {
+      "secondaryNavBar": Object {
+        "paddingLeft": "30px",
+      },
+    }
+  }
+  title="run ABC Overview"
+/>
+`;

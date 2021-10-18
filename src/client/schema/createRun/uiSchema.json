@@ -1,0 +1,14 @@
+{
+  "runName": {
+    "ui:field": "text"
+  },
+  "runDescription": {
+    "ui:field": "textarea"
+  },
+  "numOfClusters": {
+    "ui:field": "updown"
+  },
+  "numOfTurns": {
+    "ui:field": "updown"
+  }
+}

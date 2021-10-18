@@ -1,0 +1,4 @@
+insert into CAA (caaId, client, account, app) values('247ai-referencebot-referencebot','247ai', 'referencebot', 'referencebot');
+insert into project (projectId, caaId, projectName, datasetName, modified, modifiedBy, created, createdBy, projectDescription, datasetURL, projectStatus,projectStatusDescription)
+	values ('pro-1', '247ai-referencebot-referencebot', 'testProject1', 'testDataset1', 1563156821000, 'as@247-inc.com', 1563156821000, 'as@247-inc.com', 'This is a test project', null, 'QUEUED', 'This project has been queued for further validation');
+insert into run (runID, projectID, runName, runDescription, numOfTurns, numOfClusters, stopWords, modified, modifiedBy, created, createdBy, runStatus, runStatusDescription, starred, resultURL) values ('run-1', 'pro-1', 'testrun', 'This is a test run', 1, 500, 'hello, hi', 1562000981918, ab, 1562000981918, ab, 'QUEUED', 'This run is queued', 0, null);

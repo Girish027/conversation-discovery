@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressModal /> Snapshots renders correctly for default props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelVisible={false}
+    closeIconVisible={false}
+    isOpen={true}
+    okVisible={false}
+    otherDialogProps={
+      Object {
+        "shouldFocusAfterRender": false,
+      }
+    }
+    showFooter={false}
+    showHeader={false}
+    size="small"
+  >
+    <div>
+      <p
+        style={
+          Object {
+            "marginBottom": "25px",
+          }
+        }
+      >
+        operation in progress...
+      </p>
+      <Spinner
+        height="50"
+        stroke="#EF8822"
+        width="50"
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<ProgressModal /> Snapshots renders correctly when cancel button is to be shown 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelVisible={false}
+    closeIconVisible={false}
+    isOpen={true}
+    okVisible={false}
+    otherDialogProps={
+      Object {
+        "shouldFocusAfterRender": false,
+      }
+    }
+    showFooter={false}
+    showHeader={false}
+    size="small"
+  >
+    <div>
+      <p
+        style={
+          Object {
+            "marginBottom": "25px",
+          }
+        }
+      >
+        operation in progress...
+      </p>
+      <Spinner
+        height="50"
+        stroke="#EF8822"
+        width="50"
+      />
+      <withTheme(Button)
+        name="cancel-progress"
+        onClick={[Function]}
+        type="flat"
+      >
+        CANCEL
+      </withTheme(Button)>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<ProgressModal /> Snapshots renders with closeIcon visible when given via props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelVisible={false}
+    closeIconVisible={true}
+    isOpen={true}
+    okVisible={false}
+    otherDialogProps={
+      Object {
+        "shouldFocusAfterRender": false,
+      }
+    }
+    showFooter={false}
+    showHeader={false}
+    size="small"
+  >
+    <div>
+      <p
+        style={
+          Object {
+            "marginBottom": "25px",
+          }
+        }
+      >
+        operation in progress...
+      </p>
+      <Spinner
+        height="50"
+        stroke="#EF8822"
+        width="50"
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConversationSearchBar /> Snapshots renders correctly 1`] = `
+<ConversationSearchBar
+  closeIcon={false}
+  onBlur={[Function]}
+  onSearch={[Function]}
+  styleOverride={Object {}}
+  value=""
+>
+  <div
+    style={
+      Object {
+        "clearIcon": Object {
+          "position": "relative",
+          "right": 30,
+        },
+        "container": Object {
+          "marginRight": "0px",
+          "width": "350px",
+        },
+        "display": "flex",
+        "marginTop": "-12px",
+        "paddingLeft": "0px",
+        "paddingTop": "12px",
+        "searchIcon": Object {
+          "padding": "12px 10px",
+          "position": "absolute",
+          "zIndex": 1,
+        },
+        "textFieldContainerStyle": Object {
+          "width": "90%",
+        },
+        "textFieldStyle": Object {
+          "input": Object {
+            "paddingLeft": "30px",
+          },
+          "width": "13vw",
+        },
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "padding": "12px 10px",
+          "position": "absolute",
+          "zIndex": 1,
+        }
+      }
+    >
+      <SearchIcon
+        fill="#004c97"
+        height="1em"
+        width="12px"
+      >
+        <svg
+          height="1em"
+          viewBox="0 0 12.53 12.53"
+          width="12px"
+        >
+          <g
+            fill="#004c97"
+            fillRule="nonzero"
+          >
+            <path
+              d="M14.53,13.47,10.46,9.4a4.67,4.67,0,1,0-3.78,1.95,4.61,4.61,0,0,0,2.72-.89l4.07,4.07ZM4.43,8.93A3.16,3.16,0,0,1,3.5,6.68,3.18,3.18,0,0,1,8.92,4.42,3.17,3.17,0,0,1,6.68,9.85,3.16,3.16,0,0,1,4.43,8.93Z"
+              transform="translate(-2 -2)"
+            />
+          </g>
+        </svg>
+      </SearchIcon>
+    </div>
+    <div
+      style={
+        Object {
+          "marginRight": "0px",
+          "width": "350px",
+        }
+      }
+    >
+      <withTheme(TextField)
+        defaultValue=""
+        name="search-bar"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        onSearch={[Function]}
+        placeholder="Find Conversations"
+        styleOverride={
+          Object {
+            "input": Object {
+              "paddingLeft": "30px",
+            },
+            "width": "13vw",
+          }
+        }
+        value=""
+      >
+        <TextField
+          alertIconProps={Object {}}
+          autoComplete="on"
+          checkmarkProps={Object {}}
+          defaultValue=""
+          disabled={false}
+          invalid={false}
+          name="search-bar"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyPress={[Function]}
+          onSearch={[Function]}
+          placeholder="Find Conversations"
+          showValidCheck={false}
+          styleOverride={
+            Object {
+              "input": Object {
+                "paddingLeft": "30px",
+              },
+              "width": "13vw",
+            }
+          }
+          tfsStyle={
+            Object {
+              "textField": Object {
+                "container": Object {
+                  "cursor": "auto",
+                  "display": "inline-block",
+                  "width": "250px",
+                },
+                "input": Object {
+                  ":active": Object {
+                    "border": "1px solid #8C9FBC",
+                  },
+                  ":hover": Object {
+                    "border": "1px solid #8C9FBC",
+                  },
+                  "backgroundColor": "#FFFFF",
+                  "border": "1px solid #DCE1E8",
+                  "borderRadius": "2px",
+                  "boxSizing": "border-box",
+                  "height": "40px",
+                  "margin": "0px",
+                  "opacity": 1,
+                  "outline": "none",
+                  "padding": "8px",
+                  "width": "100%",
+                },
+                "validation": Object {
+                  "padding": "10px",
+                  "position": "absolute",
+                  "right": 0,
+                },
+              },
+            }
+          }
+          tooltipDirection="bottom"
+          tooltipText=""
+          tooltipTrigger="click"
+          type="text"
+          value=""
+        >
+          <div
+            data-radium={true}
+            style={
+              Object {
+                "cursor": "auto",
+                "display": "inline-block",
+                "width": "13vw",
+              }
+            }
+          >
+            <div
+              data-radium={true}
+              style={
+                Object {
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                data-radium={true}
+                key=".0"
+                style={
+                  Object {
+                    "padding": "10px",
+                    "position": "absolute",
+                    "right": 0,
+                  }
+                }
+              />
+              <withTheme(Tooltip)
+                content=""
+                direction="bottom"
+                enabled={false}
+                key=".1"
+                trigger="click"
+                type="error"
+              >
+                <Tooltip
+                  content=""
+                  direction="bottom"
+                  enabled={false}
+                  styleOverride={Object {}}
+                  tfsStyle={
+                    Object {
+                      "tooltip": Object {
+                        "error": Object {
+                          "backgroundColor": "#c81919",
+                          "color": "#ffffff",
+                        },
+                        "info": Object {
+                          "backgroundColor": "#0062E6",
+                          "color": "#ffffff",
+                        },
+                        "warning": Object {
+                          "backgroundColor": "#B36100",
+                          "color": "#ffffff",
+                        },
+                      },
+                    }
+                  }
+                  trigger="click"
+                  type="error"
+                >
+                  <ForwardRef(TippyWrapper)
+                    animation="fade"
+                    arrow={true}
+                    content=""
+                    duration={
+                      Array [
+                        500,
+                        10,
+                      ]
+                    }
+                    onCreate={[Function]}
+                    onTrigger={[Function]}
+                    placement="bottom-end"
+                    theme="error"
+                    trigger="click"
+                  >
+                    <Tippy
+                      animation="fade"
+                      arrow={true}
+                      content=""
+                      duration={
+                        Array [
+                          500,
+                          10,
+                        ]
+                      }
+                      onCreate={[Function]}
+                      onTrigger={[Function]}
+                      placement="bottom-end"
+                      theme="error"
+                      trigger="click"
+                    >
+                      <input
+                        autoComplete="on"
+                        data-radium={true}
+                        defaultValue=""
+                        disabled={false}
+                        name="search-bar"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyPress={[Function]}
+                        onKeyUp={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        onSearch={[Function]}
+                        placeholder="Find Conversations"
+                        style={
+                          Object {
+                            "backgroundColor": "#FFFFF",
+                            "border": "1px solid #DCE1E8",
+                            "borderRadius": "2px",
+                            "boxSizing": "border-box",
+                            "height": "40px",
+                            "margin": "0px",
+                            "opacity": 1,
+                            "outline": "none",
+                            "padding": "8px",
+                            "paddingLeft": "30px",
+                            "width": "100%",
+                          }
+                        }
+                        type="text"
+                        value=""
+                      />
+                      <Portal
+                        containerInfo={
+                          <div>
+                            
+                          </div>
+                        }
+                      />
+                    </Tippy>
+                  </ForwardRef(TippyWrapper)>
+                </Tooltip>
+              </withTheme(Tooltip)>
+            </div>
+          </div>
+        </TextField>
+      </withTheme(TextField)>
+    </div>
+  </div>
+</ConversationSearchBar>
+`;

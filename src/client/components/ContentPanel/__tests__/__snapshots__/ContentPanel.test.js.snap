@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentPanel /> Snapshots renders correctly with Conversations View 1`] = `<Connect(ConversationsView) />`;
+
+exports[`<ContentPanel /> Snapshots renders correctly with Runs View 1`] = `<Connect(RunsView) />`;
+
+exports[`<ContentPanel /> Snapshots renders correctly with Runs View 2`] = `<Connect(RunsView) />`;
+
+exports[`<ContentPanel /> Snapshots renders correctly with Runs View 3`] = `<Connect(RunsView) />`;
+
+exports[`<ContentPanel /> Snapshots renders correctly with Topic Distribution View 1`] = `<Connect(TopicDistributionView) />`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomComponents renders correctly for default props 1`] = `
+Object {
+  "noop": [Function],
+  "text": [Function],
+  "textarea": [Function],
+  "updown": [Function],
+}
+`;

@@ -1,0 +1,689 @@
+{
+  "swagger": "2.0",
+  "produces": [
+    "application/json"
+  ],
+  "info": {
+    "title": "conversation-discovery",
+    "description": "An API",
+    "version": "1.0"
+  },
+  "basePath": "/v1/conversation-discovery",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "parameters": {
+    "clientId": {
+      "name": "clientId",
+      "in": "path",
+      "description": "A client id, e.g. \"247inc\".",
+      "required": true,
+      "type": "string"
+    },
+    "appId": {
+      "name": "appId",
+      "in": "path",
+      "description": "A app id, e.g. \"ReferenceBot\".",
+      "required": true,
+      "type": "string"
+    },
+    "accountId": {
+      "name": "accountId",
+      "in": "path",
+      "description": "Account id of an app",
+      "required": true,
+      "type": "string"
+    },
+    "projectId": {
+      "name": "projectId",
+      "in": "path",
+      "description": "Project id of a project",
+      "required": true,
+      "type": "string"
+    },
+    "runId": {
+      "name": "runId",
+      "in": "path",
+      "description": "Run id of a run",
+      "required": true,
+      "type": "string"
+    },
+    "self": {
+      "name": "self",
+      "in": "query",
+      "description": "whether to filter on caller identity",
+      "required": false,
+      "type": "boolean",
+      "default": false
+    },
+    "configName": {
+      "name": "configName",
+      "in": "path",
+      "description": "type of configuration",
+      "required": true,
+      "type": "string"
+    },
+    "includeApps": {
+      "name": "includeApps",
+      "description": "Indicates whether the response should include client applications",
+      "in": "query",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "responses": {
+    "BadRequest": {
+      "description": "The request was invalid. For example, the value of the initial parameter was invalid",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "NotFound": {
+      "description": "The URI requested is invalid or the resource requested, such as a user, does not exist. Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Unauthorized": {
+      "description": "Missing or incorrect authentication credentials. This may also returned in other undefined circumstances.Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Forbidden": {
+      "description": "Forbidden. The request is understood, but it has been refused or access is not allowed. An accompanying error message will explain further. Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "MethodNotAllowed": {
+      "description": "Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "NotAcceptable": {
+      "description": "Returned when an invalid format is specified in the request. Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Conflict": {
+      "description": "The request could not be completed due to a conflict with the current state of the resource.Do not retry with the same input.",
+      "schema": {
+        "type": "string"
+      }
+    }
+  },
+  "paths": {
+    "/clients/{clientId}/accounts": {
+      "get": {
+        "summary": "Retrieves all applications for an account",
+        "x-swagger-router-controller": "applications",
+        "operationId": "getApplications",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved list of applications for an account",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Application"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications": {
+      "get": {
+        "summary": "Retrieves all applications for an account",
+        "x-swagger-router-controller": "applications",
+        "operationId": "getApplicationss",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved list of applications for an account",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Application"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/applications/{appId}": {
+      "get": {
+        "summary": "Retrieves the projects in an application",
+        "x-swagger-router-controller": "applications",
+        "operationId": "getApplication",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved Application",
+            "schema": {
+              "$ref": "#/definitions/Application"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{appId}/projects/": {
+      "post": {
+        "summary": "Creates a new project for a given client, app and account",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "in": "body",
+            "name": "Project name",
+            "description": "The project to create",
+            "schema": {
+              "type": "object",
+              "required": [
+                "projectName",
+                "date"
+              ],
+              "properties": {
+                "projectName": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "projectCreatedBy": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created a new project",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "projectName": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "projectCreatedBy": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "405": {
+            "$ref": "#/responses/MethodNotAllowed"
+          },
+          "406": {
+            "$ref": "#/responses/NotAcceptable"
+          },
+          "409": {
+            "$ref": "#/responses/Conflict"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all the projects for a given app",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved Projects",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Project"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "405": {
+            "$ref": "#/responses/MethodNotAllowed"
+          },
+          "406": {
+            "$ref": "#/responses/NotAcceptable"
+          },
+          "409": {
+            "$ref": "#/responses/Conflict"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/applications/{appId}/accounts/{accountId}/projects/{projectId}/runs/": {
+      "post": {
+        "summary": "Creates a new run for a given project",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "in": "body",
+            "name": "Run name",
+            "description": "The name of the run to create",
+            "schema": {
+              "type": "object",
+              "required": [
+                "runName",
+                "clusters"
+              ],
+              "properties": {
+                "runName": {
+                  "type": "string"
+                },
+                "clusters": {
+                  "type": "integer"
+                },
+                "numOfClientTurns": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created a new run",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "runName": {
+                  "type": "string"
+                },
+                "clusters": {
+                  "type": "integer"
+                },
+                "numOfClientTurns": {
+                  "type": "integer"
+                },
+                "runURL": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "405": {
+            "$ref": "#/responses/MethodNotAllowed"
+          },
+          "406": {
+            "$ref": "#/responses/NotAcceptable"
+          },
+          "409": {
+            "$ref": "#/responses/Conflict"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all the projects for a given account",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created a new project"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/applications/{appId}/accounts/{accountId}/projects/{projectId}/runs/{runId}": {
+      "get": {
+        "summary": "Get a run with the given runId",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created a new run"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletes a run with a given runId",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The project is deleted"
+          },
+          "204": {
+            "description": "The project is deleted"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/applications/{appId}/accounts/{accountId}/projects/{projectId}": {
+      "get": {
+        "summary": "Get a project with the given projectId",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created a new project"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletes a project with the given projectId",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/appId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The project is deleted"
+          },
+          "204": {
+            "description": "The project is deleted"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Client": {
+      "description": "Client Object",
+      "type": "object",
+      "required": [
+        "id",
+        "clientId"
+      ],
+      "properties": {
+        "id": {
+          "description": "The unique id of the client",
+          "type": "string",
+          "format": "uuid"
+        },
+        "clientId": {
+          "description": "A client id, e.g. \"247inc\".",
+          "type": "string"
+        },
+        "description": {
+          "description": "Client description",
+          "type": "string"
+        }
+      }
+    },
+    "Project": {
+      "description": "Project Object",
+      "type": "object",
+      "required": [
+        "id",
+        "appId",
+        "accountId",
+        "clientId",
+        "projectName",
+        "description",
+        "projectCreatedBy"
+      ],
+      "properties": {
+        "id": {
+          "description": "The unique id of the Project",
+          "type": "string",
+          "format": "uuid"
+        },
+        "appId": {
+          "description": "The app id of the Project",
+          "type": "string"
+        },
+        "clientId": {
+          "description": "The client id of the Project",
+          "type": "string"
+        },
+        "accountId": {
+          "description": "The account id of the Project",
+          "type": "string"
+        },
+        "projectName": {
+          "description": "The name of the project",
+          "type": "string"
+        },
+        "projectCreatedBy": {
+          "description": "The NT id of the user who created the project",
+          "type": "string"
+        }
+      }
+    },
+    "Application": {
+      "description": "Application Object",
+      "type": "object",
+      "required": [
+        "id",
+        "appId",
+        "clientId"
+      ],
+      "properties": {
+        "id": {
+          "description": "The unique id of the Application",
+          "type": "string",
+          "format": "uuid"
+        },
+        "appId": {
+          "description": "A Application id, e.g. \"ReferenceBot\".",
+          "type": "string"
+        },
+        "description": {
+          "description": "Application description",
+          "type": "string"
+        },
+        "accountId": {
+          "description": "Account of a client",
+          "type": "string"
+        },
+        "clientId": {
+          "description": "UUID Reference to the client",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

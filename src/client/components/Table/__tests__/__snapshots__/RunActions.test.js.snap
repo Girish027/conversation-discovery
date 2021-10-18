@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RunActions /> Functionality: onClickDelete 1`] = `
+Object {
+  "deleteMode": true,
+  "header": "Delete \\"name\\"?",
+  "message": "These analysis results will be gone forever. Are you sure you want to delete this item?",
+  "modalName": "ConfirmationDialog",
+  "onClickOk": [Function],
+}
+`;
+
+exports[`<RunActions /> Functionality: onClickEdit 1`] = `
+Object {
+  "formData": Object {
+    "roleConfig": Object {},
+    "runDescription": "desc",
+    "runName": "name",
+    "runStatus": "QUEUED",
+  },
+  "modalName": "EditRunModal",
+  "runId": "run-123",
+}
+`;
+
+exports[`<RunActions /> Snapshots renders correctly for the given props - status QUEUED 1`] = `
+<div
+  className="float-left"
+>
+  <IconButton
+    data-qa="delete-run"
+    defaultColor="#004c97"
+    disabled={true}
+    disabledColor="#9B9B9B"
+    focusedColor="#003467"
+    height={12}
+    icon={[Function]}
+    onClick={[Function]}
+    padding="5px"
+    strokeColor="none"
+    title="Download Run Results"
+    width={12}
+  />
+</div>
+`;
+
+exports[`<RunActions /> Snapshots renders correctly for the props - FAILED 1`] = `
+<div
+  className="float-left"
+>
+  <IconButton
+    data-qa="delete-run"
+    defaultColor="#004c97"
+    disabled={true}
+    disabledColor="#9B9B9B"
+    focusedColor="#003467"
+    height={12}
+    icon={[Function]}
+    onClick={[Function]}
+    padding="5px"
+    strokeColor="none"
+    title="Download Run Results"
+    width={12}
+  />
+</div>
+`;
+
+exports[`<RunActions /> Snapshots renders correctly for the props - IN PROGRESS 1`] = `
+<div
+  className="float-left"
+>
+  <IconButton
+    data-qa="delete-run"
+    defaultColor="#004c97"
+    disabled={true}
+    disabledColor="#9B9B9B"
+    focusedColor="#003467"
+    height={12}
+    icon={[Function]}
+    onClick={[Function]}
+    padding="5px"
+    strokeColor="none"
+    title="Download Run Results"
+    width={12}
+  />
+</div>
+`;
+
+exports[`<RunActions /> Snapshots renders correctly for the props - READY 1`] = `
+<div
+  className="float-left"
+>
+  <IconButton
+    data-qa="delete-run"
+    defaultColor="#004c97"
+    disabled={false}
+    disabledColor="#9B9B9B"
+    focusedColor="#003467"
+    height={12}
+    icon={[Function]}
+    onClick={[Function]}
+    padding="5px"
+    strokeColor="none"
+    title="Download Run Results"
+    width={12}
+  />
+</div>
+`;

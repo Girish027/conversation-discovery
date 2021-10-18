@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/Clusters: Cluster Actions: editCluster: should make get call to edit the given cluster 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2"`;
+
+exports[`state/Clusters: Cluster Actions: editClusterFail: should dispatch to indicate edit cluster failed 1`] = `
+Array [
+  Object {
+    "error": Object {
+      "err": "CLUSTER_DUPLICATE_NAME",
+      "message": "Duplicate name for Topic",
+    },
+    "type": "clusters/EDIT_CLUSTER_FAIL",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: editClusterStart: should dispatch to indicate edit cluster started 1`] = `
+Array [
+  Object {
+    "caa": Object {
+      "accountId": "referencebot",
+      "appId": "referencebot",
+      "clientId": "247ai",
+    },
+    "data": Object {
+      "finalized": true,
+    },
+    "projectId": "pro-123",
+    "runId": "run-123",
+    "type": "clusters/EDIT_CLUSTER_START",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: editClusterSuccess: should dispatch to indicate edit cluster success 1`] = `
+Array [
+  Object {
+    "cluster": Object {
+      "clusterDescription": "relates to cancel order",
+      "clusterId": "1",
+      "clusterName": "cancel_order_customer_service",
+      "count": 230,
+      "finalized": false,
+      "finalizedBy": "",
+      "finalizedOn": undefined,
+      "modified": 1554930400000,
+      "modifiedBy": "user1@247.ai",
+      "originalName": "cancel_order_customer_service",
+      "rollupCluster": "Cancel_Order",
+      "suggestedNames": Array [
+        "cancel_order_customer_service",
+        "abcde",
+        "defg",
+      ],
+    },
+    "type": "clusters/EDIT_CLUSTER_SUCCESS",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: editClusterSuccess: should dispatch to indicate edit cluster success 2`] = `
+Array [
+  Object {
+    "cluster": Object {
+      "clusterDescription": "relates to cancel order",
+      "clusterId": "1",
+      "clusterName": "cancel_order_customer_service",
+      "count": 230,
+      "finalized": false,
+      "finalizedBy": "",
+      "finalizedOn": undefined,
+      "modified": 1554930400000,
+      "modifiedBy": "user1@247.ai",
+      "originalName": "cancel_order_customer_service",
+      "rollupCluster": "Cancel_Order",
+      "suggestedNames": Array [
+        "cancel_order_customer_service",
+        "abcde",
+        "defg",
+      ],
+    },
+    "type": "clusters/EDIT_CLUSTER_SUCCESS",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: getAllClusters: should make get call to get all clusters for the caa 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters"`;
+
+exports[`state/Clusters: Cluster Actions: getCluster: should make get call to get cluster details 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2"`;
+
+exports[`state/Clusters: Cluster Actions: loadFilter: should  set the default filter state 1`] = `
+Array [
+  Object {
+    "filters": Object {
+      "finalized": false,
+      "flag": Object {
+        "similarityCutOff": false,
+        "volume": false,
+      },
+      "open": false,
+      "selectedTopFilter": "Count",
+      "similarityCutOff": "",
+      "volume": Object {},
+    },
+    "selectedRunId": "run-123",
+    "type": "clusters/SET_FILTER",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: loadFilter: should load from localstorage and set the filter 1`] = `
+Array [
+  Object {
+    "filters": Object {
+      "finalized": false,
+      "flag": Object {
+        "similarityCutOff": false,
+        "volume": false,
+      },
+      "open": false,
+      "selectedTopFilter": "Count",
+      "similarityCutOff": "",
+      "volume": Object {},
+    },
+    "selectedRunId": "run-123",
+    "type": "clusters/SET_FILTER",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: onEditClusterFail: should dispatch to indicate edit cluster failed , open modal and show notification 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "clusters/EDIT_CLUSTER_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "clusterId": "2",
+      "error": "Duplicate name for Topic",
+      "errorType": "Duplicate name for Topic",
+      "formData": Object {
+        "clusterName": "newName",
+      },
+      "modalName": "EditClusterModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "message": "Duplicate name for Topic",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: onEditClusterFail: should dispatch to indicate edit cluster failed 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "clusters/EDIT_CLUSTER_FAIL",
+  },
+  Object {
+    "message": "Something went wrong. Please contact team",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: onEditClusterSuccess: should dispatch for handling successful updation of cluster 1`] = `
+Array [
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "cluster": Object {
+      "clusterDescription": "order canceled",
+      "clusterId": "2",
+      "clusterName": "newName",
+      "count": 400,
+      "finalized": false,
+      "finalizedBy": "",
+      "finalizedOn": undefined,
+      "modified": 1554930400000,
+      "modifiedBy": "user1@247.ai",
+      "originalName": "Cancel_Order",
+      "rollupCluster": "Cancel_Order",
+      "suggestedNames": Array [
+        "cancel_order_service",
+        "abcde",
+        "defg",
+      ],
+    },
+    "type": "clusters/EDIT_CLUSTER_SUCCESS",
+  },
+  Object {
+    "message": "Cluster newName has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: onGetClusterFail: should dispatch actions to show notifications 1`] = `
+Array [
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Cluster does not exist",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: receiveAllClusters: should dispatch action on recieving all clusters 1`] = `
+Array [
+  Object {
+    "clustersList": Array [
+      Object {
+        "clusterDescription": "relates to cancel order",
+        "clusterId": "1",
+        "clusterName": "cancel_order_customer_service",
+        "count": 230,
+        "finalized": false,
+        "finalizedBy": "",
+        "finalizedOn": undefined,
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalName": "cancel_order_customer_service",
+        "rollupCluster": "Cancel_Order",
+        "suggestedNames": Array [
+          "cancel_order_customer_service",
+          "abcde",
+          "defg",
+        ],
+      },
+      Object {
+        "clusterDescription": "order canceled",
+        "clusterId": "2",
+        "clusterName": "Cancel_Order",
+        "count": 400,
+        "finalized": false,
+        "finalizedBy": "",
+        "finalizedOn": undefined,
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalName": "Cancel_Order",
+        "rollupCluster": "Cancel_Order",
+        "suggestedNames": Array [
+          "cancel_order_service",
+          "abcde",
+          "defg",
+        ],
+      },
+      Object {
+        "clusterDescription": "relates to size and position",
+        "clusterId": "3",
+        "clusterName": "size_and_position",
+        "count": 142,
+        "finalized": true,
+        "finalizedBy": "user1@247.ai",
+        "finalizedOn": undefined,
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalName": "size_and_position",
+        "rollupCluster": "Store_Location",
+        "suggestedNames": Array [
+          "position_size",
+          "store_location",
+          "defg",
+        ],
+      },
+      Object {
+        "clusterDescription": "relates to cancel order",
+        "clusterId": "4",
+        "clusterName": "Place_Order",
+        "count": 129,
+        "finalized": false,
+        "finalizedBy": "",
+        "finalizedOn": undefined,
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalName": "Place_Order",
+        "rollupCluster": "Place_Order",
+        "suggestedNames": Array [
+          "multiple_order",
+          "abcde",
+          "defg",
+        ],
+      },
+    ],
+    "type": "clusters/RECIEVE_ALL_CLUSTERS",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: receiveCluster: should dispatch recieve cluster 1`] = `
+Array [
+  Object {
+    "cluster": Object {
+      "clusterDescription": "relates to cancel order",
+      "clusterId": "1",
+      "clusterName": "cancel_order_customer_service",
+      "count": 230,
+      "finalized": false,
+      "finalizedBy": "",
+      "finalizedOn": undefined,
+      "modified": 1554930400000,
+      "modifiedBy": "user1@247.ai",
+      "originalName": "cancel_order_customer_service",
+      "rollupCluster": "Cancel_Order",
+      "suggestedNames": Array [
+        "cancel_order_customer_service",
+        "abcde",
+        "defg",
+      ],
+    },
+    "type": "clusters/RECIEVE_CLUSTER",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: refreshGraph: should make get call to get all runs for the caa 1`] = `
+Array [
+  Object {
+    "type": "clusters/REFRESH_GRAPH",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: resetFilter: should reset filter state 1`] = `
+Array [
+  Object {
+    "type": "clusters/CLEAR_FILTER",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: selectCluster: should dispatch select cluster and push new route 1`] = `
+Array [
+  Object {
+    "selectedClusterId": "3",
+    "type": "clusters/SELECT_CLUSTER",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/topic-review?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined&project=pro-123&run=run-123&cluster=3",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: setFilter: should update state 1`] = `
+Array [
+  Object {
+    "filters": Object {
+      "finalized": true,
+    },
+    "selectedRunId": "run-123",
+    "type": "clusters/SET_FILTER",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: setFilteredClusters: should dispatch select setFilteredClusters and push new route 1`] = `
+Array [
+  Object {
+    "filteredClusters": Array [
+      Object {
+        "clusterDescription": "relates to cancel order",
+        "clusterId": "1",
+        "clusterName": "cancel_order_customer_service",
+        "count": 230,
+        "finalized": false,
+        "finalizedBy": "",
+        "finalizedOn": undefined,
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalName": "cancel_order_customer_service",
+        "rollupCluster": "Cancel_Order",
+        "suggestedNames": Array [
+          "cancel_order_customer_service",
+          "abcde",
+          "defg",
+        ],
+      },
+      Object {
+        "clusterDescription": "order canceled",
+        "clusterId": "2",
+        "clusterName": "Cancel_Order",
+        "count": 400,
+        "finalized": false,
+        "finalizedBy": "",
+        "finalizedOn": undefined,
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalName": "Cancel_Order",
+        "rollupCluster": "Cancel_Order",
+        "suggestedNames": Array [
+          "cancel_order_service",
+          "abcde",
+          "defg",
+        ],
+      },
+    ],
+    "selectedRunId": "run-123",
+    "type": "clusters/SET_FILTERED_CLUSTERS",
+  },
+]
+`;
+
+exports[`state/Clusters: Cluster Actions: setSelectedCluster: should dispatch the select cluster action 1`] = `
+Array [
+  Object {
+    "selectedClusterId": "3",
+    "type": "clusters/SELECT_CLUSTER",
+  },
+]
+`;

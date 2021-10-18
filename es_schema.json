@@ -1,0 +1,80 @@
+{
+    "settings": {
+      "number_of_shards": 5,
+      "number_of_replicas": 1,
+      "index.requests.cache.enable": true,
+      "analysis": {
+        "analyzer": {
+          "analyzer_keyword": {
+            "tokenizer": "keyword",
+            "filter": [
+              "lowercase"
+            ]
+          }
+        }
+      }
+    },
+    "mappings": {
+      "_default_": {
+        "_meta": {
+          "schemaVersion": "schema1"
+        },
+        "dynamic_templates": [{
+          "message_field": {
+            "match": "message",
+            "match_mapping_type": "text",
+            "mapping": {
+              "type": "text",
+              "norms": false
+            }
+          }
+        }
+        ],
+        "properties": {
+
+           "clusterRun": 2107238071298,
+           "clusterId": 1,
+           "clusterName": "cancel_order_customer_service", 
+           "originalName": "cancel_order_customer_service",
+           "clusterDescription": "relates to cancel order",
+           "rollupCluster": "Cancel_Order",
+           "suggestedNames": ["cancel_order_customer_service", "abcde", "defg"],
+           "modifiedBy": "user1@247.ai",
+           "modified": 1554930400000,
+           "finalized": false,
+           "finalizedOn": 1554930400000,
+           "finalizedBy": "user1@247.ai",
+           "conversations": [{
+            "transcriptId": "qwe-qwe", 
+            "sentenceSet": "hello how are you......a lot of words; ",
+            "transcriptDetail" : [{  "turnSequence": 1,
+                "from": 0,
+                "message": "How can we help?"
+              },{}],
+            "originalSimilarity": "0.67",
+            "originalCluster": "original-cluster-Id", 
+            "previousCluster": "previous-cluster-id",
+            "currentCluster": "current-cluster-id",
+            "modifiedBy": "user1@247.ai",
+            "modified": 1554930400000,
+           }]
+
+           
+          }
+          "clusterId": 1,
+          "clusterName": "cancel_order_customer_service", 
+          "originalName": "cancel_order_customer_service",
+          "clusterDescription": "relates to cancel order",
+          "rollupCluster": "Cancel_Order",
+          "suggestedNames": ["cancel_order_customer_service", "abcde", "defg"],
+          "modifiedBy": "user1@247.ai",
+          "modified": 1554930400000,
+          "finalized": false,
+          "finalizedOn": 1554930400000,
+          "finalizedBy": "user1@247.ai",
+          "clusterMemberId":,
+          "clusterMemberSentence":"this is a cluster member 2",
+        }
+      }
+    }
+  }

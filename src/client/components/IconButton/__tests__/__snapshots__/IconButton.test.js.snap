@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconButton /> Snapshots renders correctly when icon is disabled 1`] = `
+<withTheme(Button)
+  disabled={true}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      "backgroundColor": "initial",
+      "border": "none",
+      "height": "auto",
+      "padding": "1px 1px 3px 1px",
+    }
+  }
+  title=""
+  type="flat"
+>
+  <Plus
+    fill="#9B9B9B"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly when icon is in focus 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      "backgroundColor": "initial",
+      "border": "none",
+      "height": "auto",
+      "padding": "1px 1px 3px 1px",
+    }
+  }
+  title=""
+  type="flat"
+>
+  <Plus
+    fill="#003467"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly when icon is not in focus 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      "backgroundColor": "initial",
+      "border": "none",
+      "height": "auto",
+      "padding": "1px 1px 3px 1px",
+    }
+  }
+  title=""
+  type="flat"
+>
+  <Plus
+    fill="#004c97"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly when icon with extended props 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      "backgroundColor": "initial",
+      "border": "none",
+      "height": "auto",
+      "padding": "1px 1px 3px 1px",
+    }
+  }
+  title=""
+  type="flat"
+>
+  <Plus
+    fill="yellow"
+    height={20}
+    stroke="none"
+    width={20}
+  />
+</withTheme(Button)>
+`;
+
+exports[`<IconButton /> Snapshots renders correctly with title 1`] = `
+<withTheme(Button)
+  disabled={false}
+  name="action-button"
+  onBlur={[Function]}
+  onClick={[MockFunction]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  styleOverride={
+    Object {
+      "backgroundColor": "initial",
+      "border": "none",
+      "height": "auto",
+      "padding": "1px 1px 3px 1px",
+    }
+  }
+  title="test title"
+  type="flat"
+>
+  <Plus
+    fill="#004c97"
+    height={10}
+    stroke="none"
+    width={10}
+  />
+</withTheme(Button)>
+`;

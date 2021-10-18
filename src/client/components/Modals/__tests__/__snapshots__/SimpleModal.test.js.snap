@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleModal /> Snapshots renders correctly  1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    headerChildren="Access Denied"
+    isOpen={true}
+    okChildren="OK"
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    onClickOkButton={[Function]}
+    size="small"
+    styleOverride={Object {}}
+  >
+    <div
+      style={
+        Object {
+          "padding": "0px 30px 0px 30px",
+        }
+      }
+    >
+      unauthorized to access this client
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

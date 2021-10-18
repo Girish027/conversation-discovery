@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ValidationPlaceholder /> Snapshots renders correctly for default props 1`] = `
+<Fragment>
+  <AlertIcon
+    exclamationMarkColor="#FFF"
+    fill="#FF3C27"
+    height="1em"
+    style={
+      Object {
+        "height": "0.7em",
+      }
+    }
+    width="1em"
+  />
+  <span
+    style={
+      Object {
+        "color": "red",
+        "fontSize": "13px",
+      }
+    }
+  >
+     
+    Name should be greater than 4 char
+     
+  </span>
+</Fragment>
+`;

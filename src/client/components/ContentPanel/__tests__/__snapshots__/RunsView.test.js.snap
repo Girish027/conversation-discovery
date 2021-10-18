@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RunsView /> Functionality: createNewProject 1`] = `
+Object {
+  "modalName": "CreateProjectModal",
+}
+`;
+
+exports[`<RunsView /> Functionality: createNewRun 1`] = `
+Object {
+  "header": "Create a New Analysis",
+  "modalName": "CreateRunModal",
+}
+`;
+
+exports[`<RunsView /> Snapshots renders correctly when selected project has FAILED 1`] = `
+<div
+  className="runs-view"
+>
+  <withTheme(ContextualActionsBar)>
+    <div
+      style={
+        Object {
+          "marginTop": "1px",
+        }
+      }
+    />
+  </withTheme(ContextualActionsBar)>
+  <Connect(RunsTable)
+    data={Array []}
+    projectId="pro-123"
+    roleConfig={Object {}}
+  />
+</div>
+`;
+
+exports[`<RunsView /> Snapshots renders correctly when selected project is ENABLED, and there are no runs yet 1`] = `
+<div
+  className="runs-view"
+>
+  <withTheme(ContextualActionsBar)>
+    <div
+      style={
+        Object {
+          "marginTop": "1px",
+        }
+      }
+    />
+  </withTheme(ContextualActionsBar)>
+  <Connect(RunsTable)
+    data={Array []}
+    projectId="pro-123"
+    roleConfig={Object {}}
+  />
+</div>
+`;
+
+exports[`<RunsView /> Snapshots renders correctly when selected project is ENABLED, and there are previous runs 1`] = `
+<div
+  className="runs-view"
+>
+  <withTheme(ContextualActionsBar)>
+    <div
+      style={
+        Object {
+          "marginTop": "1px",
+        }
+      }
+    />
+  </withTheme(ContextualActionsBar)>
+  <Connect(RunsTable)
+    data={
+      Array [
+        Object {
+          "created": 1564166348680,
+          "createdBy": "abc@test.com",
+          "modified": 1564166848680,
+          "modifiedBy": "abc@test.com",
+          "numOfClusters": 400,
+          "numOfTurns": 4,
+          "projectId": "pro-3e4c72f8-72cc-4e2d-77bb-11a5a266514c",
+          "runDescription": "trial",
+          "runId": "run-59da2519-ed17-46ad-8294-1367e287589d",
+          "runName": "test-1564166348646",
+          "runStatus": "QUEUED",
+          "runStatusDescription": "The run is queued",
+          "starred": 0,
+          "stopWords": "[\\"hello\\",\\"hilton\\"]",
+        },
+        Object {
+          "created": 1564159900153,
+          "createdBy": "abc@test.com",
+          "modified": 1564159930153,
+          "modifiedBy": "abc@test.com",
+          "numOfClusters": 400,
+          "numOfTurns": 4,
+          "projectId": "pro-3e4c72f8-72cc-4e2d-77bb-11a5a266514c",
+          "runDescription": "trial",
+          "runId": "run-9dd719a7-4670-4198-5bde-82477be2c5a5",
+          "runName": "test-1564159900138",
+          "runStatus": "QUEUED",
+          "runStatusDescription": "The run is queued",
+          "starred": 1,
+          "stopWords": "[\\"hello\\",\\"hilton\\"]",
+        },
+      ]
+    }
+    projectId="pro-3e4c72f8-72cc-4e2d-77bb-11a5a266514c"
+    roleConfig={Object {}}
+  />
+</div>
+`;
+
+exports[`<RunsView /> Snapshots renders correctly when selected project is not yet ENABLED 1`] = `
+<div
+  className="runs-view"
+>
+  <withTheme(ContextualActionsBar)>
+    <div
+      style={
+        Object {
+          "marginTop": "1px",
+        }
+      }
+    />
+  </withTheme(ContextualActionsBar)>
+  <Connect(RunsTable)
+    data={Array []}
+    projectId="pro-123"
+    roleConfig={Object {}}
+  />
+</div>
+`;
+
+exports[`<RunsView /> Snapshots renders correctly when there are no projects yet 1`] = `
+<div
+  className="runs-view"
+>
+  <withTheme(ContextualActionsBar)>
+    <div
+      style={
+        Object {
+          "marginTop": "1px",
+        }
+      }
+    />
+  </withTheme(ContextualActionsBar)>
+  <Connect(RunsTable)
+    data={Array []}
+    projectId=""
+    roleConfig={Object {}}
+  />
+</div>
+`;

@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddToBotModal /> Functionality: getAllIntents should get all intents - empty list 1`] = `
+Array [
+  Object {
+    "label": "Loading...",
+    "value": "loading",
+  },
+]
+`;
+
+exports[`<AddToBotModal /> Snapshots renders correctly with default props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    dispatch={[Function]}
+    formData={Object {}}
+    headerChildren="Add to Conversations"
+    intentsList={Immutable.List []}
+    isOpen={true}
+    okChildren="ADD"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    selectedConversations={[Function]}
+    size="large"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "0px",
+          "overflow": "hidden",
+        },
+        "content": Object {
+          "left": "calc((100vw - 1000px) / 2)",
+          "maxHeight": "700px",
+          "maxWidth": "900px",
+          "top": "100px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "top": "20%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#6E6E6E",
+          "fontSize": "14px",
+        }
+      }
+    >
+       Add selected utterances as an intent
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "10px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontFamily": "Lato",
+            "fontSize": "12px",
+            "fontWeight": "bold",
+            "marginBottom": "20px",
+          }
+        }
+      >
+         Format: noun_action. 
+      </span>
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontFamily": "Lato",
+            "fontSize": "12px",
+            "fontStyle": "italic",
+            "fontWeight": "bold",
+            "marginBottom": "20px",
+          }
+        }
+      >
+         For ex: Order_Cancel 
+      </span>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "20px",
+        }
+      }
+    >
+      <withTheme(CreatableSelect)
+        onChange={[Function]}
+        onInputChange={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "Loading...",
+              "value": "loading",
+            },
+          ]
+        }
+        placeholder="Select or Add Intent"
+        styleOverride={
+          Object {
+            "container": Object {
+              "width": "400px",
+            },
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "10px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontFamily": "Lato",
+            "fontSize": "12px",
+            "fontWeight": "bold",
+            "marginBottom": "20px",
+          }
+        }
+      >
+        Note: 
+      </span>
+      <span
+        style={
+          Object {
+            "color": "#6E6E6E",
+            "fontFamily": "Lato",
+            "fontSize": "12px",
+            "fontStyle": "italic",
+            "fontWeight": "bold",
+            "marginBottom": "20px",
+          }
+        }
+      >
+        Please rebuild the bot in Conversation Builder for updated utterances to take into effect.
+      </span>
+    </div>
+    <Conversations
+      data={Array []}
+      selectedConversations={[Function]}
+    />
+  </withTheme(DialogComponent)>
+</div>
+`;

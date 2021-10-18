@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/PageHeaderHelper clickHandlers Specific handler - should change route should navigate to corresponding route when clicked on project name 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "router action push",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`utils/PageHeaderHelper detailsMap should have mappings between route, title and breadcrumbs 1`] = `
+Object {
+  "/conversationdiscovery": Object {
+    "title": [Function],
+  },
+  "/conversationdiscovery/ui": Object {
+    "title": [Function],
+  },
+  "/conversationdiscovery/ui/discover-intents": Object {
+    "title": [Function],
+  },
+  "/conversationdiscovery/ui/run-overview": Object {
+    "breadcrumbItems": Array [
+      Object {
+        "label": "discoverIntents",
+      },
+      Object {
+        "label": "projectView",
+        "route": "/conversationdiscovery/ui/discover-intents",
+      },
+    ],
+    "title": [Function],
+  },
+  "/conversationdiscovery/ui/topic-review": Object {
+    "breadcrumbItems": Array [
+      Object {
+        "label": "discoverIntents",
+      },
+      Object {
+        "label": "projectView",
+        "route": "/conversationdiscovery/ui/discover-intents",
+      },
+      Object {
+        "label": "runView",
+        "route": "/conversationdiscovery/ui/run-overview",
+      },
+    ],
+    "title": [Function],
+  },
+}
+`;
+
+exports[`utils/PageHeaderHelper getPageDetails should get correct title and breadcrumbs for Discover Intents Route 1`] = `
+Object {
+  "breadcrumb": Array [],
+  "title": "Discover Intents",
+}
+`;
+
+exports[`utils/PageHeaderHelper getPageDetails should get correct title and breadcrumbs for Distribution Graph Route 1`] = `
+Object {
+  "breadcrumb": Array [
+    Object {
+      "label": "Discover Intents",
+      "onClick": undefined,
+      "readOnly": true,
+      "value": "Discover Intents",
+    },
+    Object {
+      "accountId": "tfscorp",
+      "appId": "referencebot",
+      "clientId": "247ai",
+      "itsBaseUrl": "https://its.com/",
+      "label": "project 123",
+      "onClick": [Function],
+      "projectId": "pro-123",
+      "projectName": "project 123",
+      "readOnly": false,
+      "routeName": "/conversationdiscovery/ui/run-overview",
+      "runId": "run-123",
+      "runName": "Run 123",
+      "value": "projectproject 123",
+    },
+  ],
+  "title": "Run 123 Overview",
+}
+`;
+
+exports[`utils/PageHeaderHelper getPageDetails should get correct title and breadcrumbs for Topic Review Route 1`] = `
+Object {
+  "breadcrumb": Array [
+    Object {
+      "label": "Discover Intents",
+      "onClick": undefined,
+      "readOnly": true,
+      "value": "Discover Intents",
+    },
+    Object {
+      "accountId": "tfscorp",
+      "appId": "referencebot",
+      "clientId": "247ai",
+      "clusterId": "cluster-234",
+      "clusterName": "cancel_order",
+      "itsBaseUrl": "https://its.com/",
+      "label": "project 123",
+      "onClick": [Function],
+      "projectId": "pro-123",
+      "projectName": "project 123",
+      "readOnly": false,
+      "routeName": "/conversationdiscovery/ui/topic-review",
+      "runId": "run-123",
+      "runName": "Run 123",
+      "value": "projectproject 123",
+    },
+    Object {
+      "accountId": "tfscorp",
+      "appId": "referencebot",
+      "clientId": "247ai",
+      "clusterId": "cluster-234",
+      "clusterName": "cancel_order",
+      "itsBaseUrl": "https://its.com/",
+      "label": "Run 123 Overview",
+      "onClick": [Function],
+      "projectId": "pro-123",
+      "projectName": "project 123",
+      "readOnly": false,
+      "routeName": "/conversationdiscovery/ui/topic-review",
+      "runId": "run-123",
+      "runName": "Run 123",
+      "value": "runRun 123 Overview",
+    },
+  ],
+  "title": "Topic Review",
+}
+`;

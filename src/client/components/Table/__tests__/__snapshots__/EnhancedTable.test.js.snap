@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EnhancedTable /> Functionality: handleColumnSelection should set toggle the visibility of the column 1`] = `
+Object {
+  "col1": Object {
+    "visible": false,
+  },
+}
+`;
+
+exports[`<EnhancedTable /> Functionality: handleTableResizeChange should not store the resized state in localstorage if resized state is not provided 1`] = `null`;
+
+exports[`<EnhancedTable /> Functionality: handleTableResizeChange should store the resized state in localstorage against column name and table identifier 1`] = `
+Object {
+  "col2": Object {
+    "activeCol": "col2",
+    "resizedWidth": 235.515625,
+    "resizing": true,
+  },
+}
+`;
+
+exports[`<EnhancedTable /> Snapshots renders correctly for the given props 1`] = `
+<div
+  className="table-container"
+>
+  <withTheme(Table)
+    columns={
+      Array [
+        Object {
+          "Header": "Heading 1",
+          "accessor": "col1",
+          "minWidth": 40,
+          "show": true,
+          "sortable": true,
+        },
+        Object {
+          "Header": "Heading 2",
+          "accessor": "col2",
+          "show": true,
+          "sortable": false,
+        },
+        Object {
+          "Header": "Heading 3",
+          "accessor": "col3",
+          "minWidth": 40,
+          "show": true,
+          "sortable": true,
+        },
+      ]
+    }
+    data={
+      Array [
+        Object {
+          "desc": "desc abc",
+          "id": "col1",
+          "name": "abc",
+        },
+        Object {
+          "desc": "desc def",
+          "id": "col2",
+          "name": "def",
+        },
+        Object {
+          "desc": "desc xyz",
+          "details": "more details",
+          "id": "col3",
+          "name": "xyz",
+        },
+      ]
+    }
+    data-qa="test-table"
+    defaultPageSize={10}
+    minRows={0}
+    onResizedChange={[Function]}
+    pageSizeOptions={
+      Array [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        50,
+        100,
+      ]
+    }
+    resizable={true}
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`<EnhancedTable /> Snapshots renders correctly with filter button 1`] = `
+<div
+  className="table-container"
+>
+  <withTheme(Table)
+    columns={
+      Array [
+        Object {
+          "Header": "Heading 1",
+          "accessor": "col1",
+          "minWidth": 40,
+          "show": true,
+          "sortable": true,
+        },
+        Object {
+          "Header": "Heading 2",
+          "accessor": "col2",
+          "show": true,
+          "sortable": false,
+        },
+        Object {
+          "Header": "Heading 3",
+          "accessor": "col3",
+          "minWidth": 40,
+          "show": true,
+          "sortable": true,
+        },
+      ]
+    }
+    data={
+      Array [
+        Object {
+          "desc": "desc abc",
+          "id": "col1",
+          "name": "abc",
+        },
+        Object {
+          "desc": "desc def",
+          "id": "col2",
+          "name": "def",
+        },
+        Object {
+          "desc": "desc xyz",
+          "details": "more details",
+          "id": "col3",
+          "name": "xyz",
+        },
+      ]
+    }
+    data-qa="test-table"
+    defaultPageSize={10}
+    minRows={0}
+    onResizedChange={[Function]}
+    pageSizeOptions={
+      Array [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        50,
+        100,
+      ]
+    }
+    resizable={true}
+    style={Object {}}
+  />
+  <div
+    className="column-selector"
+  >
+    <IconButton
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px 1px 3px 1px"
+      strokeColor="none"
+      title="Filter Columns"
+      width={10}
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/PreviewActions addCustomAgentMessage should call ude addCustomAgentMessage action  1`] = `
+Object {
+  "actionData": Object {
+    "message": Object {
+      "content": "Hi User",
+      "from": "agent",
+      "fromName": "Bot",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "type": "text",
+    },
+  },
+  "actionName": "ADD_AGENT_MESSAGE",
+}
+`;
+
+exports[`utils/PreviewActions addCustomUserMessage should call ude addCustomUserMessage action  1`] = `
+Object {
+  "actionData": Object {
+    "message": Object {
+      "content": "Hi Agent",
+      "from": "user",
+      "fromName": "User",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "type": "text",
+    },
+  },
+  "actionName": "ADD_USER_MESSAGE",
+}
+`;
+
+exports[`utils/PreviewActions addWelcomeMessage should call ude addWelcomeMessage action  1`] = `
+Object {
+  "actionData": Object {
+    "message": Object {
+      "content": "You are talking to a Bot",
+      "from": "system",
+      "fromName": "SYSTEM",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "showTime": false,
+      "type": "text",
+    },
+  },
+  "actionName": "ADD_SYSTEM_MESSAGE",
+}
+`;
+
+exports[`utils/PreviewActions closeWidget should call ude closeWidget action  1`] = `
+Object {
+  "actionData": Object {},
+  "actionName": "CLOSE_WIDGET",
+}
+`;
+
+exports[`utils/PreviewActions loadViewInchat should call ude loadViewInchat action  1`] = `
+Object {
+  "actionData": Object {
+    "view": "inchat",
+  },
+  "actionName": "LOAD_VIEW_INCHAT",
+}
+`;
+
+exports[`utils/PreviewActions removeAllMessages should call ude removeAllMessages action  1`] = `
+Object {
+  "actionData": Object {},
+  "actionName": "REMOVE_ALL_MESSAGE",
+}
+`;
+
+exports[`utils/PreviewActions resetWorkflowTransition should call ude resetWorkflowTransition action  1`] = `
+Object {
+  "actionData": Object {},
+  "actionName": "RESET_WORKFLOW_TRANSITION",
+}
+`;
+
+exports[`utils/PreviewActions scrolledToTop should call ude scrolledToTop action  1`] = `
+Object {
+  "actionData": Object {
+    "scrollFlag": true,
+  },
+  "actionName": "SCROLLED_TO_TOP",
+}
+`;

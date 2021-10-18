@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/URIUtils getURLParams should extract the url params from the input data eg:hash 1`] = `
+Object {
+  "account": "refbot",
+  "app": "refapp",
+  "client": "247",
+}
+`;
+
+exports[`utils/URIUtils getURLParams should extract the url params from the input data eg:search 1`] = `
+Object {
+  "account": "refbot",
+  "app": "refapp",
+  "client": "247",
+}
+`;
+
+exports[`utils/URIUtils getURLParams should extract the url params from the input url 1`] = `
+Object {
+  "account": "refbot",
+  "app": "refapp",
+  "client": "247",
+}
+`;
+
+exports[`utils/URIUtils getURLParams should give empty object when url params is not present 1`] = `Object {}`;

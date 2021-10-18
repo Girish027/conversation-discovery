@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> Functionality: closeModal should dispatch action to close modal 1`] = `
+Array [
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "isComplete": true,
+    "type": "conversations/ADD_CONVERSATIONS_COMPLETE",
+  },
+]
+`;
+
+exports[`<Modal /> Functionality: handleEscapeKey should dispatch action to close modal when escape key is pressed 1`] = `
+Array [
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`<Modal /> Snapshots renders correctly with AddToBot Modal 1`] = `
+<Connect(AddToBotModal)
+  conversationsAddingInProgress={false}
+  dispatch={[Function]}
+  onClickCancel={[Function]}
+  onClickClose={[Function]}
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+/>
+`;
+
+exports[`<Modal /> Snapshots renders correctly with AddToFaq Modal 1`] = `
+<Connect(AddToFaqModal)
+  conversationsAddingInProgress={false}
+  dispatch={[Function]}
+  onClickCancel={[Function]}
+  onClickClose={[Function]}
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+/>
+`;
+
+exports[`<Modal /> Snapshots renders correctly with Confirmation Modal 1`] = `
+<ConfirmationModal
+  caa={
+    Object {
+      "accountId": "referencebot",
+      "appId": "referencebot",
+      "clientId": "247inc",
+    }
+  }
+  closeIconVisible={false}
+  confirmMode={false}
+  deleteMode={false}
+  dispatch={[Function]}
+  header="Confirm Action"
+  message="Please confirm the action"
+  onClickCancel={[Function]}
+  onClickClose={[Function]}
+  onClickOk={[Function]}
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+/>
+`;
+
+exports[`<Modal /> Snapshots renders correctly with CreateProject Modal 1`] = `
+<CreateProjectModal
+  caa={
+    Object {
+      "accountId": "referencebot",
+      "appId": "referencebot",
+      "clientId": "247inc",
+    }
+  }
+  closeIconVisible={true}
+  dispatch={[Function]}
+  error=""
+  errorType=""
+  formdata={Object {}}
+  header="Create a new project"
+  onClickCancel={[Function]}
+  onClickClose={[Function]}
+  projectCreationInProgress={false}
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+/>
+`;
+
+exports[`<Modal /> Snapshots renders correctly with Progress Modal 1`] = `
+<ProgressModal
+  caa={
+    Object {
+      "accountId": "referencebot",
+      "appId": "referencebot",
+      "clientId": "247inc",
+    }
+  }
+  closeIconVisible={false}
+  dispatch={[Function]}
+  message=""
+  onClickCancel={[Function]}
+  onClickCancelButton={[Function]}
+  onClickClose={[Function]}
+  showCancelButton={false}
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+/>
+`;
+
+exports[`<Modal /> Snapshots renders correctly with Simple Modal for unauthorized user 1`] = `
+<SimpleModal
+  closeIconVisible={true}
+  dispatch={[Function]}
+  header="Access Denied"
+  message="you are unauthorized to access this client"
+  onClickCancel={[Function]}
+  onClickClose={[Function]}
+  onClickOkButton={[Function]}
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+/>
+`;
+
+exports[`<Modal /> Snapshots renders null when modalState is empty 1`] = `""`;

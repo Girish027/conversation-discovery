@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateProjectModal /> Snapshots renders correctly 1`] = `
+<withTheme(DialogComponent)
+  cancelChildren="CANCEL"
+  cancelVisible={true}
+  centerContent={false}
+  closeIconVisible={true}
+  dispatch={[Function]}
+  headerChildren="Upload Transcripts"
+  isOpen={true}
+  okChildren="ANALYZE"
+  okDisabled={true}
+  okVisible={true}
+  onClickCancel={[Function]}
+  onClickOk={[Function]}
+  size="default"
+  styleOverride={
+    Object {
+      "cancel": Object {
+        "backgroundColor": "unset",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      },
+      "content": Object {
+        "left": "calc((100vw - 450px) / 2)",
+        "maxHeight": "650px",
+        "maxWidth": "450px",
+      },
+      "ok": Object {
+        "marginLeft": "10px",
+        "paddingLeft": "25px",
+        "paddingRight": "25px",
+      },
+      "top": "20%",
+    }
+  }
+>
+  <div>
+    <CreateProjectForm
+      caa={
+        Object {
+          "accountId": "referencebot",
+          "appId": "referencebot",
+          "clientId": "247inc",
+        }
+      }
+      error=""
+      errorType=""
+      formdata={Object {}}
+      saveChanges={[Function]}
+      saveFile={[Function]}
+    />
+  </div>
+</withTheme(DialogComponent)>
+`;

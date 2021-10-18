@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterConversations /> Snapshots renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <withTheme(Checkbox)
+      checked={false}
+      key="one"
+      label="Similarity Score greater than"
+      onChange={[Function]}
+      value="similarityCutOff"
+    />
+    <withTheme(TextField)
+      class="filter-input"
+      max={100}
+      min={0}
+      name="similarity-score"
+      onChange={[Function]}
+      placeholder={0.08}
+      styleOverride={
+        Object {
+          "input": Object {
+            "height": "25px",
+          },
+          "marginLeft": "10px",
+          "width": "50px",
+        }
+      }
+      type="number"
+      value=""
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <withTheme(Checkbox)
+      key="two"
+      label="Random Sample Size"
+      onChange={[Function]}
+      value=""
+    />
+    <withTheme(TextField)
+      class="filter-input"
+      max={100}
+      min={0}
+      name="sample-size"
+      onChange={[Function]}
+      placeholder={30}
+      styleOverride={
+        Object {
+          "input": Object {
+            "height": "25px",
+          },
+          "marginLeft": "10px",
+          "width": "50px",
+        }
+      }
+      type="number"
+      value=""
+    />
+  </div>
+</div>
+`;

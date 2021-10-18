@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddToFaqModal /> Functionality: getAllFaqs should get all faqs - empty list 1`] = `Array []`;
+
+exports[`<AddToFaqModal /> Functionality: getAllInterfaces should get all interfaces - empty list 1`] = `
+Array [
+  Object {
+    "label": "Loading...",
+    "value": "loading",
+  },
+]
+`;
+
+exports[`<AddToFaqModal /> Snapshots renders correctly with default props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    faqsList={Immutable.List []}
+    formData={Object {}}
+    headerChildren="Add to Answers"
+    interfacesList={Immutable.List []}
+    isOpen={true}
+    loadingFAQs={false}
+    okChildren="ADD"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    selectedConversations={[Function]}
+    size="large"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "0px",
+          "marginTop": "10px",
+          "overflow": "scroll",
+        },
+        "content": Object {
+          "left": "calc((100vw - 1000px) / 2)",
+          "maxHeight": "700px",
+          "maxWidth": "900px",
+          "top": "100px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "top": "20%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#6E6E6E",
+          "fontSize": "14px",
+          "marginBottom": "15px",
+        }
+      }
+    >
+       You can edit your selected utterances before adding to Answers
+    </div>
+    <Conversations
+      data={Array []}
+      selectedConversations={[Function]}
+    />
+    <div
+      style={
+        Object {
+          "color": "#6E6E6E",
+          "fontSize": "14px",
+          "marginBottom": "15px",
+          "marginTop": "20px",
+        }
+      }
+    >
+       Add selected utterances as an FAQ to your bot
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "20px",
+        }
+      }
+    >
+      <withTheme(Select)
+        isSearchable={true}
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "Loading...",
+              "value": "loading",
+            },
+          ]
+        }
+        placeholder="Select Interface"
+        styleOverride={
+          Object {
+            "container": Object {
+              "width": "400px",
+            },
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "20px",
+        }
+      }
+    />
+  </withTheme(DialogComponent)>
+</div>
+`;

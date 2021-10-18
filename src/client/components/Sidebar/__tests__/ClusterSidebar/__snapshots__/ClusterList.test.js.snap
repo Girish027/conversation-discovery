@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ClusterList /> Snapshots renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "fontWeight": "bold",
+        "marginBottom": "18px",
+        "padding": "25px 0px 0px 20px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "14px",
+          "paddingLeft": "10px",
+        }
+      }
+    >
+      Potential Intents
+    </span>
+    <div
+      style={
+        Object {
+          "float": "right",
+          "marginRight": "23px",
+        }
+      }
+    >
+      <withTheme(Button)
+        name="volume-btn"
+        onClick={[Function]}
+        styleOverride={
+          Object {
+            ":hover": Object {
+              "color": "#8698b8",
+            },
+            "color": "#313F54",
+            "fontSize": "13px",
+            "height": "unset",
+            "paddingRight": "5px",
+          }
+        }
+        type="flat"
+      >
+        Volume
+      </withTheme(Button)>
+      <TableSorter
+        height="13px"
+        highLightColor="#666"
+        nonHighLightColor="#d4d4d4"
+        sortOrder="asc"
+      />
+    </div>
+  </div>
+  <hr
+    style={
+      Object {
+        "backgroundColor": "rgb(246, 247, 248)",
+        "borderWidth": "0",
+        "height": "2px",
+      }
+    }
+  />
+  <ul
+    style={
+      Object {
+        "color": "rgb(49, 63, 84)",
+        "fontSize": "13px",
+        "height": "calc(100vh - 220px)",
+        "listStyleType": "none",
+        "margin": "0px",
+        "overflow": "auto",
+        "paddingLeft": "8px",
+      }
+    }
+  >
+    <li
+      key="1"
+    >
+      <div
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        role="button"
+        style={
+          Object {
+            "cursor": "pointer",
+            "display": "block",
+            "height": "16px",
+            "padding": "10px 0px 10px 22px",
+            "paddingRight": 0,
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          style={
+            Object {
+              "float": "left",
+              "minWidth": "100px",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "whiteSpace": "nowrap",
+              "width": "75%",
+            }
+          }
+        >
+          Cancel Order Customer Service
+        </div>
+        <div
+          style={
+            Object {
+              "float": "right",
+              "marginRight": "23px",
+            }
+          }
+        >
+          230
+        </div>
+      </div>
+    </li>
+    <li
+      key="1"
+    >
+      <div
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        role="button"
+        style={
+          Object {
+            "cursor": "pointer",
+            "display": "block",
+            "height": "16px",
+            "padding": "10px 0px 10px 22px",
+            "paddingRight": 0,
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          style={
+            Object {
+              "float": "left",
+              "minWidth": "100px",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "whiteSpace": "nowrap",
+              "width": "75%",
+            }
+          }
+        >
+          Cancel Order Customer Service
+        </div>
+        <div
+          style={
+            Object {
+              "float": "right",
+              "marginRight": "23px",
+            }
+          }
+        >
+          230
+        </div>
+      </div>
+    </li>
+    <li
+      key="2"
+    >
+      <div
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        role="button"
+        style={
+          Object {
+            "cursor": "pointer",
+            "display": "block",
+            "height": "16px",
+            "padding": "10px 0px 10px 22px",
+            "paddingRight": 0,
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          style={
+            Object {
+              "float": "left",
+              "minWidth": "100px",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "whiteSpace": "nowrap",
+              "width": "75%",
+            }
+          }
+        >
+          Cancel Order
+        </div>
+        <div
+          style={
+            Object {
+              "float": "right",
+              "marginRight": "23px",
+            }
+          }
+        >
+          400
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

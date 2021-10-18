@@ -1,0 +1,8 @@
+{
+  "projectName": {
+    "ui:field": "text"
+  },
+  "projectDescription": {
+    "ui:field": "textarea"
+  }
+}

@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/App: App Actions: getAnswersConfig: should dispatch getAnswersConfig 1`] = `Array []`;
+
+exports[`state/App: App Actions: getConversationsConfig: should dispatch getConversationsConfig 1`] = `Array []`;
+
+exports[`state/App: App Actions: getUserConfig: should dispatch getUserConfig 1`] = `Array []`;
+
+exports[`state/App: App Actions: setClientsConfig should dispatch setClientsConfig action 1`] = `
+Array [
+  Object {
+    "clientConfigs": Array [
+      Object {
+        "apps": Array [
+          Object {
+            "accountId": "chatbot",
+            "appId": "chatbot",
+          },
+        ],
+        "clientId": "capitalone",
+      },
+      Object {
+        "apps": Array [
+          Object {
+            "accountId": "chatbot",
+            "appId": "chatbot",
+          },
+        ],
+        "clientId": "sirius",
+      },
+    ],
+    "type": "app/SET_CLIENTS_CONFIG",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setClientsConfig should dispatch setClientsConfig action 2`] = `
+Array [
+  Object {
+    "clientConfigs": Array [],
+    "type": "app/SET_CLIENTS_CONFIG",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setModalIsOpen should dispatch setModalIsOpen action 1`] = `
+Array [
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "header": "undefined project?",
+      "message": "undefined project?",
+      "modalName": "ConfirmationDialog",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setModalIsOpen should dispatch setModalIsOpen action 2`] = `
+Array [
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "header": "undefined project?",
+      "message": "undefined project?",
+      "modalName": "ConfirmationDialog",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setModalMessage should dispatch setModalMessage action 1`] = `
+Array [
+  Object {
+    "modalMessage": "Modal is Open",
+    "type": "app/MODAL_MESSAGE",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setModalMessageState should dispatch setModalMessageState action 1`] = `
+Array [
+  Object {
+    "modalMessage": "Modal is Open",
+    "type": "app/MODAL_MESSAGE",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setModalMessageState should dispatch setModalMessageState action 2`] = `
+Array [
+  Object {
+    "modalMessage": "Modal is Open",
+    "type": "app/MODAL_MESSAGE",
+  },
+]
+`;
+
+exports[`state/App: App Actions: setUnifiedPortalClientPicker should dispatch setUnifiedPortalClientPicker action 1`] = `
+Array [
+  Object {
+    "type": "app/SET_UNIFIED_PORTAL_CLIENT_PICKER",
+    "unifiedPortalClientPicker": false,
+  },
+]
+`;
+
+exports[`state/App: App Actions: setUserConfig should dispatch setUserConfig action 1`] = `
+Array [
+  Object {
+    "config": Object {
+      "analyticsKey": "c8adb0c80da1f7ed082cfc43c4da0fe4",
+      "authEnabled": false,
+    },
+    "type": "app/SET_USER_CONFIG",
+  },
+]
+`;
+
+exports[`state/App: App Actions: updateCAA: should dispatch update CAA 1`] = `
+Array [
+  Object {
+    "caa": Object {
+      "accountId": "referencebot",
+      "appId": "referencebot",
+      "clientId": "247ai",
+    },
+    "type": "all/UPDATE_CAA",
+  },
+]
+`;

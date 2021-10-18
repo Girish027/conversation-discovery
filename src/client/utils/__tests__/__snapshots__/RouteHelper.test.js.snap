@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/RouteHelper getRoute should construct route for given route not add clusterId if run is not present 1`] = `"/conversationdiscovery/ui/run-overview?clientid=247ai&accountid=acc&appid=app&componentClientId=undefined&project=pro-123"`;
+
+exports[`utils/RouteHelper getRoute should construct route for given route with all the params 1`] = `"/conversationdiscovery/ui/topic-review?clientid=247ai&accountid=acc&appid=app&componentClientId=undefined&project=pro-123&run=run-234&cluster=cluster-1234"`;
+
+exports[`utils/RouteHelper getRoute should construct route for given route with caa 1`] = `"/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=acc&appid=app&componentClientId=undefined"`;
+
+exports[`utils/RouteHelper getRoute should construct route for given route with caa and project  1`] = `"/conversationdiscovery/ui/topic-review?clientid=247ai&accountid=acc&appid=app&componentClientId=undefined&project=pro-123"`;
+
+exports[`utils/RouteHelper routeNames should have the correct route paths 1`] = `
+Object {
+  "BASE_ROUTE": "/conversationdiscovery/ui",
+  "DISCOVER_INTENTS": "/conversationdiscovery/ui/discover-intents",
+  "DISTRIBUTION_GRAPH": "/conversationdiscovery/ui/run-overview",
+  "HOME_PAGE": "/conversationdiscovery",
+  "TOPIC_REVIEW": "/conversationdiscovery/ui/topic-review",
+}
+`;

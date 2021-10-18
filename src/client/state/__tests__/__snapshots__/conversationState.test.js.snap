@@ -1,0 +1,402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/conversations: Conversation Actions: closeTranscript: should dispatch  actions for closing transcript 1`] = `
+Array [
+  Object {
+    "type": "conversations/CLOSE_TRANSCRIPT",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: createFaqWithAnswers: should make a post call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/interfaceId/1/addToAnswers"`;
+
+exports[`state/conversations: Conversation Actions: createIntentWithConversations: should make a post call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/intents"`;
+
+exports[`state/conversations: Conversation Actions: getAllConversations: should make a get call with the correct url and data - Case 1 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/conversations?search=Hello!%20Is%20it%20possible%20to%20refund%20an%20order%20I%20canceled%20through%20the%20restaurant%20%24%24I%20was%20not%20able%20to%20cancel%20it%20through%20door%20dash%20but%20was%20able%20to%20cancel%0Athrough%20the%20restaurant%20.%20Yes%20I%20am.%20Yes%20that%20would%20be%20perfect!%20Thank%20you%20so%20much&similarity=0.8"`;
+
+exports[`state/conversations: Conversation Actions: getAllConversations: should make a get call with the correct url and data - Case 2 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/conversations?similarity=0.8"`;
+
+exports[`state/conversations: Conversation Actions: getAllConversations: should make a get call with the correct url and data - Case 3 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/conversations?search=Hello!%20Is%20it%20possible%20to%20refund%20an%20order%20I%20canceled%20through%20the%20restaurant%20%24%24I%20was%20not%20able%20to%20cancel%20it%20through%20door%20dash%20but%20was%20able%20to%20cancel%0Athrough%20the%20restaurant%20.%20Yes%20I%20am.%20Yes%20that%20would%20be%20perfect!%20Thank%20you%20so%20much"`;
+
+exports[`state/conversations: Conversation Actions: getAllConversations: should make a get call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/conversations"`;
+
+exports[`state/conversations: Conversation Actions: getConversationTranscript: should make a get call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/conversations?tId=qwe-qwe"`;
+
+exports[`state/conversations: Conversation Actions: getFAQs: should make a get call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/interfaceId/1/addToAnswers"`;
+
+exports[`state/conversations: Conversation Actions: getIntents: should make a get call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/intents"`;
+
+exports[`state/conversations: Conversation Actions: getInterfaces: should make a get call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/interfaces"`;
+
+exports[`state/conversations: Conversation Actions: getTranscript: should make a get call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/conversations/qwe-qwe"`;
+
+exports[`state/conversations: Conversation Actions: onAddToBotSuccess: should dispatch action to  onAddToBotSuccess 1`] = `Array []`;
+
+exports[`state/conversations: Conversation Actions: onAddToBotSuccessCreateIntent: should dispatch action to onAddToBotSuccessCreateIntent 1`] = `
+Array [
+  Object {
+    "conversations": Object {
+      "nodeId": "node-1",
+      "nodeName": "nodeName-1",
+    },
+    "type": "ADD_CONVERSATIONS_SUCCESS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onAddToBotSuccessUpdateIntent: should dispatch action to  onAddToBotSuccessUpdateIntent 1`] = `
+Array [
+  Object {
+    "conversations": Object {
+      "nodeId": "node-1",
+      "nodeName": "nodeName-1",
+    },
+    "type": "ADD_CONVERSATIONS_SUCCESS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onAddToFaqSuccess: should dispatch action to  onAddToFaqSuccess 1`] = `Array []`;
+
+exports[`state/conversations: Conversation Actions: onAddToFaqSuccessCreateFaq: should dispatch action to onAddToFaqSuccessCreateFaq 1`] = `
+Array [
+  Object {
+    "conversations": Object {
+      "responseId": "response-1",
+      "title": "responedTitle",
+    },
+    "type": "ADD_CONVERSATIONS_SUCCESS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onAddToFaqSuccessUpdateFaq: should dispatch action to  onAddToFaqSuccessUpdateFaq 1`] = `
+Array [
+  Object {
+    "conversations": Object {
+      "responseId": "response-1",
+      "title": "responedTitle",
+    },
+    "type": "ADD_CONVERSATIONS_SUCCESS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onGetFail: should dispatch action to indicate run creation has failed 1`] = `
+Array [
+  Object {
+    "message": "some error occurred",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onGetFail: should dispatch action to indicate run creation has failed empty error 1`] = `
+Array [
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onGetFailFaq: should dispatch action to indicate run creation has failed 1`] = `
+Array [
+  Object {
+    "error": Object {},
+    "type": "conversations/ADD_CONVERSATIONS_FAIL",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {
+      "modalName": "AddToFaqModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "data": Object {
+        "err": "server error",
+        "message": "some error occurred",
+      },
+      "errorType": "Internal server error. Please try again later",
+      "modalName": "AddToFaqModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onGetFailFaq: should dispatch action to indicate run creation has failed empty error 1`] = `
+Array [
+  Object {
+    "error": Object {},
+    "type": "conversations/ADD_CONVERSATIONS_FAIL",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {
+      "modalName": "AddToFaqModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "data": undefined,
+      "errorType": "Internal server error. Please try again later",
+      "modalName": "AddToFaqModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onGetFailIntent: should dispatch action to indicate run creation has failed 1`] = `
+Array [
+  Object {
+    "error": Object {},
+    "type": "conversations/ADD_CONVERSATIONS_FAIL",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {
+      "modalName": "AddToBotModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "data": Object {
+        "err": "server error",
+        "message": "some error occurred",
+      },
+      "errorType": "Internal server error. Please try again later",
+      "modalName": "AddToBotModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: onGetFailIntent: should dispatch action to indicate run creation has failed empty error 1`] = `
+Array [
+  Object {
+    "error": Object {},
+    "type": "conversations/ADD_CONVERSATIONS_FAIL",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {
+      "modalName": "AddToBotModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "data": undefined,
+      "errorType": "Internal server error. Please try again later",
+      "modalName": "AddToBotModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveAllConversations: should dispatch action to indicate all conversations are recieved 1`] = `
+Array [
+  Object {
+    "conversationsList": Array [
+      Object {
+        "currentCluster": "current-cluster-id",
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalCluster": "original-cluster-Id",
+        "originalSimilarity": 0.67,
+        "previousCluster": "previous-cluster-id",
+        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+        "transcriptId": "qwe-qwe",
+      },
+      Object {
+        "currentCluster": "current-cluster-id",
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalCluster": "original-cluster-Id",
+        "originalSimilarity": 0.67,
+        "previousCluster": "previous-cluster-id",
+        "sentenceSet": "hello. I placed an order with Garbanzo Mediterranean and the driver called me to inform me that they closed early because of NYE. I tried to
+cancel the order in hopes of a refund and was not allowed to. Am I able to receive a refund since I did not get me food . Will this refund become
+credits or back into my account",
+        "transcriptId": "abc-abc",
+      },
+    ],
+    "type": "conversations/RECEIVE_ALL_CONVERSATIONS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveConversationTranscript: should dispatch action to indicate all conversations of Transcript Id are recieved 1`] = `
+Array [
+  Object {
+    "conversationsList": Array [
+      Object {
+        "currentCluster": "current-cluster-id",
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalCluster": "original-cluster-Id",
+        "originalSimilarity": 0.67,
+        "previousCluster": "previous-cluster-id",
+        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+        "transcriptId": "qwe-qwe",
+      },
+    ],
+    "type": "conversations/RECEIVE_CONVERSATION_TRANSCRIPT",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveConversationTranscriptApiSuccess: should dispatch action to indicate 0 conversations of Transcript Id are recieved successfully 1`] = `
+Array [
+  Object {
+    "message": " Unable to fetch Transcript ! ",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveConversationTranscriptApiSuccess: should dispatch action to indicate all conversations of Transcript Id are recieved successfully 1`] = `
+Array [
+  Object {
+    "conversationsList": Array [
+      Object {
+        "currentCluster": "current-cluster-id",
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalCluster": "original-cluster-Id",
+        "originalSimilarity": 0.67,
+        "previousCluster": "previous-cluster-id",
+        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+        "transcriptId": "qwe-qwe",
+      },
+    ],
+    "type": "conversations/RECEIVE_CONVERSATION_TRANSCRIPT",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveFaqs: should dispatch  actions for empty receiveFaqs 1`] = `
+Array [
+  Object {
+    "faqs": Object {},
+    "type": "conversations/RECEIVE_FAQS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveFaqs: should dispatch  actions for receiveFaqs 1`] = `
+Array [
+  Object {
+    "faqs": Object {},
+    "type": "conversations/RECEIVE_FAQS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveIntents: should dispatch  actions for empty receiveIntents 1`] = `
+Array [
+  Object {
+    "intents": Object {},
+    "type": "conversations/RECEIVE_INTENTS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveIntents: should dispatch  actions for receiveIntents 1`] = `
+Array [
+  Object {
+    "intents": Object {},
+    "type": "conversations/RECEIVE_INTENTS",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveInterfaces: should dispatch  actions for empty receiveInterfaces 1`] = `
+Array [
+  Object {
+    "interfaces": Object {},
+    "type": "conversations/RECEIVE_INTERFACES",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveInterfaces: should dispatch  actions for receiveInterfaces 1`] = `
+Array [
+  Object {
+    "interfaces": Object {},
+    "type": "conversations/RECEIVE_INTERFACES",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveTranscript: should dispatch recieve empty transcript 1`] = `
+Array [
+  Object {
+    "transcript": Object {},
+    "type": "conversations/RECEIVE_TRANSCRIPT",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: receiveTranscript: should dispatch recieve transcript 1`] = `
+Array [
+  Object {
+    "transcript": Object {
+      "transcriptId": "selected transcript id from response",
+      "turns": Array [
+        Object {
+          "from": 0,
+          "message": "How can we help?",
+          "turnSequence": 1,
+        },
+        Object {
+          "from": 1,
+          "message": "I need to cancel my order",
+          "turnSequence": 2,
+        },
+      ],
+    },
+    "type": "conversations/RECEIVE_TRANSCRIPT",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: setSelectedTranscript: should dispatch set a selected transcript 1`] = `
+Array [
+  Object {
+    "selectedTranscriptId": "selected transcript id from response",
+    "type": "conversations/SELECT_TRANSCRIPT",
+  },
+]
+`;
+
+exports[`state/conversations: Conversation Actions: updateFaqWithAnswers: should make a patch call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/interfaceId/1/addToAnswers"`;
+
+exports[`state/conversations: Conversation Actions: updateIntentWithConversations: should make a patch call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-123/clusters/2/intents"`;
+
+exports[`state/conversations: Conversation Actions: viewTranscript: should dispatch  actions for viewing transcript 1`] = `
+Array [
+  Object {
+    "transcript": "selected transcript id from response",
+    "type": "conversations/RECEIVE_TRANSCRIPT",
+  },
+]
+`;

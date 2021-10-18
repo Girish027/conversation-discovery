@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/Runs: Run Actions: createRun: should dispatch action to indicate run Create start 1`] = `
+Array [
+  Object {
+    "runMeta": Object {
+      "caa": Object {
+        "accountId": "referencebot",
+        "appId": "referencebot",
+        "clientId": "247ai",
+        "componentClientId": undefined,
+      },
+      "data": Object {
+        "numOfClusters": 400,
+        "numOfTurns": 3,
+        "runDescription": "description",
+        "runName": "abcd",
+        "stopWords": "[\\"hello\\",\\"hilton\\"]",
+      },
+      "projectId": "pro-123",
+    },
+    "type": "runs/CREATE_RUN_START",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: createRun: should make a post call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs"`;
+
+exports[`state/Runs: Run Actions: createRunFail: should dispatch action to indicate run creation has failed 1`] = `
+Array [
+  Object {
+    "error": "Duplicate analysis name. Please provide a unique name.",
+    "type": "runs/CREATE_RUN_FAIL",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: createRunStart: should dispatch action to createRunStart 1`] = `
+Array [
+  Object {
+    "runMeta": Object {
+      "account": "referencebot",
+      "app": "referencebot",
+      "client": "247ai",
+      "created": 1564104650045,
+      "modified": 1564104650045,
+      "numOfClusters": 400,
+      "numOfTurns": 4,
+      "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+      "runDescription": "trial",
+      "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+      "runName": "test-1564104650001",
+      "runStatus": "QUEUED",
+      "runStatusDescription": "The run is queued",
+      "starred": 0,
+      "stopWords": "[\\"hello\\",\\"hilton\\"]",
+    },
+    "type": "runs/CREATE_RUN_START",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: createRunSuccess: should dispatch action to indicate run creation has been successful 1`] = `
+Array [
+  Object {
+    "run": Object {
+      "account": "referencebot",
+      "app": "referencebot",
+      "client": "247ai",
+      "created": 1564104650045,
+      "modified": 1564104650045,
+      "numOfClusters": 400,
+      "numOfTurns": 4,
+      "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+      "runDescription": "trial",
+      "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+      "runName": "test-1564104650001",
+      "runStatus": "QUEUED",
+      "runStatusDescription": "The run is queued",
+      "starred": 0,
+      "stopWords": "[\\"hello\\",\\"hilton\\"]",
+    },
+    "type": "runs/CREATE_RUN_SUCCESS",
+  },
+  Object {
+    "message": "Analysis test-1564104650001 has been successfully created",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: deleteRun: should make get call to delete the run 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-uuid"`;
+
+exports[`state/Runs: Run Actions: deleteRunStart: should dispatch actions indicating delete run started 1`] = `
+Array [
+  Object {
+    "data": Object {
+      "caa": Object {
+        "accountId": "b",
+        "appId": "c",
+        "clientId": "a",
+      },
+      "data": Object {
+        "runId": "run-123",
+        "starred": 1,
+      },
+      "projectId": "pro-123",
+    },
+    "type": "runs/DELETE_RUN_START",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: deleteRunSuccess: should dispatch actions indicating delete run failed 1`] = `
+Array [
+  Object {
+    "run": Object {
+      "code": "dummy",
+      "message": "dummy message",
+    },
+    "type": "runs/DELETE_RUN_SUCCESS",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: editRun: should make get call to update run details 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs/run-uuid"`;
+
+exports[`state/Runs: Run Actions: editRunFail: should dispatch actions indicating edit run failed 1`] = `
+Array [
+  Object {
+    "error": Object {
+      "code": "dummy",
+      "message": "dummy message",
+    },
+    "type": "runs/EDIT_RUN_FAIL",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: editRunStart: should dispatch actions indicating edit run started 1`] = `
+Array [
+  Object {
+    "data": Object {
+      "caa": Object {
+        "accountId": "b",
+        "appId": "c",
+        "clientId": "a",
+      },
+      "data": Object {
+        "runId": "run-123",
+        "starred": 1,
+      },
+      "projectId": "pro-123",
+    },
+    "type": "runs/EDIT_RUN_START",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: getAllRuns: should make get call to get all runs for the caa 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-123/runs"`;
+
+exports[`state/Runs: Run Actions: getRun: should make get call to get run details 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/undefined/runs/run-uuid"`;
+
+exports[`state/Runs: Run Actions: onCreateRunFail: should dispatch actions - createRunFail and set the modal as open 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "runs/CREATE_RUN_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "error": undefined,
+      "errorType": undefined,
+      "header": "Create a New Analysis",
+      "modalName": "CreateRunModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onCreateRunFail: should dispatch actions - empty error createRunFail and set the modal as open 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "runs/CREATE_RUN_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "error": undefined,
+      "errorType": undefined,
+      "header": "Create a New Analysis",
+      "modalName": "CreateRunModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onCreateRunSuccess: should dispatch actions to handle all successful creation of empty run 1`] = `
+Array [
+  Object {
+    "run": Object {},
+    "type": "runs/CREATE_RUN_SUCCESS",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "message": "Analysis undefined has been successfully created",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onCreateRunSuccess: should dispatch actions to handle all successful creation of run 1`] = `
+Array [
+  Object {
+    "run": Object {
+      "account": "referencebot",
+      "app": "referencebot",
+      "client": "247ai",
+      "created": 1564104650045,
+      "modified": 1564104650045,
+      "numOfClusters": 400,
+      "numOfTurns": 4,
+      "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+      "runDescription": "trial",
+      "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+      "runName": "test-1564104650001",
+      "runStatus": "QUEUED",
+      "runStatusDescription": "The run is queued",
+      "starred": 0,
+      "stopWords": "[\\"hello\\",\\"hilton\\"]",
+    },
+    "type": "runs/CREATE_RUN_SUCCESS",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "message": "Analysis test-1564104650001 has been successfully created",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onDeleteRunSuccess: should dispatch actions to show notification and indicate edit run was successful 1`] = `
+Array [
+  Object {
+    "run": Object {
+      "account": "referencebot",
+      "app": "referencebot",
+      "client": "247ai",
+      "created": 1564104650045,
+      "modified": 1564104650045,
+      "numOfClusters": 400,
+      "numOfTurns": 4,
+      "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+      "runDescription": "trial",
+      "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+      "runName": "test-1564104650001",
+      "runStatus": "QUEUED",
+      "runStatusDescription": "The run is queued",
+      "starred": 0,
+      "stopWords": "[\\"hello\\",\\"hilton\\"]",
+    },
+    "type": "runs/DELETE_RUN_SUCCESS",
+  },
+  Object {
+    "message": "Analysis  has been successfully deleted",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "activeProjectId": "",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+  Object {
+    "message": "Analysis undefined has been successfully deleted",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onEditRunFail: should dispatch actions to close dialog and indicate edit run failed 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "runs/EDIT_RUN_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "error": "dummy message",
+      "errorType": "dummy message",
+      "formData": Object {},
+      "modalName": "EditRunModal",
+      "runId": "runId",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onEditRunSuccess: should dispatch actions to close dialog and indicate edit run was successful 1`] = `
+Array [
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "run": Object {
+      "account": "referencebot",
+      "app": "referencebot",
+      "client": "247ai",
+      "created": 1564104650045,
+      "modified": 1564104650045,
+      "numOfClusters": 400,
+      "numOfTurns": 4,
+      "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+      "runDescription": "trial",
+      "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+      "runName": "test-1564104650001",
+      "runStatus": "QUEUED",
+      "runStatusDescription": "The run is queued",
+      "starred": 0,
+      "stopWords": "[\\"hello\\",\\"hilton\\"]",
+    },
+    "type": "runs/EDIT_RUN_SUCCESS",
+  },
+  Object {
+    "message": "Analysis test-1564104650001 has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Analysis test-1564104650001 has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onGetAllRunsSuccess: should dispatch action on getting all  empty runs 1`] = `
+Array [
+  Object {
+    "runsList": Array [],
+    "type": "runs/RECEIVE_ALL_RUNS",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onGetAllRunsSuccess: should dispatch action on getting all runs 1`] = `
+Array [
+  Object {
+    "runsList": Array [
+      Object {
+        "account": "referencebot",
+        "app": "referencebot",
+        "client": "247ai",
+        "created": 1564104650045,
+        "modified": 1564104650045,
+        "numOfClusters": 400,
+        "numOfTurns": 4,
+        "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+        "runDescription": "trial",
+        "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+        "runName": "test-1564104650001",
+        "runStatus": "QUEUED",
+        "runStatusDescription": "The run is queued",
+        "starred": 0,
+        "stopWords": "[\\"hello\\",\\"hilton\\"]",
+      },
+    ],
+    "type": "runs/RECEIVE_ALL_RUNS",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onGetRunFail: should dispatch actions to show notifications 1`] = `
+Array [
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Run does not exists",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: onGetRunFail: should dispatch actions to show notifications 2`] = `
+Array [
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: receiveAllRuns: should dispatch action on recieving empty runs 1`] = `
+Array [
+  Object {
+    "runsList": Array [],
+    "type": "runs/RECEIVE_ALL_RUNS",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: receiveAllRuns: should dispatch action on recieving runs 1`] = `
+Array [
+  Object {
+    "runsList": Array [
+      Object {
+        "account": "referencebot",
+        "app": "referencebot",
+        "client": "247ai",
+        "created": 1564104650045,
+        "modified": 1564104650045,
+        "numOfClusters": 400,
+        "numOfTurns": 4,
+        "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+        "runDescription": "trial",
+        "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+        "runName": "test-1564104650001",
+        "runStatus": "QUEUED",
+        "runStatusDescription": "The run is queued",
+        "starred": 0,
+        "stopWords": "[\\"hello\\",\\"hilton\\"]",
+      },
+    ],
+    "type": "runs/RECEIVE_ALL_RUNS",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: receiveRun: should dispatch recieve run action 1`] = `
+Array [
+  Object {
+    "run": Object {
+      "account": "referencebot",
+      "app": "referencebot",
+      "client": "247ai",
+      "created": 1564104650045,
+      "modified": 1564104650045,
+      "numOfClusters": 400,
+      "numOfTurns": 4,
+      "projectId": "pro-2a9136b9-ec7e-41c7-8d14-4fb525f3b06f",
+      "runDescription": "trial",
+      "runId": "run-21584ee5-0f74-4151-24bf-aab97cea808e",
+      "runName": "test-1564104650001",
+      "runStatus": "QUEUED",
+      "runStatusDescription": "The run is queued",
+      "starred": 0,
+      "stopWords": "[\\"hello\\",\\"hilton\\"]",
+    },
+    "type": "runs/RECEIVE_RUN",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: selectRun: should dispatch actions on selecting a run 1`] = `
+Array [
+  Object {
+    "selectedRunId": "run-uuid",
+    "type": "runs/SELECT_RUN",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/run-overview?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined&project=pro-123&run=run-uuid",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: setSelectedRun: should dispatch action to set the selected run 1`] = `
+Array [
+  Object {
+    "selectedRunId": "run-uuid",
+    "type": "runs/SELECT_RUN",
+  },
+]
+`;
+
+exports[`state/Runs: Run Actions: updateRunsStatus: should dispatch action to get all runs if trackRuns is set to true 1`] = `Array []`;

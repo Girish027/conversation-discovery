@@ -1,0 +1,15 @@
+{
+  "appenders": {
+    "file": {
+      "type": "node-log4js-json-appender",
+      "filename": "src/server/logs/conversation_discovery.log"
+    },
+    "console": {
+      "type": "node-log4js-json-appender"
+    }
+  },
+  "categories": {
+    "default": { "appenders": ["file", "console"], "level": "INFO"},
+    "SRVR": { "appenders": ["file", "console"], "level": "INFO"}
+  }
+}

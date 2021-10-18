@@ -1,0 +1,8 @@
+{
+  "clusterName": {
+    "ui:field": "text"
+  },
+  "clusterDescription": {
+    "ui:field": "textarea"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "index": "idt_cluster",
+  "body": {
+    "size": 0,
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "bool": {
+              "must": [
+                {
+                  "term": {
+                    "project_id": {
+                      "value": "Project-Test",
+                      "boost": 1.0
+                    }
+                  }
+                },
+                {
+                  "term": {
+                    "run_id": {
+                      "value": "R-ts-01",
+                      "boost": 1.0
+                    }
+                  }
+                }
+              ],
+              "adjust_pure_negative": true,
+              "boost": 1.0
+            }
+          },
+          {
+            "term": {
+              "is_enabled": {
+                "value": true,
+                "boost": 1.0
+              }
+            }
+          }
+        ],
+        "adjust_pure_negative": true,
+        "boost": 1.0
+      }
+    },
+    "_source": false,
+    "stored_fields": "_none_",
+    "aggregations": {
+      "groupby": {
+        "composite": {
+          "size": 1000,
+          "sources": [
+            {
+              "rollupIntent": {
+                "terms": {
+                  "field": "rollup_label",
+                  "missing_bucket": true,
+                  "order": "asc"
+                }
+              }
+            },
+            {
+              "granularIntent": {
+                "terms": {
+                  "field": "entire_cluster_label",
+                  "missing_bucket": true,
+                  "order": "asc"
+                }
+              }
+            },
+            {
+              "wordCloudTerms": {
+                "terms": {
+                  "field": "word_cloud_terms.keyword",
+                  "missing_bucket": true,
+                  "order": "asc"
+                }
+              }
+            },
+            {
+              "finalized": {
+                "terms": {
+                  "field": "is_finalized",
+                  "missing_bucket": true,
+                  "order": "asc"
+                }
+              }
+            },
+            {
+              "clusterId": {
+                "terms": {
+                  "field": "cluster_id",
+                  "missing_bucket": true,
+                  "order": "asc"
+                }
+              }
+            },
+            {
+              "originalGranularIntent": {
+                "terms": {
+                  "field": "original_granular_intent",
+                  "missing_bucket": true,
+                  "order": "asc"
+                }
+              }
+            }
+          ]
+        },
+        "aggregations": {
+          "rollupIntent": {
+            "filter": {
+              "exists": {
+                "field": "rollup_label",
+                "boost": 1.0
+              }
+            }
+          },
+          "similarity": {
+            "max": {
+              "field": "similarity"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConfirmationModal /> Snapshots renders correctly in confirmation mode 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="YES, CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={false}
+    headerChildren="Confirming action"
+    isOpen={true}
+    okChildren="NO, GO BACK"
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="small"
+    styleOverride={Object {}}
+  >
+    <div>
+      Are you sure you want to do this?
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;
+
+exports[`<ConfirmationModal /> Snapshots renders correctly in delete confirm mode 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={false}
+    headerChildren="Confirming action"
+    isOpen={true}
+    okChildren="DELETE"
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="small"
+    styleOverride={Object {}}
+  >
+    <div>
+      Are you sure you want to do this?
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

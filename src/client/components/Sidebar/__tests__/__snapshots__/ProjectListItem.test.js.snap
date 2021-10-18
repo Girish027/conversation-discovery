@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProjectListItem /> Functionality: onClickListItem onClickDelete 1`] = `
+Object {
+  "deleteMode": true,
+  "header": "Delete \\"project A\\"?",
+  "message": "This transcript will be deleted forever. Are you sure you want to delete this item?",
+  "modalName": "ConfirmationDialog",
+  "onClickOk": [Function],
+}
+`;
+
+exports[`<ProjectListItem /> Functionality: onClickListItem onClickEdit 1`] = `
+Object {
+  "formData": Object {
+    "caa": Object {
+      "accountId": "referencebot",
+      "appId": "referencebot",
+      "clientId": "247inc",
+    },
+    "caaId": "247ai-referencebot-referencebot",
+    "created": 1563227027435,
+    "createdBy": "user@247.ai",
+    "datasetName": "test.csv",
+    "focused": false,
+    "modified": 1563227027435,
+    "modifiedBy": "user@247.ai",
+    "onClickListItem": [MockFunction],
+    "onFocusItem": [MockFunction],
+    "projectDescription": "project A desc",
+    "projectName": "project A",
+    "projectStatus": "QUEUED",
+    "projectStatusDescription": null,
+    "roleConfig": Object {},
+    "selected": false,
+    "sticky": "",
+  },
+  "header": "Edit Transcript Details",
+  "modalName": "EditProjectModal",
+  "projectId": "pro-3e4c72f8-72cc-4e2d-77bb-11a5a266514c",
+}
+`;

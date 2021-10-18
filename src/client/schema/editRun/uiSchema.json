@@ -1,0 +1,8 @@
+{
+  "runName": {
+    "ui:field": "text"
+  },
+  "runDescription": {
+    "ui:field": "textarea"
+  }
+}

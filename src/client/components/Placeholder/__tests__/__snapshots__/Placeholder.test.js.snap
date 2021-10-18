@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Placeholder /> Snapshots renders correctly with given information 1`] = `
+<div
+  className="vertical-center horizontal-center"
+  style={
+    Object {
+      "paddingBottom": "20px",
+    }
+  }
+>
+  placeholder message
+</div>
+`;

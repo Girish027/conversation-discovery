@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StopWords /> Snapshots renders correctly with default props 1`] = `
+<Fragment>
+  <div
+    style={
+      Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "letterSpacing": 0,
+        "marginTop": "20px",
+        "paddingBottom": "10px",
+        "textAlign": "left",
+      }
+    }
+  >
+    <span>
+       Watch Words 
+    </span>
+    <withTheme(Button)
+      name="back-btn"
+      onClick={[Function]}
+      styleOverride={
+        Object {
+          "float": "right",
+        }
+      }
+      type="flat"
+    >
+       &lt;&lt; Back 
+    </withTheme(Button)>
+  </div>
+  <div
+    style={
+      Object {
+        "padding": "10px",
+        "position": "absolute",
+        "right": 0,
+        "zIndex": 1,
+      }
+    }
+  >
+    <IconButton
+      data-qa="add-stopword"
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="3px"
+      strokeColor="#ffffff"
+      title="Add"
+      width={10}
+    />
+  </div>
+  <GenericTooltip
+    content="In the natural language process, insignificant words (such as \\"of\\", \\"the\\" etc) are referred to as Stop Words. These stop words are generally ignored while creating an analysis. Keywords that need to be considered for clustering and have to be exempted from being treated as ’Stop Words’ are provided here."
+    direction="bottom"
+    type="info"
+  >
+    <withTheme(TextField)
+      name="stop-words"
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      placeholder="Add a new watch word"
+      styleOverride={
+        Object {
+          "background": "#FFFFFF",
+          "border": "0px solid #DCE1E8",
+          "borderRadius": "2px",
+          "input": Object {
+            "fontSize": "14px",
+            "letterSpacing": 0,
+            "textAlign": "left",
+          },
+          "width": "240%",
+        }
+      }
+      value=""
+    />
+  </GenericTooltip>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexWrap": "wrap",
+        "marginTop": "15px",
+      }
+    }
+  />
+</Fragment>
+`;

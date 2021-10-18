@@ -1,0 +1,572 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/Projects: Project Actions: createProject: should dispatch action to indicate project Create start 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "projectName": "abcd",
+    },
+    "type": "projects/CREATE_PROJECT_START",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: createProject: should make a post call with the correct url and data 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects"`;
+
+exports[`state/Projects: Project Actions: createProjectFail: should dispatch action to indicate project creation has failed 1`] = `
+Array [
+  Object {
+    "error": "Transcript already exist. Please provide a unique name.",
+    "type": "projects/CREATE_PROJECT_FAIL",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: createProjectStart: should dispatch action to createProjectStart 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "created": "1554930505916",
+      "createdBy": "litta.zachariah@247.ai",
+      "datasetName": "TrialData.csv",
+      "description": "project abc description",
+      "modified": "1554930505916",
+      "moifiedBy": "litta.zachariah@247.ai",
+      "projectId": "pro-uuid-123",
+      "projectName": "project abc",
+      "projectStatus": "QUEUED",
+      "projectStatusDescription": "QUEUED",
+    },
+    "type": "projects/CREATE_PROJECT_START",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: createProjectSuccess: should dispatch action to indicate project creation has been successful 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "created": "1554930505916",
+      "createdBy": "litta.zachariah@247.ai",
+      "datasetName": "TrialData.csv",
+      "description": "project abc description",
+      "modified": "1554930505916",
+      "moifiedBy": "litta.zachariah@247.ai",
+      "projectId": "pro-uuid-123",
+      "projectName": "project abc",
+      "projectStatus": "QUEUED",
+      "projectStatusDescription": "QUEUED",
+    },
+    "type": "projects/CREATE_PROJECT_SUCCESS",
+  },
+  Object {
+    "message": "Transcript project abc has been successfully created",
+    "notificationType": "info",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: deleteProject: should make get call to delete the project 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/project-uuid"`;
+
+exports[`state/Projects: Project Actions: deleteProjectFail: should dispatch actions indicating delete project failed 1`] = `
+Array [
+  Object {
+    "error": Object {
+      "code": "dummy",
+      "message": "dummy message",
+    },
+    "type": "projects/DELETE_PROJECT_FAIL",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: deleteProjectStart: should dispatch actions indicating delete project started 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "caa": Object {
+        "accountId": "b",
+        "appId": "c",
+        "clientId": "a",
+      },
+      "projectId": "pro-123",
+    },
+    "type": "projects/DELETE_PROJECT_START",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: editProject: should make get call to update project details 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/project-uuid"`;
+
+exports[`state/Projects: Project Actions: editProjectFail: should dispatch actions indicating edit project failed 1`] = `
+Array [
+  Object {
+    "error": Object {
+      "code": "dummy",
+      "message": "dummy message",
+    },
+    "type": "projects/EDIT_PROJECT_FAIL",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: editProjectStart: should dispatch actions indicating edit project started 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "caa": Object {
+        "accountId": "b",
+        "appId": "c",
+        "clientId": "a",
+      },
+      "data": Object {
+        "projectDescription": "test desc",
+        "projectName": "testproject",
+      },
+      "projectId": "pro-123",
+    },
+    "type": "projects/EDIT_PROJECT_START",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: getAllProjects: should make get call to get all projects for the caa 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects"`;
+
+exports[`state/Projects: Project Actions: getProject: should make get call to get project details 1`] = `"//localhost:8080/conversationdiscovery/clients/undefined/accounts/referencebot/applications/referencebot/projects/pro-uuid"`;
+
+exports[`state/Projects: Project Actions: onCreateProjectFail: should dispatch actions - createProjectFail and set the modal as open ,empty err 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "projects/CREATE_PROJECT_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "error": undefined,
+      "errorType": undefined,
+      "modalName": "CreateProjectModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onCreateProjectFail: should dispatch actions - createProjectFail and set the modal as open 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "projects/CREATE_PROJECT_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "error": undefined,
+      "errorType": undefined,
+      "modalName": "CreateProjectModal",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onCreateProjectSuccess: should dispatch actions to handle all successful creation of project - empty response 1`] = `
+Array [
+  Object {
+    "project": Object {},
+    "type": "projects/CREATE_PROJECT_SUCCESS",
+  },
+  Object {
+    "activeProjectId": undefined,
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "message": "Transcript undefined has been successfully created",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onCreateProjectSuccess: should dispatch actions to handle all successful creation of project 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "created": "1554930505916",
+      "createdBy": "litta.zachariah@247.ai",
+      "datasetName": "TrialData.csv",
+      "description": "project abc description",
+      "modified": "1554930505916",
+      "moifiedBy": "litta.zachariah@247.ai",
+      "projectId": "pro-uuid-123",
+      "projectName": "project abc",
+      "projectStatus": "QUEUED",
+      "projectStatusDescription": "QUEUED",
+    },
+    "type": "projects/CREATE_PROJECT_SUCCESS",
+  },
+  Object {
+    "activeProjectId": "pro-uuid-123",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined&project=pro-uuid-123",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "message": "Transcript project abc has been successfully created",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onDeleteProjectSuccess: should dispatch actions to show notification and indicate edit project was successful 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "created": "1554930505916",
+      "createdBy": "litta.zachariah@247.ai",
+      "datasetName": "TrialData.csv",
+      "description": "project abc description",
+      "modified": "1554930505916",
+      "moifiedBy": "litta.zachariah@247.ai",
+      "projectId": "pro-uuid-123",
+      "projectName": "project abc",
+      "projectStatus": "QUEUED",
+      "projectStatusDescription": "QUEUED",
+    },
+    "type": "projects/DELETE_PROJECT_SUCCESS",
+  },
+  Object {
+    "activeProjectId": "",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+  Object {
+    "message": "Transcript project abc has been successfully deleted",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Transcript undefined has been successfully deleted",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onDeleteProjectSuccess: should dispatch actions to show notification and indicate edit project was successful 2`] = `
+Array [
+  Object {
+    "project": Object {},
+    "type": "projects/DELETE_PROJECT_SUCCESS",
+  },
+  Object {
+    "activeProjectId": "",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+  Object {
+    "message": "Transcript undefined has been successfully deleted",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Transcript undefined has been successfully deleted",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onEditProjectFail: should dispatch actions to close dialog and indicate edit project failed 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "projects/EDIT_PROJECT_FAIL",
+  },
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onEditProjectFail: should dispatch actions to close dialog and indicate edit project failed 2`] = `
+Array [
+  Object {
+    "error": undefined,
+    "type": "projects/EDIT_PROJECT_FAIL",
+  },
+  Object {
+    "modalIsOpen": true,
+    "modalState": Object {
+      "error": undefined,
+      "errorType": undefined,
+      "formData": Object {},
+      "modalName": "EditProjectModal",
+      "projectId": "proId",
+    },
+    "type": "app/MODAL_IS_OPEN",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onEditProjectSuccess: should dispatch actions to close dialog and indicate edit project was successful 1`] = `
+Array [
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "project": Object {},
+    "type": "projects/EDIT_PROJECT_SUCCESS",
+  },
+  Object {
+    "message": "Transcript undefined has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "selectedRunId": Object {
+      "created": "1554930505916",
+      "createdBy": "litta.zachariah@247.ai",
+      "datasetName": "TrialData.csv",
+      "description": "project abc description",
+      "modified": "1554930505916",
+      "moifiedBy": "litta.zachariah@247.ai",
+      "projectId": "pro-uuid-123",
+      "projectName": "project abc",
+      "projectStatus": "QUEUED",
+      "projectStatusDescription": "QUEUED",
+    },
+    "type": "runs/SELECT_RUN",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/run-overview?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+  Object {
+    "message": "Transcript project abc has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onEditProjectSuccess: should dispatch actions to close dialog and indicate edit project was successful 2`] = `
+Array [
+  Object {
+    "modalIsOpen": false,
+    "modalState": Object {},
+    "type": "app/MODAL_IS_OPEN",
+  },
+  Object {
+    "project": Object {},
+    "type": "projects/EDIT_PROJECT_SUCCESS",
+  },
+  Object {
+    "message": "Transcript undefined has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Transcript project abc has been successfully updated",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onGetAllProjectsSuccess: should dispatch action on getting all projects 1`] = `
+Array [
+  Object {
+    "projectsList": Array [
+      Object {
+        "created": "1554930505916",
+        "createdBy": "litta.zachariah@247.ai",
+        "datasetName": "TrialData.csv",
+        "description": "project abc description",
+        "modified": "1554930505916",
+        "moifiedBy": "litta.zachariah@247.ai",
+        "projectId": "pro-uuid-123",
+        "projectName": "project abc",
+        "projectStatus": "QUEUED",
+        "projectStatusDescription": "QUEUED",
+      },
+    ],
+    "type": "projects/RECEIVE_ALL_PROJECTS",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onGetAllProjectsSuccess: should dispatch action on getting all projects 2`] = `
+Array [
+  Object {
+    "projectsList": Array [],
+    "type": "projects/RECEIVE_ALL_PROJECTS",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onGetProjectFail: should dispatch actions to show notifications - err empty 1`] = `
+Array [
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onGetProjectFail: should dispatch actions to show notifications - err empty 2`] = `
+Array [
+  Object {
+    "message": "Project does not exists",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: onGetProjectFail: should dispatch actions to show notifications 1`] = `
+Array [
+  Object {
+    "message": undefined,
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+  Object {
+    "message": "Project does not exists",
+    "notificationType": "error",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: receiveAllProjects: should dispatch action on recieving projects 1`] = `
+Array [
+  Object {
+    "projectsList": Array [
+      Object {
+        "created": "1554930505916",
+        "createdBy": "litta.zachariah@247.ai",
+        "datasetName": "TrialData.csv",
+        "description": "project abc description",
+        "modified": "1554930505916",
+        "moifiedBy": "litta.zachariah@247.ai",
+        "projectId": "pro-uuid-123",
+        "projectName": "project abc",
+        "projectStatus": "QUEUED",
+        "projectStatusDescription": "QUEUED",
+      },
+    ],
+    "type": "projects/RECEIVE_ALL_PROJECTS",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: receiveAllProjects: should dispatch action on recieving projects 2`] = `
+Array [
+  Object {
+    "projectsList": Array [],
+    "type": "projects/RECEIVE_ALL_PROJECTS",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: receiveProject: should dispatch recieve project action 1`] = `
+Array [
+  Object {
+    "project": Object {
+      "created": "1554930505916",
+      "createdBy": "litta.zachariah@247.ai",
+      "datasetName": "TrialData.csv",
+      "description": "project abc description",
+      "modified": "1554930505916",
+      "moifiedBy": "litta.zachariah@247.ai",
+      "projectId": "pro-uuid-123",
+      "projectName": "project abc",
+      "projectStatus": "QUEUED",
+      "projectStatusDescription": "QUEUED",
+    },
+    "type": "projects/RECEIVE_PROJECT",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: selectProject: should dispatch actions on selecting a project 1`] = `
+Array [
+  Object {
+    "activeProjectId": "pro-uuid",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+  Object {
+    "payload": Object {
+      "args": Array [
+        "/conversationdiscovery/ui/discover-intents?clientid=247ai&accountid=referencebot&appid=referencebot&componentClientId=undefined&project=pro-uuid",
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+]
+`;
+
+exports[`state/Projects: Project Actions: setActiveProject: should dispatch action to set the active project 1`] = `
+Array [
+  Object {
+    "activeProjectId": "pro-uuid",
+    "type": "projects/SELECT_ACTIVE_PROJECT",
+  },
+]
+`;

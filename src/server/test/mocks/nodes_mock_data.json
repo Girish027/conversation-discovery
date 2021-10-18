@@ -1,0 +1,227 @@
+{
+  "paging": {
+    "offset": 0,
+    "limit": 5,
+    "total": 95
+  },
+  "data": [
+    {
+      "nodeId": "4ee82d41-82e2-11ea-8beb-71d97db85493",
+      "nodeName": "None_None",
+      "normalizedName": "None_None",
+      "operation": "create",
+      "escalations": [],
+      "context": {
+        "inputContext": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "outputContext": []
+      },
+      "responses": [
+        {
+          "event": "success",
+          "locale": "en-US",
+          "messageType": "out.msg",
+          "mimeType": "text/html",
+          "offset": 1,
+          "text": "<p>Oops, I couldn't understand that. Try rephrasing what you wrote. Short, simple questions work best.</p>"
+        }
+      ],
+      "utterances": [],
+      "resolutions": [],
+      "isReportingIntent": false,
+      "metadata": {
+        "Allow": [
+          "GET",
+          "OPTIONS",
+          "PATCH"
+        ],
+        "ETag": "0",
+        "x-tfs-hidden": [
+          "utterances"
+        ],
+        "x-tfs-readonly": [
+          "escalations",
+          "intentModelMap",
+          "nodeName"
+        ]
+      },
+      "uiOrgCategory": { "conversation": {}}
+    },
+    {
+      "nodeId": "5224e1b0-82e2-11ea-8beb-71d97db85493",
+      "normalizedName": "SocialHumanity_Request",
+      "operation": "create",
+      "escalations": [],
+      "context": {
+        "inputContext": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "outputContext": []
+      },
+      "responses": [
+        {
+          "event": "success",
+          "locale": "en-US",
+          "messageType": "out.msg",
+          "mimeType": "text/html",
+          "offset": 1,
+          "text": "<p>Having achieved digital enlightenment, I simply \"am.\"</p>"
+        }
+      ],
+      "utterances": [],
+      "resolutions": [],
+      "isReportingIntent": false,
+      "metadata": {
+        "Allow": [
+          "GET",
+          "OPTIONS",
+          "PATCH"
+        ],
+        "ETag": "\"1d4bd-YJgExA4fMsi3etfvdxzad2TmlEE\"",
+        "x-tfs-hidden": [
+          "utterances"
+        ],
+        "x-tfs-readonly": [
+          "escalations",
+          "intentModelMap",
+          "nodeName"
+        ]
+      },
+      "uiOrgCategory": "social"
+    },
+    {
+      "nodeId": "522508c0-82e2-11ea-8beb-71d97db85493",
+      "nodeName": "SocialJoke_Request",
+      "normalizedName": "SocialJoke_Request",
+      "operation": "create",
+      "escalations": [],
+      "context": {
+        "inputContext": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "outputContext": []
+      },
+      "responses": [
+        {
+          "event": "success",
+          "locale": "en-US",
+          "messageType": "out.msg",
+          "mimeType": "text/html",
+          "offset": 1,
+          "text": "<p>I'm not good at telling jokes, but I am great at helping people. What can I help you with?</p>"
+        }
+      ],
+      "utterances": [],
+      "resolutions": [],
+      "isReportingIntent": false,
+      "metadata": {
+        "Allow": [
+          "GET",
+          "OPTIONS",
+          "PATCH"
+        ],
+        "ETag": "0",
+        "x-tfs-hidden": [
+          "utterances"
+        ],
+        "x-tfs-readonly": [
+          "escalations",
+          "intentModelMap",
+          "nodeName",
+          "utterances"
+        ]
+      },
+      "defects": [
+        {
+          "defectType": "DUPLICATE_UTTERANCE",
+          "utterances": [
+            "whats ur favorite joke"
+          ]
+        }
+      ],
+      "uiOrgCategory": "social"
+    },
+    {
+      "nodeId": "522508c1-82e2-11ea-8beb-71d97db85493",
+      "nodeName": "SocialGender_Request",
+      "normalizedName": "SocialGender_Request",
+      "operation": "create",
+      "escalations": [],
+      "context": {
+        "inputContext": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "outputContext": []
+      },
+      "responses": [
+        {
+          "event": "success",
+          "locale": "en-US",
+          "messageType": "out.msg",
+          "mimeType": "text/html",
+          "offset": 1,
+          "text": "<p>I'm a chatbot! But this is supposed to be about you! Let's get back to that.</p>"
+        }
+      ],
+      "utterances": [],
+      "resolutions": [],
+      "isReportingIntent": false,
+      "metadata": {
+        "Allow": [
+          "GET",
+          "OPTIONS",
+          "PATCH"
+        ],
+        "ETag": "0",
+        "x-tfs-hidden": [
+          "utterances"
+        ]
+      },
+      "uiOrgCategory": "conversation"
+    },
+    {
+      "nodeId": "522508c2-82e2-11ea-8beb-71d97db85493",
+      "nodeName": "SocialBirthplace_Request",
+      "normalizedName": "SocialBirthplace_Request",
+      "operation": "create",
+      "escalations": [],
+      "context": {
+        "inputContext": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "outputContext": []
+      },
+      "responses": [
+        {
+          "event": "success",
+          "locale": "en-US",
+          "messageType": "out.msg",
+          "mimeType": "text/html",
+          "offset": 1,
+          "text": "<p>I was born in the cloud by the creative teams at [24]7.ai. They programmed me to help you. Let's get back to that.</p>"
+        }
+      ],
+      "utterances": [],
+      "resolutions": [],
+      "isReportingIntent": false,
+      "metadata": {
+        "Allow": [
+          "GET",
+          "OPTIONS",
+          "PATCH"
+        ],
+        "ETag": "0",
+        "x-tfs-hidden": [
+          "utterances"
+        ],
+        "x-tfs-readonly": [
+          "escalations",
+          "intentModelMap",
+          "nodeName",
+          "utterances"
+        ]
+      }
+    }
+  ]
+}

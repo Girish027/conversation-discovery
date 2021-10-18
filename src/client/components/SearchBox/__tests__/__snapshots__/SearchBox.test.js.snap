@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBox /> Snapshots renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "clearIcon": Object {
+        "position": "relative",
+        "right": 30,
+      },
+      "display": "flex",
+      "paddingLeft": "31px",
+      "paddingTop": "10px",
+      "searchIcon": Object {
+        "padding": "12px 10px",
+        "position": "absolute",
+        "zIndex": 1,
+      },
+      "textFieldContainerStyle": Object {
+        "width": "90%",
+      },
+      "textFieldStyle": Object {
+        "input": Object {
+          "paddingLeft": "30px",
+        },
+        "width": "13vw",
+      },
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "12px 10px",
+        "position": "absolute",
+        "zIndex": 1,
+      }
+    }
+  >
+    <SearchIcon
+      fill="#004c97"
+      height="1em"
+      width="12px"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "width": "90%",
+      }
+    }
+  >
+    <withTheme(TextField)
+      defaultValue=""
+      name="search-bar"
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      placeholder="Find Topics"
+      styleOverride={
+        Object {
+          "input": Object {
+            "paddingLeft": "30px",
+          },
+          "width": "13vw",
+        }
+      }
+    />
+  </div>
+</div>
+`;

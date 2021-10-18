@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> Snapshots renders correctly with default props 1`] = `
+<Form
+  ErrorList={[Function]}
+  ObjectFieldTemplate={[Function]}
+  disabled={false}
+  fields={
+    Object {
+      "noop": [Function],
+      "text": [Function],
+      "textarea": [Function],
+      "updown": [Function],
+    }
+  }
+  formContext={Object {}}
+  formData={Object {}}
+  liveValidate={false}
+  noHtml5Validate={false}
+  noValidate={false}
+  onChange={[Function]}
+  onSubmit={[Function]}
+  safeRenderCompletion={false}
+  schema={
+    Object {
+      "properties": Object {
+        "numOfClusters": Object {
+          "default": 2,
+          "maximum": 900,
+          "minimum": 2,
+          "title": "Clusters (2-900):",
+        },
+        "numOfTurns": Object {
+          "default": 1,
+          "maximum": 5,
+          "minimum": 1,
+          "title": "Number of Turns (1-5):",
+        },
+        "runDescription": Object {
+          "maxLength": 150,
+          "minLength": 0,
+          "title": "Description",
+          "type": "string",
+        },
+        "runName": Object {
+          "maxLength": 50,
+          "minLength": 4,
+          "title": "Name",
+          "type": "string",
+        },
+      },
+      "required": Array [
+        "runName",
+        "numOfClusters",
+        "numOfTurns",
+      ],
+      "title": "",
+      "type": "object",
+    }
+  }
+  showErrorList={false}
+  transformErrors={[Function]}
+  uiSchema={
+    Object {
+      "numOfClusters": Object {
+        "ui:field": "updown",
+      },
+      "numOfTurns": Object {
+        "ui:field": "updown",
+      },
+      "runDescription": Object {
+        "ui:field": "textarea",
+      },
+      "runName": Object {
+        "ui:field": "text",
+      },
+    }
+  }
+>
+  <div>
+    <button
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</Form>
+`;

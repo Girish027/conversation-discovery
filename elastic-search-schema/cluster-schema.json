@@ -1,0 +1,94 @@
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "index.requests.cache.enable": true,
+    "analysis": {
+      "analyzer": {
+        "analyzer_keyword": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "project_id":{
+        "type":  "keyword"
+      },
+      "run_id":{
+        "type":  "keyword"
+      },
+      "cluster_id":{
+        "type":  "keyword"
+      },
+      "original_granular_intent":{
+        "type":  "keyword"
+      },
+      "description":{
+        "type":  "text"
+      },
+      "suggested_intent":{
+        "type":  "nested"
+      },
+      "interaction_id":{
+        "type":  "keyword"
+      },
+      "processed_body":{
+        "type":  "text"
+      },
+      "similarity":{
+        "type":  "float"
+      },
+      "entire_cluster_label":{
+        "type":  "keyword"
+      },
+      "centroid_cluster_label":{
+        "type":  "keyword"
+      },
+      "rollup_label":{
+        "type":  "keyword"
+      },
+      "wordCloudTerms":{
+        "type": "text"
+      },
+      "assigned_intent":{
+        "type":  "text"
+      },
+      "assigned_faq":{
+        "type":  "text"
+      },
+      "num_of_subclusters":{
+        "type":  "integer"
+      },
+      "is_finalized":{
+        "type":  "boolean"
+      },
+      "finalized_by":{
+        "type": "keyword"
+      },
+      "finalized_at":{
+        "type": "date"
+      },
+      "created_at":{
+        "type": "date"
+      },
+      "created_by":{
+        "type": "keyword"
+      },
+      "modified_at":{
+        "type": "date"
+      },
+      "modified_by":{
+        "type": "keyword"
+      },
+      "is_enabled":{
+        "type": "boolean"
+      }
+    }
+  }
+}

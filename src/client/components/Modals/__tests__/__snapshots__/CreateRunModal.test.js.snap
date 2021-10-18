@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateRunModal /> Snapshots renders correctly with default props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    dispatch={[Function]}
+    headerChildren="Create New Run"
+    isOpen={true}
+    okChildren="SUBMIT"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="large"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "maxHeight": "600px",
+          "maxWidth": "450px",
+        },
+        "content": Object {
+          "left": "calc((100vw - 450px) / 2)",
+          "maxHeight": "570px",
+          "maxWidth": "450px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "overlay": Object {
+          "zIndex": 9000,
+        },
+        "top": "20%",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "position": "relative",
+            "visibility": "visible",
+          }
+        }
+      >
+        <Form
+          formContext={Object {}}
+          formData={Object {}}
+          jsonSchema={
+            Object {
+              "properties": Object {
+                "numOfClusters": Object {
+                  "default": 2,
+                  "maximum": 900,
+                  "minimum": 2,
+                  "title": "Clusters (2-900):",
+                },
+                "numOfTurns": Object {
+                  "default": 1,
+                  "maximum": 5,
+                  "minimum": 1,
+                  "title": "Number of Turns (1-5):",
+                },
+                "runDescription": Object {
+                  "maxLength": 150,
+                  "minLength": 0,
+                  "title": "Description",
+                  "type": "string",
+                },
+                "runName": Object {
+                  "maxLength": 50,
+                  "minLength": 4,
+                  "title": "Name",
+                  "type": "string",
+                },
+              },
+              "required": Array [
+                "runName",
+                "numOfClusters",
+                "numOfTurns",
+              ],
+              "title": "",
+              "type": "object",
+            }
+          }
+          liveValidate={true}
+          onChange={[Function]}
+          onSubmit={[Function]}
+          showErrorList={false}
+          uiSchema={
+            Object {
+              "numOfClusters": Object {
+                "ui:field": "updown",
+              },
+              "numOfTurns": Object {
+                "ui:field": "updown",
+              },
+              "runDescription": Object {
+                "ui:field": "textarea",
+              },
+              "runName": Object {
+                "ui:field": "text",
+              },
+            }
+          }
+        />
+        <withTheme(Button)
+          name="stop-words"
+          onClick={[Function]}
+          styleOverride={
+            Object {
+              "marginTop": "15px",
+            }
+          }
+          type="flat"
+        >
+          Add Watch Words &gt;&gt;
+        </withTheme(Button)>
+      </div>
+      <div
+        style={
+          Object {
+            "position": "absolute",
+            "visibility": "hidden",
+          }
+        }
+      >
+        <StopWords
+          onClickBack={[Function]}
+          onStopWordChange={[Function]}
+        />
+      </div>
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

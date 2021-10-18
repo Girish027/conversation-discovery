@@ -1,0 +1,189 @@
+{
+  "listen": {
+    "port": {
+      "value": 8080,
+      "_doc": "The HTTP server listens on this port"
+    },
+    "keepAliveTimeout": {
+      "value": 15000,
+      "_doc": "See https://nodejs.org/dist/latest-v8.x/docs/api/http.html#http_server_keepalivetimeout"
+    }
+  },
+  "service-log": {
+    "config-path": {
+      "value": "src/server/config/conversation-discovery-logging.json",
+      "_doc": "the path to the service log config file"
+    }
+  },
+  "request-log": {
+    "output-dir": {
+      "value": "src/server/logs",
+      "_doc": "the base directory in which request logs are written"
+    },
+    "flushinterval": {
+      "value": 1000,
+      "_doc": "the number of milliseconds to wait before writing buffered log events to file"
+    }
+  },
+  "gc-log": {
+    "enabled": {
+      "value": true,
+      "_doc": "toggles logging of v8 GC events"
+    }
+  },
+  "health": {
+    "heartbeat-path": {
+      "value": "heartbeat.txt",
+      "_doc": "Physical path of the file served by the service to indicate its health to the load balancer"
+    }
+  },
+  "analytics": {
+    "apiKey": {
+      "value": "c8adb0c80da1f7ed082cfc43c4da0fe4",
+      "_doc": "Amplitude API key"
+    }
+  },
+  "configs-file-path": {
+    "value": "../../../node_modules/aiva-apps-configs/appsConfigs.json",
+    "_doc": "Clients/Apps configs file path"
+  },
+  "nfs-mount-path": {
+    "value": "src/server/test/mocks",
+    "_doc": "Network file system mount path for Dataset and Results"
+  },
+  "nfs-mount-path-dc": {
+    "value": "src/server/test/mocks/idt_data_local_dc",
+    "_doc": "Network file system mount path for Dataset and Results"
+  },  
+  "mysql": {
+    "host": {
+      "value": "localhost",
+      "_doc": "MYSQL host"
+    },
+    "user": {
+      "value": "root",
+      "_doc": "MYSQL user name"
+    },
+    "password": {
+      "value": "root",
+      "_doc": "MYSQL password"
+    },
+    "port": {
+      "value": 3306,
+      "_doc": "MYSQL Port"
+    },
+    "database": {
+      "value": "conversationdiscovery",
+      "_doc": "MYSQL database name"
+    },
+    "connectionLimit": {
+      "value": 100,
+      "_doc": "Connection Limit"
+    }
+  },
+  "es": {
+    "idt_cluster_index": {
+    "value": "idt_cluster",
+      "_doc": "IDT elasticsearch cluster index name"
+    },
+    "idt_conversation_index": {
+      "value": "idt_conversation",
+      "_doc": "IDT elasticsearch conversation index name"
+    },
+    "nodes": {
+      "value": ["http://localhost:9200"],
+      "_doc": "ES node"
+    },
+    "max_retries": {
+      "value": 5,
+      "_doc": "Max number of retries if failed to connect to a node"
+    },
+    "request_timeout": {
+      "value": 60000,
+      "_doc": "Max request timeout for the request"
+    },
+    "sniff_on_start": {
+      "value": true,
+      "_doc": "Perform a sniff once the client is started"
+    }
+  },
+  "security": {
+    "oidc": {
+      "issuer": "https://login.247ai.com/oauth2/auspmm4sazzUUNe0f0h7",
+      "client_id": "0oaj58zvtcji91gKP0h7",
+      "client_secret": "W2f4eP3UJd6GfqqYepPWCxjFT1zBh5aofoGQdpoO",
+      "redirect_uri": "http://localhost:8080/conversation-discovery/authorization-code/callback",
+      "scope": "openid profile clients groups email"
+    },
+    "okta_url": "https://login.247ai.com/",
+    "enabled": false,
+    "_doc": "Open ID Client configuration for Conversation Discovery with Okta",
+    "authorization_enabled": false
+  },
+  "sessions": {
+    "inactiveDurationSec": {
+      "value": 600,
+      "_doc": "seconds since last activity after which session is considered inactive"
+    },
+    "maxSessionCount": {
+      "value": 100,
+      "_doc": "maximum number of concurrent, active sessions"
+    }
+  },
+  "content": {
+    "baseUrl": {
+      "value": "http://virt-asst-content-stable.api.247-inc.net",
+      "_doc": "endpoint of stable/staging platform content server"
+    }
+  },
+  "platform": {
+    "baseUrl": {
+      "value": "https://stable.api.sv2.247-inc.net",
+      "_doc": "endpoint of stable/staging platform front door"
+    }
+  },
+  "configs": {
+    "ui": {
+      "docPortalUrl": "https://test-url/docportal/Content/Intent-Discovery/Intent-Discovery.htm",
+      "unifiedPortalUrl": "https://test-url/home/",
+      "contactSupportUrlExternal": "http://test-url/cssp/scxml/#start",
+      "contactSupportUrlInternal": "https://test-url/secure/RapidBoard.jspa?rapidView=1178&projectKey=SRE"
+    },
+    "its": {
+      "apiUrl": "https://dev.developer.sv2.247-inc.net/integratedtoolsuite/trusted/",
+      "baseUrl": "https://dev.developer.sv2.247-inc.net/integratedtoolsuite/"
+    },
+    "dm": {
+      "apiUrl": "https://mock.developer.sv2.247-inc.net/v1/dialogmanager/",
+      "baseUrl": "https://mock.developer.sv2.247-inc.net/v1/dialogmanager/"
+    },
+    "answers": {
+      "baseUrl": "https://a71okta.intelliresponse.com/answersApi/",
+      "clientApiKey": [
+        {"clientId": "a71okta", "apiKey": "test"}
+      ]
+    }
+  },
+  "downloadBasePath": "tmp/downloads/",
+  "cookies": {
+    "expires": 604800000
+  },
+  "celery":{
+    "redisHosts": {
+      "value": "dev-modelbuilder-redis01.db.shared.int.sv2.247-inc.net,dev-modelbuilder-redis02.db.shared.int.sv2.247-inc.net",
+      "_doc": "Redis Hosts used for celery broker queue"
+    },
+    "redisClusterName": {
+      "value": "model-master",
+      "_doc": "Redis cluster name used for celery broker queue"
+    },
+    "queue": {
+      "name": "cfd_queue",
+      "_doc": "Redis queue name used by celery and where tasks will be queued"
+    }
+  },
+  "env": {
+      "value": "test",
+      "_doc": "Development environment"
+  }
+}

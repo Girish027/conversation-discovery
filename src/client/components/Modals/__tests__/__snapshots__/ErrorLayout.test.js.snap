@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorLayout /> Snapshots renders correctly when styleOverride props is passed 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#FFFFD1",
+      "border": "1px solid #C81919",
+      "borderRadius": "3px",
+      "color": "#C81919",
+      "fontSize": "15px",
+      "marginBottom": "20px",
+      "padding": "10px",
+    }
+  }
+>
+  <AlertIcon
+    exclamationMarkColor="#FFF"
+    fill="#FF3C27"
+    height="1em"
+    width="1em"
+  />
+   
+  Run ABC already exist
+</div>
+`;
+
+exports[`<ErrorLayout /> Snapshots renders correctly with default props 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#FFFFD1",
+      "border": "1px solid #C81919",
+      "borderRadius": "3px",
+      "color": "#C81919",
+      "fontSize": "15px",
+      "padding": "10px",
+    }
+  }
+>
+  <AlertIcon
+    exclamationMarkColor="#FFF"
+    fill="#FF3C27"
+    height="1em"
+    width="1em"
+  />
+   
+  Project ABC already exist
+</div>
+`;

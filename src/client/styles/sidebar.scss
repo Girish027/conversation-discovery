@@ -1,0 +1,54 @@
+
+.project-list-item {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  padding-left: 30px;
+  text-overflow: ellipsis;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 16px;
+  letter-spacing: 0;
+
+  .project-name {
+    font-size: 14px;
+    color: #313f54;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+  }
+
+  .project-meta {
+    color: #9e9e9e;
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .actions {
+    position: absolute;
+    right: 12px;
+    top: 40px;
+  }
+
+  .status {
+    position: absolute;
+    right: 10px;
+    top: 23px;
+  }
+}
+
+.default-message {
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #9e9e9e;
+  font-size: 14px;
+}
+
+.filter-input::-webkit-inner-spin-button,
+.filter-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

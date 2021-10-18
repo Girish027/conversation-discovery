@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/roleHelper updateRoleConfig update with admin config 1`] = `
+Object {
+  "addToAnswers": true,
+  "addToConversations": true,
+  "deleteAnalysis": true,
+  "deleteTranscripts": true,
+  "editPotentialIntentsNames": true,
+  "markAsComplete": true,
+  "markAsReviewed": true,
+  "runNewAnalysis": true,
+  "updateAnalysis": true,
+  "updateTranscripts": true,
+  "uploadNewTranscript": true,
+}
+`;
+
+exports[`utils/roleHelper updateRoleConfig update with viewer config 1`] = `
+Object {
+  "addToAnswers": false,
+  "addToConversations": false,
+  "deleteAnalysis": false,
+  "deleteTranscripts": false,
+  "editPotentialIntentsNames": false,
+  "markAsComplete": false,
+  "markAsReviewed": false,
+  "runNewAnalysis": false,
+  "updateAnalysis": false,
+  "updateTranscripts": false,
+  "uploadNewTranscript": false,
+}
+`;

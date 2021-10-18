@@ -1,0 +1,19 @@
+.CollapsibleOuter {
+  position: relative;
+  padding: 0 0 0 33px;
+
+  &:before {
+    content: '\276F';
+    position: absolute;
+    left: 18px;
+    display: block;
+    font-size: 13px;
+    transition: transform 100ms;
+  }
+
+  &.isOpen {
+    &:before {
+      transform: rotateZ(90deg);
+    }
+  }
+}

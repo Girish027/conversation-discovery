@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/Header: Header Actions: hideNotification: should dispatch actions to clear the notification data 1`] = `
+Array [
+  Object {
+    "type": "CLEAR_ALL_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Header: Header Actions: showNotification: should dispatch actions with proper data 1`] = `
+Array [
+  Object {
+    "message": "Run Created Successfully",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;
+
+exports[`state/Header: Header Actions: showNotificationWithTimer: should dispatch action to show notification 1`] = `
+Array [
+  Object {
+    "message": "Run Created Successfully",
+    "notificationType": "success",
+    "type": "header/SHOW_NOTIFICATION",
+  },
+]
+`;

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ClustersSidebar /> Snapshots renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <SearchBox
+      closeIcon={true}
+      onSearch={[Function]}
+      placeholder="Find Intents"
+      styleOverride={
+        Object {
+          "width": "90%",
+        }
+      }
+    />
+    <Popover
+      align="start"
+      containerClassName="react-tiny-popover-container"
+      containerStyle={
+        Object {
+          "backgroundColor": "white",
+          "boxShadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+          "color": "black",
+          "display": "flex",
+          "fontSize": "13px",
+          "fontWeight": 100,
+          "height": "auto",
+          "left": "300px",
+          "padding": "25px",
+          "userSelect": "none",
+          "width": "auto",
+        }
+      }
+      content={<Connect(FilterTopics) />}
+      isOpen={false}
+      onClickOutside={[Function]}
+      padding={6}
+      position="bottom"
+      windowBorderPadding={6}
+    >
+      <withTheme(ContextualActionsBar)
+        styleOverride={
+          Object {
+            "border": "unset",
+            "fontWeight": "bold",
+            "height": "45px",
+            "width": "48%",
+          }
+        }
+      >
+        <withTheme(ContextualActionItem)
+          icon={[Function]}
+          onClickAction={[Function]}
+          right={true}
+          styleOverride={
+            Object {
+              "fontSize": "12px",
+              "marginRight": "-7px",
+              "marginTop": "23px",
+            }
+          }
+        >
+          FILTER
+        </withTheme(ContextualActionItem)>
+      </withTheme(ContextualActionsBar)>
+    </Popover>
+  </div>
+  <Connect(ClusterList)
+    clusters={Array []}
+    handleSorting={[Function]}
+    isOpen={false}
+    sortOrder="none"
+  />
+</div>
+`;

@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditClusterModal /> Snapshots renders correctly with default props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    cluserId="cluster-123"
+    dispatch={[Function]}
+    headerChildren="Edit Topic"
+    isOpen={true}
+    okChildren="SAVE"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    size="small"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "410px",
+          "width": "450px",
+        },
+        "content": Object {
+          "left": "calc((100vw - 450px) / 2)",
+          "maxHeight": "410px",
+          "maxWidth": "450px",
+          "top": "100px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "top": "20%",
+      }
+    }
+  >
+    <div>
+      <Form
+        formContext={Object {}}
+        formData={
+          Object {
+            "clusterDescription": "trial",
+            "clusterName": "Test Cluster",
+          }
+        }
+        jsonSchema={
+          Object {
+            "properties": Object {
+              "clusterDescription": Object {
+                "maxLength": 150,
+                "minLength": 0,
+                "placeholder": "Add Description",
+                "title": "Description",
+                "type": "string",
+              },
+              "clusterName": Object {
+                "maxLength": 50,
+                "minLength": 4,
+                "placeholder": "Add Unique Cluster Name",
+                "title": "Name",
+                "type": "string",
+              },
+            },
+            "title": "",
+            "type": "object",
+          }
+        }
+        liveValidate={true}
+        onChange={[Function]}
+        onSubmit={[Function]}
+        showErrorList={false}
+        uiSchema={
+          Object {
+            "clusterDescription": Object {
+              "ui:field": "textarea",
+            },
+            "clusterName": Object {
+              "ui:field": "text",
+            },
+          }
+        }
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

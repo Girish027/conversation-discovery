@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/Authentication: Authentication Actions: actionCompletedAuth: should dispatch authentication complete 1`] = `
+Array [
+  Object {
+    "type": "auth/AUTHENTICATION_COMPLETE",
+    "userInfo": Object {
+      "email": "abc@xyz.com",
+      "name": "testuser",
+      "oktaUrl": "okta-url",
+    },
+  },
+]
+`;
+
+exports[`state/Authentication: Authentication Actions: actionLoggedoutAuth: should dispatch logout  1`] = `
+Array [
+  Object {
+    "type": "auth/LOGGED_OUT",
+  },
+]
+`;
+
+exports[`state/Authentication: Authentication Actions: getAuthUserinfo: should make get call to get authentication details 1`] = `Array []`;

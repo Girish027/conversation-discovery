@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditProjectModal /> Snapshots renders correctly with default props 1`] = `
+<div>
+  <withTheme(DialogComponent)
+    cancelChildren="CANCEL"
+    cancelVisible={true}
+    centerContent={false}
+    closeIconVisible={true}
+    dispatch={[Function]}
+    headerChildren="Edit Transcript Details"
+    isOpen={true}
+    okChildren="SUBMIT"
+    okDisabled={true}
+    okVisible={true}
+    onClickCancel={[Function]}
+    onClickClose={[Function]}
+    onClickOk={[Function]}
+    projectId="project-123"
+    size="small"
+    styleOverride={
+      Object {
+        "cancel": Object {
+          "backgroundColor": "unset",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+        },
+        "childContainer": Object {
+          "marginBottom": "10px",
+          "marginTop": "10px",
+        },
+        "container": Object {
+          "display": "grid",
+          "gridTemplateRows": "60px auto 60px",
+          "height": "410px",
+          "width": "450px",
+        },
+        "content": Object {
+          "left": "calc((100vw - 450px) / 2)",
+          "maxHeight": "410px",
+          "maxWidth": "450px",
+        },
+        "ok": Object {
+          "marginLeft": "10px",
+          "paddingLeft": "25px",
+          "paddingRight": "25px",
+        },
+        "top": "20%",
+      }
+    }
+  >
+    <div>
+      <Form
+        formContext={Object {}}
+        formData={
+          Object {
+            "projectDescription": "This is a test project",
+            "projectName": "Test Project",
+          }
+        }
+        jsonSchema={
+          Object {
+            "properties": Object {
+              "projectDescription": Object {
+                "maxLength": 150,
+                "minLength": 0,
+                "placeholder": "Add Project Description",
+                "title": "Description",
+                "type": "string",
+              },
+              "projectName": Object {
+                "maxLength": 50,
+                "minLength": 4,
+                "placeholder": "Add Unique Project Name",
+                "title": "Name",
+                "type": "string",
+              },
+            },
+            "title": "",
+            "type": "object",
+          }
+        }
+        liveValidate={true}
+        onChange={[Function]}
+        onSubmit={[Function]}
+        showErrorList={false}
+        uiSchema={
+          Object {
+            "projectDescription": Object {
+              "ui:field": "textarea",
+            },
+            "projectName": Object {
+              "ui:field": "text",
+            },
+          }
+        }
+      />
+    </div>
+  </withTheme(DialogComponent)>
+</div>
+`;

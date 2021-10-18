@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/caaHelper getDefaultCAA should get the default caa - first client, app, account 1`] = `
+Object {
+  "accountId": "pyb",
+  "appId": "pyb",
+  "clientId": "assurant",
+  "componentClientId": "assurant",
+}
+`;
+
+exports[`utils/caaHelper getDefaultCAA should get the default caa - first client, app, account 2`] = `
+Object {
+  "accountId": undefined,
+  "appId": undefined,
+  "clientId": "assurant",
+  "componentClientId": "assurant",
+}
+`;
+
+exports[`utils/caaHelper getSortedClientsList should sort the clientsList 1`] = `
+Array [
+  Object {
+    "apps": Array [
+      Object {
+        "accountId": "pyb",
+        "appId": "pyb",
+      },
+    ],
+    "clientId": "assurant",
+  },
+  Object {
+    "apps": Array [
+      Object {
+        "accountId": "chatbot",
+        "appId": "chatbot",
+      },
+    ],
+    "clientId": "capitalone",
+  },
+  Object {
+    "apps": Array [
+      Object {
+        "accountId": "uk",
+        "appId": "uk",
+      },
+      Object {
+        "accountId": "de",
+        "appId": "de",
+      },
+    ],
+    "clientId": "ebay",
+  },
+  Object {
+    "apps": Array [
+      Object {
+        "accountId": "chatbot",
+        "appId": "chatbot",
+      },
+    ],
+    "clientId": "sirius",
+  },
+]
+`;
+
+exports[`utils/caaHelper getSortedClientsList should sort the clientsList 2`] = `Array []`;

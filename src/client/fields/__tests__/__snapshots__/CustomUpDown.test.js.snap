@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomUpDown /> Snapshots renders correctly for default props 1`] = `
+<div
+  style={
+    Object {
+      "field": Object {
+        "border": "1px solid #DCE1E8",
+        "borderRadius": "0 2px 2px 0",
+        "display": "block",
+        "lineHeight": "25px",
+        "paddingLeft": "5px",
+        "width": "100%",
+      },
+      "label": Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "letterSpacing": 0,
+        "paddingBottom": "5px",
+        "textAlign": "left",
+      },
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "#6E6E6E",
+        "fontSize": "14px",
+        "fontWeight": "normal",
+        "letterSpacing": 0,
+        "paddingBottom": "5px",
+        "textAlign": "left",
+      }
+    }
+  >
+    Clusters (2-900):
+  </div>
+  <GenericTooltip
+    content="The Number of user-turns to use – User intents are not always obvious in the first user turns. Increase this turn count may improve the odds of finding useful intents in the transcripts. But bringing in too many user turns may add noise to the intent discovery process. We recommend that the number of user-turns stays between 2 and 3."
+    direction="bottom"
+    type="info"
+  >
+    <input
+      max={900}
+      min={2}
+      name="test"
+      onChange={[Function]}
+      style={
+        Object {
+          "border": "1px solid #DCE1E8",
+          "borderRadius": "0 2px 2px 0",
+          "display": "block",
+          "lineHeight": "25px",
+          "paddingLeft": "5px",
+          "width": "100%",
+        }
+      }
+      type="number"
+    />
+  </GenericTooltip>
+</div>
+`;

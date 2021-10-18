@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageLayout /> Snapshots renders correctly with all the necessary components 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <Connect(withTheme(NavBar)) />
+    <Connect(PageHeaderWrapper) />
+  </header>
+  <HomePage />
+  <Connect(Modal) />
+  <footer />
+</div>
+`;

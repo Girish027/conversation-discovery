@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateProjectForm /> Snapshots renders correctly with default props 1`] = `
+<div>
+  <div
+    className="formItem"
+  >
+    <div
+      className="labelName"
+    >
+      Name
+    </div>
+    <withTheme(TextField)
+      defaultValue=""
+      name="projectName"
+      onChange={[Function]}
+      styleOverride={
+        Object {
+          "width": "390px",
+        }
+      }
+      type="text"
+    />
+  </div>
+  <div
+    className="formItem"
+  >
+    <div
+      className="labelName"
+    >
+      Description
+    </div>
+    <withTheme(TextField)
+      defaultValue=""
+      name="projectDescription"
+      onChange={[Function]}
+      styleOverride={
+        Object {
+          "width": "390px",
+        }
+      }
+      type="text"
+    />
+  </div>
+  <div
+    className="formItem"
+  >
+    <div
+      className="labelName"
+    >
+      <span>
+         Upload Chat Data File 
+      </span>
+      <hr />
+    </div>
+    <withTheme(Button)
+      onClick={[Function]}
+      styleOverride={
+        Object {
+          "color": "#313f54",
+          "fontSize": "12px",
+          "fontWeight": "normal",
+          "textDecoration": "underline",
+        }
+      }
+      type="flat"
+    >
+      <Download
+        fill="#004c97"
+        height={15}
+        style={
+          Object {
+            "paddingRight": "10px",
+            "verticalAlign": "middle",
+          }
+        }
+        width={15}
+      />
+      Download the template
+    </withTheme(Button)>
+    <Dropzone
+      accept="text/csv, application/vnd.ms-excel"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={[Function]}
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "90px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      maxSize={200000000}
+      multiple={false}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<CreateProjectForm /> Snapshots renders correctly with formdata when provided 1`] = `
+<div>
+  <div
+    className="formItem"
+  >
+    <div
+      className="labelName"
+    >
+      Name
+    </div>
+    <withTheme(TextField)
+      defaultValue="pro-1"
+      name="projectName"
+      onChange={[Function]}
+      styleOverride={
+        Object {
+          "width": "390px",
+        }
+      }
+      type="text"
+    />
+  </div>
+  <div
+    className="formItem"
+  >
+    <div
+      className="labelName"
+    >
+      Description
+    </div>
+    <withTheme(TextField)
+      defaultValue="desc"
+      name="projectDescription"
+      onChange={[Function]}
+      styleOverride={
+        Object {
+          "width": "390px",
+        }
+      }
+      type="text"
+    />
+  </div>
+  <div
+    className="formItem"
+  >
+    <div
+      className="labelName"
+    >
+      <span>
+         Upload Chat Data File 
+      </span>
+      <hr />
+    </div>
+    <withTheme(Button)
+      onClick={[Function]}
+      styleOverride={
+        Object {
+          "color": "#313f54",
+          "fontSize": "12px",
+          "fontWeight": "normal",
+          "textDecoration": "underline",
+        }
+      }
+      type="flat"
+    >
+      <Download
+        fill="#004c97"
+        height={15}
+        style={
+          Object {
+            "paddingRight": "10px",
+            "verticalAlign": "middle",
+          }
+        }
+        width={15}
+      />
+      Download the template
+    </withTheme(Button)>
+    <Dropzone
+      accept="text/csv, application/vnd.ms-excel"
+      acceptStyle={
+        Object {
+          "borderColor": "#00e676",
+        }
+      }
+      acceptedIcon={[Function]}
+      activeStyle={
+        Object {
+          "borderColor": "#2196f3",
+        }
+      }
+      baseStyle={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#eeeeee",
+          "borderRadius": 2,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "color": "#bdbdbd",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "height": "90px",
+          "outline": "none",
+          "padding": "20px",
+          "transition": "border .24s ease-in-out",
+        }
+      }
+      disabled={false}
+      icon={[Function]}
+      maxSize={200000000}
+      multiple={false}
+      rejectStyle={
+        Object {
+          "borderColor": "#ff1744",
+        }
+      }
+      saveFile={[Function]}
+      shouldUpload={false}
+      uploadHandler={[Function]}
+    />
+  </div>
+</div>
+`;

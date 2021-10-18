@@ -1,0 +1,39 @@
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 3128
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 3129
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 33061
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 5501
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 1080
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 2222
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 29418
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 8001
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 3134
+Could not request local forwarding.
+packet_write_wait: Connection to 10.64.131.250 port 22: Broken pipe
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 3128
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 3129
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 33061
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 5501
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 1080
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 2222
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 29418
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 8001
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 3134
+Could not request local forwarding.

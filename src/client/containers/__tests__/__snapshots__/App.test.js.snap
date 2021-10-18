@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Snapshots renders correctly 1`] = `
+<ErrorBoundary>
+  <Switch>
+    <Route
+      component={[Function]}
+      path="/conversationdiscovery"
+    />
+  </Switch>
+</ErrorBoundary>
+`;

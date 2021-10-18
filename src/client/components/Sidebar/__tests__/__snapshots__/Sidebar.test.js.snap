@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> Snapshots renders correctly when sidebar is closed 1`] = `
+<div
+  className="sidebar-container sidebar-closed"
+>
+  <div
+    className="sidebar-toggle sidebar-closed"
+  >
+    <IconButton
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px 1px 3px 1px"
+      strokeColor="none"
+      title="Show Sidebar"
+      width={10}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Sidebar /> Snapshots renders correctly when sidebar is closed and then opened 1`] = `
+<div
+  className="sidebar-container sidebar-open"
+>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/conversationdiscovery/ui/run-overview"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/conversationdiscovery/ui/topic-review"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/conversationdiscovery/ui/discover-intents"
+    />
+    <Route
+      component={[Function]}
+      path="/conversationdiscovery"
+    />
+  </Switch>
+  <div
+    className="sidebar-toggle sidebar-open"
+  >
+    <IconButton
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px 1px 3px 1px"
+      strokeColor="none"
+      title="Hide Sidebar"
+      width={10}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Sidebar /> Snapshots renders correctly with routes and is open 1`] = `
+<div
+  className="sidebar-container sidebar-open"
+>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/conversationdiscovery/ui/run-overview"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/conversationdiscovery/ui/topic-review"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/conversationdiscovery/ui/discover-intents"
+    />
+    <Route
+      component={[Function]}
+      path="/conversationdiscovery"
+    />
+  </Switch>
+  <div
+    className="sidebar-toggle sidebar-open"
+  >
+    <IconButton
+      defaultColor="#004c97"
+      disabled={false}
+      disabledColor="#9B9B9B"
+      focusedColor="#003467"
+      height={10}
+      icon={[Function]}
+      onClick={[Function]}
+      padding="1px 1px 3px 1px"
+      strokeColor="none"
+      title="Hide Sidebar"
+      width={10}
+    />
+  </div>
+</div>
+`;

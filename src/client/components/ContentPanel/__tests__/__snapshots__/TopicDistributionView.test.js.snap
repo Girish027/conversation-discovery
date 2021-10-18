@@ -1,0 +1,855 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TopicDistributionView /> Snapshots renders Granular distribution for all clusters 1`] = `
+<div
+  style={
+    Object {
+      "minWidth": "700px",
+    }
+  }
+>
+  <withTheme(ContextualActionsBar)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+    >
+      VIEW BAR CHART
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      right={true}
+    />
+    <withTheme(ContextualActionItem)
+      disabled={false}
+      icon={[Function]}
+      onClickAction={[Function]}
+      right={true}
+    >
+      DOWNLOAD
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "margin": "0px 3px",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <Chart
+        chartActions={null}
+        chartEvents={
+          Array [
+            Object {
+              "callback": [Function],
+              "eventName": "ready",
+            },
+            Object {
+              "callback": [Function],
+              "eventName": "select",
+            },
+          ]
+        }
+        chartType="PieChart"
+        chartWrapperParams={Object {}}
+        className=""
+        columns={null}
+        controls={null}
+        data={
+          Array [
+            Array [
+              "Topic",
+              "Volume",
+              Object {
+                "role": "wordCloudTerms",
+              },
+            ],
+            Array [
+              "cancel_order_service",
+              400,
+              undefined,
+            ],
+            Array [
+              "cancel_order_customer_service",
+              230,
+              undefined,
+            ],
+            Array [
+              "store_close_holiday",
+              218,
+              undefined,
+            ],
+            Array [
+              "size_and_position",
+              142,
+              undefined,
+            ],
+          ]
+        }
+        diffdata={null}
+        formatters={null}
+        getChartEditor={null}
+        getChartWrapper={[Function]}
+        graphID={null}
+        graph_id={null}
+        height="calc(100vh - 40px - 90px - 67px - 10px)"
+        legendToggle={false}
+        legend_toggle={false}
+        loader={
+          <Placeholder
+            styleOverride={Object {}}
+          >
+            <div
+              className="message-default"
+            >
+              <LoadingIndicator
+                color="#A7A9AF"
+                isHerbie={true}
+                message="Preparing The Distribution Graph"
+                size={30}
+              />
+            </div>
+          </Placeholder>
+        }
+        options={
+          Object {
+            "hAxis": Object {
+              "title": "Topics",
+            },
+            "pieHole": 0.5,
+            "sliceVisibilityThreshold": 0.005,
+            "title": "Topic Distribution",
+            "vAxis": Object {
+              "title": "Volume (Count)",
+            },
+          }
+        }
+        render={null}
+        rootProps={Object {}}
+        rows={null}
+        spreadSheetQueryParameters={
+          Object {
+            "gid": 1,
+            "headers": 1,
+          }
+        }
+        spreadSheetUrl={null}
+        style={
+          Object {
+            "paddingRight": "30px",
+          }
+        }
+        toolbarID={null}
+        toolbarItems={null}
+        width="50vw"
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "overflowWrap": "anywhere",
+          "padding": "85px 10px 10px 10px",
+          "position": "relative",
+        }
+      }
+    >
+      <Connect(WordCloud) />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TopicDistributionView /> Snapshots renders Granular distribution for the selectedRollup cluster 1`] = `
+<div
+  style={
+    Object {
+      "minWidth": "700px",
+    }
+  }
+>
+  <withTheme(ContextualActionsBar)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+    >
+      VIEW BAR CHART
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      right={true}
+    />
+    <withTheme(ContextualActionItem)
+      disabled={false}
+      icon={[Function]}
+      onClickAction={[Function]}
+      right={true}
+    >
+      DOWNLOAD
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "margin": "0px 3px",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <Chart
+        chartActions={null}
+        chartEvents={
+          Array [
+            Object {
+              "callback": [Function],
+              "eventName": "ready",
+            },
+            Object {
+              "callback": [Function],
+              "eventName": "select",
+            },
+          ]
+        }
+        chartType="PieChart"
+        chartWrapperParams={Object {}}
+        className=""
+        columns={null}
+        controls={null}
+        data={
+          Array [
+            Array [
+              "Topic",
+              "Volume",
+              Object {
+                "role": "wordCloudTerms",
+              },
+            ],
+            Array [
+              "cancel_order_service",
+              400,
+              undefined,
+            ],
+            Array [
+              "cancel_order_customer_service",
+              230,
+              undefined,
+            ],
+            Array [
+              "store_close_holiday",
+              218,
+              undefined,
+            ],
+            Array [
+              "size_and_position",
+              142,
+              undefined,
+            ],
+          ]
+        }
+        diffdata={null}
+        formatters={null}
+        getChartEditor={null}
+        getChartWrapper={[Function]}
+        graphID={null}
+        graph_id={null}
+        height="calc(100vh - 40px - 90px - 67px - 10px)"
+        legendToggle={false}
+        legend_toggle={false}
+        loader={
+          <Placeholder
+            styleOverride={Object {}}
+          >
+            <div
+              className="message-default"
+            >
+              <LoadingIndicator
+                color="#A7A9AF"
+                isHerbie={true}
+                message="Preparing The Distribution Graph"
+                size={30}
+              />
+            </div>
+          </Placeholder>
+        }
+        options={
+          Object {
+            "hAxis": Object {
+              "title": "Topics",
+            },
+            "pieHole": 0.5,
+            "sliceVisibilityThreshold": 0.005,
+            "title": "Topic Distribution",
+            "vAxis": Object {
+              "title": "Volume (Count)",
+            },
+          }
+        }
+        render={null}
+        rootProps={Object {}}
+        rows={null}
+        spreadSheetQueryParameters={
+          Object {
+            "gid": 1,
+            "headers": 1,
+          }
+        }
+        spreadSheetUrl={null}
+        style={
+          Object {
+            "paddingRight": "30px",
+          }
+        }
+        toolbarID={null}
+        toolbarItems={null}
+        width="50vw"
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "overflowWrap": "anywhere",
+          "padding": "85px 10px 10px 10px",
+          "position": "relative",
+        }
+      }
+    >
+      <Connect(WordCloud) />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TopicDistributionView /> Snapshots renders Rollup Distribution when there are clusters yet 1`] = `
+<div
+  style={
+    Object {
+      "minWidth": "700px",
+    }
+  }
+>
+  <withTheme(ContextualActionsBar)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+    >
+      VIEW BAR CHART
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      right={true}
+    />
+    <withTheme(ContextualActionItem)
+      disabled={false}
+      icon={[Function]}
+      onClickAction={[Function]}
+      right={true}
+    >
+      DOWNLOAD
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "margin": "0px 3px",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <Chart
+        chartActions={null}
+        chartEvents={
+          Array [
+            Object {
+              "callback": [Function],
+              "eventName": "ready",
+            },
+            Object {
+              "callback": [Function],
+              "eventName": "select",
+            },
+          ]
+        }
+        chartType="PieChart"
+        chartWrapperParams={Object {}}
+        className=""
+        columns={null}
+        controls={null}
+        data={
+          Array [
+            Array [
+              "Topic",
+              "Volume",
+              Object {
+                "role": "wordCloudTerms",
+              },
+            ],
+            Array [
+              "cancel_order_service",
+              400,
+              undefined,
+            ],
+            Array [
+              "cancel_order_customer_service",
+              230,
+              undefined,
+            ],
+            Array [
+              "store_close_holiday",
+              218,
+              undefined,
+            ],
+            Array [
+              "size_and_position",
+              142,
+              undefined,
+            ],
+          ]
+        }
+        diffdata={null}
+        formatters={null}
+        getChartEditor={null}
+        getChartWrapper={[Function]}
+        graphID={null}
+        graph_id={null}
+        height="calc(100vh - 40px - 90px - 67px - 10px)"
+        legendToggle={false}
+        legend_toggle={false}
+        loader={
+          <Placeholder
+            styleOverride={Object {}}
+          >
+            <div
+              className="message-default"
+            >
+              <LoadingIndicator
+                color="#A7A9AF"
+                isHerbie={true}
+                message="Preparing The Distribution Graph"
+                size={30}
+              />
+            </div>
+          </Placeholder>
+        }
+        options={
+          Object {
+            "hAxis": Object {
+              "title": "Topics",
+            },
+            "pieHole": 0.5,
+            "sliceVisibilityThreshold": 0.005,
+            "title": "Topic Distribution",
+            "vAxis": Object {
+              "title": "Volume (Count)",
+            },
+          }
+        }
+        render={null}
+        rootProps={Object {}}
+        rows={null}
+        spreadSheetQueryParameters={
+          Object {
+            "gid": 1,
+            "headers": 1,
+          }
+        }
+        spreadSheetUrl={null}
+        style={
+          Object {
+            "paddingRight": "30px",
+          }
+        }
+        toolbarID={null}
+        toolbarItems={null}
+        width="50vw"
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "overflowWrap": "anywhere",
+          "padding": "85px 10px 10px 10px",
+          "position": "relative",
+        }
+      }
+    >
+      <Connect(WordCloud) />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TopicDistributionView /> Snapshots renders correctly when finalized filter is applied 1`] = `
+<div
+  style={
+    Object {
+      "minWidth": "700px",
+    }
+  }
+>
+  <withTheme(ContextualActionsBar)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+    >
+      VIEW BAR CHART
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      right={true}
+    />
+    <withTheme(ContextualActionItem)
+      disabled={false}
+      icon={[Function]}
+      onClickAction={[Function]}
+      right={true}
+    >
+      DOWNLOAD
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "margin": "0px 3px",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <Chart
+        chartActions={null}
+        chartEvents={
+          Array [
+            Object {
+              "callback": [Function],
+              "eventName": "ready",
+            },
+            Object {
+              "callback": [Function],
+              "eventName": "select",
+            },
+          ]
+        }
+        chartType="PieChart"
+        chartWrapperParams={Object {}}
+        className=""
+        columns={null}
+        controls={null}
+        data={
+          Array [
+            Array [
+              "Topic",
+              "Volume",
+              Object {
+                "role": "wordCloudTerms",
+              },
+            ],
+            Array [
+              "cancel_order_service",
+              400,
+              undefined,
+            ],
+            Array [
+              "cancel_order_customer_service",
+              230,
+              undefined,
+            ],
+            Array [
+              "store_close_holiday",
+              218,
+              undefined,
+            ],
+            Array [
+              "size_and_position",
+              142,
+              undefined,
+            ],
+          ]
+        }
+        diffdata={null}
+        formatters={null}
+        getChartEditor={null}
+        getChartWrapper={[Function]}
+        graphID={null}
+        graph_id={null}
+        height="calc(100vh - 40px - 90px - 67px - 10px)"
+        legendToggle={false}
+        legend_toggle={false}
+        loader={
+          <Placeholder
+            styleOverride={Object {}}
+          >
+            <div
+              className="message-default"
+            >
+              <LoadingIndicator
+                color="#A7A9AF"
+                isHerbie={true}
+                message="Preparing The Distribution Graph"
+                size={30}
+              />
+            </div>
+          </Placeholder>
+        }
+        options={
+          Object {
+            "hAxis": Object {
+              "title": "Topics",
+            },
+            "pieHole": 0.5,
+            "sliceVisibilityThreshold": 0.005,
+            "title": "Topic Distribution",
+            "vAxis": Object {
+              "title": "Volume (Count)",
+            },
+          }
+        }
+        render={null}
+        rootProps={Object {}}
+        rows={null}
+        spreadSheetQueryParameters={
+          Object {
+            "gid": 1,
+            "headers": 1,
+          }
+        }
+        spreadSheetUrl={null}
+        style={
+          Object {
+            "paddingRight": "30px",
+          }
+        }
+        toolbarID={null}
+        toolbarItems={null}
+        width="50vw"
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "overflowWrap": "anywhere",
+          "padding": "85px 10px 10px 10px",
+          "position": "relative",
+        }
+      }
+    >
+      <Connect(WordCloud) />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TopicDistributionView /> Snapshots renders correctly when open filter is applied 1`] = `
+<div
+  style={
+    Object {
+      "minWidth": "700px",
+    }
+  }
+>
+  <withTheme(ContextualActionsBar)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+    >
+      VIEW BAR CHART
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      right={true}
+    />
+    <withTheme(ContextualActionItem)
+      disabled={false}
+      icon={[Function]}
+      onClickAction={[Function]}
+      right={true}
+    >
+      DOWNLOAD
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "margin": "0px 3px",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <Chart
+        chartActions={null}
+        chartEvents={
+          Array [
+            Object {
+              "callback": [Function],
+              "eventName": "ready",
+            },
+            Object {
+              "callback": [Function],
+              "eventName": "select",
+            },
+          ]
+        }
+        chartType="PieChart"
+        chartWrapperParams={Object {}}
+        className=""
+        columns={null}
+        controls={null}
+        data={
+          Array [
+            Array [
+              "Topic",
+              "Volume",
+              Object {
+                "role": "wordCloudTerms",
+              },
+            ],
+            Array [
+              "cancel_order_service",
+              400,
+              undefined,
+            ],
+            Array [
+              "cancel_order_customer_service",
+              230,
+              undefined,
+            ],
+            Array [
+              "store_close_holiday",
+              218,
+              undefined,
+            ],
+            Array [
+              "size_and_position",
+              142,
+              undefined,
+            ],
+          ]
+        }
+        diffdata={null}
+        formatters={null}
+        getChartEditor={null}
+        getChartWrapper={[Function]}
+        graphID={null}
+        graph_id={null}
+        height="calc(100vh - 40px - 90px - 67px - 10px)"
+        legendToggle={false}
+        legend_toggle={false}
+        loader={
+          <Placeholder
+            styleOverride={Object {}}
+          >
+            <div
+              className="message-default"
+            >
+              <LoadingIndicator
+                color="#A7A9AF"
+                isHerbie={true}
+                message="Preparing The Distribution Graph"
+                size={30}
+              />
+            </div>
+          </Placeholder>
+        }
+        options={
+          Object {
+            "hAxis": Object {
+              "title": "Topics",
+            },
+            "pieHole": 0.5,
+            "sliceVisibilityThreshold": 0.005,
+            "title": "Topic Distribution",
+            "vAxis": Object {
+              "title": "Volume (Count)",
+            },
+          }
+        }
+        render={null}
+        rootProps={Object {}}
+        rows={null}
+        spreadSheetQueryParameters={
+          Object {
+            "gid": 1,
+            "headers": 1,
+          }
+        }
+        spreadSheetUrl={null}
+        style={
+          Object {
+            "paddingRight": "30px",
+          }
+        }
+        toolbarID={null}
+        toolbarItems={null}
+        width="50vw"
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "overflowWrap": "anywhere",
+          "padding": "85px 10px 10px 10px",
+          "position": "relative",
+        }
+      }
+    >
+      <Connect(WordCloud) />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TopicDistributionView /> Snapshots renders correctly when there are no clusters yet 1`] = `
+<div
+  style={
+    Object {
+      "minWidth": "700px",
+    }
+  }
+>
+  <withTheme(ContextualActionsBar)>
+    <withTheme(ContextualActionItem)
+      icon={[Function]}
+      onClickAction={[Function]}
+    >
+      VIEW BAR CHART
+    </withTheme(ContextualActionItem)>
+    <withTheme(ContextualActionItem)
+      right={true}
+    />
+    <withTheme(ContextualActionItem)
+      disabled={false}
+      icon={[Function]}
+      onClickAction={[Function]}
+      right={true}
+    >
+      DOWNLOAD
+    </withTheme(ContextualActionItem)>
+  </withTheme(ContextualActionsBar)>
+  <Placeholder
+    styleOverride={Object {}}
+  >
+    <div
+      className="message-default"
+    >
+      <LoadingIndicator
+        color="#A7A9AF"
+        isHerbie={true}
+        message="Preparing The Distribution Graph"
+        size={30}
+      />
+    </div>
+  </Placeholder>
+</div>
+`;

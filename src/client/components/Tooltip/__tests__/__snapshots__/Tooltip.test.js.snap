@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GenericTooltip /> Snapshots renders correctly for the given props 1`] = `
+<withTheme(Tooltip)
+  content="The run is Queued"
+  direction="bottom"
+  type="info"
+>
+  <div
+    style={
+      Object {
+        "width": "max-content",
+      }
+    }
+  >
+    QUEUED
+  </div>
+</withTheme(Tooltip)>
+`;

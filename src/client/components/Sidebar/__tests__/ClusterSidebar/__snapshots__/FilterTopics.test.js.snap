@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterTopics /> Snapshots renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "inline-flex",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <withTheme(Checkbox)
+      checked={false}
+      key="one"
+      label="Top"
+      onChange={[Function]}
+    />
+    <withTheme(TextField)
+      class="filter-input"
+      defaultValue={false}
+      max={100}
+      min={0}
+      name="top-topics"
+      onChange={[Function]}
+      placeholder={50}
+      styleOverride={
+        Object {
+          "input": Object {
+            "height": "25px",
+          },
+          "marginLeft": "10px",
+          "width": "50px",
+        }
+      }
+      type="number"
+    />
+    <withTheme(DropDown)
+      itemList={
+        Array [
+          "Count",
+          "Percent",
+        ]
+      }
+      labelName=" "
+      onItemSelected={[Function]}
+      selectedIndex={0}
+      shouldRetainState={true}
+      styleOverride={
+        Object {
+          "dropdownContainer": Object {
+            "float": "unset",
+            "marginLeft": "10px",
+            "paddingTop": "6px",
+          },
+        }
+      }
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "paddingBottom": "5px",
+      }
+    }
+  >
+    <withTheme(Checkbox)
+      checked={false}
+      disabled={true}
+      key="two"
+      label="Similarity Score greater than"
+      onChange={[Function]}
+      value="similarityCutOff"
+    />
+    <withTheme(TextField)
+      class="filter-input"
+      defaultValue=""
+      max={100}
+      min={0}
+      name="similarity-score"
+      onChange={[Function]}
+      placeholder={0.08}
+      styleOverride={
+        Object {
+          "input": Object {
+            "height": "25px",
+          },
+          "marginLeft": "10px",
+          "width": "50px",
+        }
+      }
+      type="number"
+    />
+  </div>
+  <withTheme(Checkbox)
+    checked={false}
+    key="three"
+    label="Finalized Topics"
+    onChange={[Function]}
+    styleOverride={
+      Object {
+        "paddingBottom": "5px",
+      }
+    }
+    value="finalized"
+  />
+  <withTheme(Checkbox)
+    checked={false}
+    key="four"
+    label="Open Topics"
+    onChange={[Function]}
+    value="open"
+  />
+</div>
+`;

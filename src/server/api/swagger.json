@@ -1,0 +1,2093 @@
+{
+  "swagger": "2.0",
+  "produces": [
+    "application/json"
+  ],
+  "info": {
+    "title": "conversationdiscovery",
+    "description": "An API",
+    "version": "1.0"
+  },
+  "basePath": "/conversationdiscovery",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "parameters": {
+    "clientId": {
+      "name": "clientId",
+      "in": "path",
+      "description": "A client id, e.g. \"247inc\".",
+      "required": true,
+      "type": "string"
+    },
+    "applicationId": {
+      "name": "applicationId",
+      "in": "path",
+      "description": "An app id, e.g. \"ReferenceBot\".",
+      "required": true,
+      "type": "string"
+    },
+    "nodeId": {
+      "name": "nodeId",
+      "in": "path",
+      "description": "An nodeId id, e.g. \"123def-2133acd-acc12-eab1\".",
+      "required": true,
+      "type": "string"
+    },
+    "apiRequestBodyNode": {
+      "name": "body",
+      "description": "body for nodes POST and PATCH operations",
+      "in": "body",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/ApiRequestBodyNode"
+      }
+    },
+    "accountId": {
+      "name": "accountId",
+      "in": "path",
+      "description": "An account id, e.g. \"ReferenceBot\".",
+      "required": true,
+      "type": "string"
+    },
+    "upfile": {
+      "in": "formData",
+      "name": "upfile",
+      "type": "file",
+      "required": true,
+      "description": "The file to upload."
+    },
+    "runId": {
+      "name": "runId",
+      "in": "path",
+      "description": "Run id of a run",
+      "required": true,
+      "type": "string",
+      "format": "uuid"
+    },
+    "clusterId": {
+      "name": "clusterId",
+      "in": "path",
+      "description": "Cluster identifier",
+      "required": true,
+      "type": "string"
+    },
+    "conversationId": {
+      "name": "conversationId",
+      "in": "path",
+      "description": "Conversation identifier",
+      "required": true,
+      "type": "string"
+    },
+    "projectNameInForm": {
+      "in": "formData",
+      "name": "projectName",
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 50,
+      "required": true,
+      "description": "The name of the project"
+    },
+    "datasetNameInForm": {
+      "in": "formData",
+      "name": "datasetName",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50,
+      "required": true,
+      "description": "The name of the dataset"
+    },
+    "projectUniqueId": {
+      "in": "formData",
+      "name": "proj_UUID",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50,
+      "required": true,
+      "description": "unique id of project"
+    },
+    "datasetFilePath": {
+      "in": "formData",
+      "name": "transcriptURL",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250,
+      "required": true,
+      "description": "The path of the dataset"
+    },
+    "projectDescriptionInForm": {
+      "in": "formData",
+      "name": "projectDescription",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 150,
+      "required": false,
+      "description": "The project description"
+    },
+    "self": {
+      "name": "self",
+      "in": "query",
+      "description": "whether to filter on caller identity",
+      "required": true,
+      "type": "boolean"
+    },
+    "configName": {
+      "name": "configName",
+      "in": "path",
+      "description": "type of configuration",
+      "required": true,
+      "type": "string"
+    },
+    "projectId": {
+      "name": "projectId",
+      "in": "path",
+      "description": "id of the project",
+      "required": true,
+      "type": "string"
+    },
+    "projectStatusEnabled": {
+      "name": "projectStatusEnabled",
+      "in": "query",
+      "description": "project status ENABLED or DISABLED",
+      "required": false,
+      "type": "boolean",
+      "default": true
+    },
+    "interfaceId": {
+      "name": "interfaceId",
+      "in": "path",
+      "description": "interfaceId",
+      "required": true,
+      "type": "string"
+    },
+    "folderId": {
+      "name": "folderId",
+      "in": "path",
+      "description": "folderId",
+      "required": true,
+      "type": "string"
+    }
+  },
+  "responses": {
+    "BadRequest": {
+      "description": "The request was invalid. For example, the value of the initial parameter was invalid",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "NotFound": {
+      "description": "The URI requested is invalid or the resource requested, such as a user, does not exist. Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Unauthorized": {
+      "description": "Missing or incorrect authentication credentials. This may also returned in other undefined circumstances.Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Forbidden": {
+      "description": "Forbidden. The request is understood, but it has been refused or access is not allowed. An accompanying error message will explain further. Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "MethodNotAllowed": {
+      "description": "Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "NotAcceptable": {
+      "description": "Returned when an invalid format is specified in the request. Do not retry with the same input",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "InternalServerError": {
+      "description": "Internal server error",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Conflict": {
+      "description": "The request could not be completed due to a conflict with the current state of the resource.Do not retry with the same input.",
+      "schema": {
+        "type": "string"
+      }
+    }
+  },
+  "paths": {
+    "/authentications": {
+      "get": {
+        "summary": "Retrieves all authenticated identities",
+        "x-swagger-router-controller": "authentications",
+        "operationId": "getAuthentications",
+        "parameters": [
+          {
+            "$ref": "#/parameters/self"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved list of authentications",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Authentications"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/templates": {
+      "get": {
+        "summary": "Download template of a dataset",
+        "x-swagger-router-controller": "download",
+        "operationId": "downloadTemplate",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The template file will be returned",
+            "schema": {
+              "type": "file"
+            }
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects": {
+      "post": {
+        "summary": "Creates a new project for a given client, app and account",
+        "x-swagger-router-controller": "projects",
+        "operationId": "createProject",
+        "tags": [
+          "project"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/upfile"
+          },
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectNameInForm"
+          },
+          {
+            "$ref": "#/parameters/datasetNameInForm"
+          },
+          {
+            "$ref": "#/parameters/projectDescriptionInForm"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A new project was created successfully.",
+            "schema": {
+              "$ref": "#/definitions/ProjectAfterCreation"
+            }
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all the projects for a given app",
+        "x-swagger-router-controller": "projects",
+        "operationId": "getProjects",
+        "tags": [
+          "project"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectStatusEnabled"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved Projects",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Project"
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}": {
+      "patch": {
+        "summary": "Updates the project name and/or project description for a given client, app, account and projectId",
+        "x-swagger-router-controller": "projects",
+        "operationId": "updateProject",
+        "tags": [
+          "project"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "in": "body",
+            "name": "Project name",
+            "description": "The project to update",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "projectName": {
+                  "type": "string",
+                  "minLength": 4,
+                  "maxLength": 50
+                },
+                "projectDescription": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 150
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Updated a project",
+            "schema": {
+              "$ref": "#/definitions/Project"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "409": {
+            "$ref": "#/responses/Conflict"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Disables the project for a given client, app, account and projectId",
+        "x-swagger-router-controller": "projects",
+        "operationId": "deleteProject",
+        "tags": [
+          "project"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Deleted a project",
+            "schema": {
+              "$ref": "#/definitions/Project"
+            }
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get the project for a given app",
+        "x-swagger-router-controller": "projects",
+        "operationId": "getProject",
+        "tags": [
+          "project"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved Project",
+            "schema": {
+              "$ref": "#/definitions/Project"
+            }
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs": {
+      "post": {
+        "summary": "Creates a new run for a given project",
+        "x-swagger-router-controller": "runs",
+        "operationId": "createRun",
+        "tags": [
+          "run"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "in": "body",
+            "name": "data",
+            "required": true,
+            "description": "The run to create",
+            "schema": {
+              "$ref": "#/definitions/RunCreationObject"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Created a new run",
+            "schema": {
+              "$ref": "#/definitions/RunAfterCreation"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all the runs for a given project",
+        "x-swagger-router-controller": "runs",
+        "operationId": "getAllRuns",
+        "tags": [
+          "run"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All the runs for a given project",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Run"
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}": {
+      "get": {
+        "summary": "Get given run for the given project",
+        "x-swagger-router-controller": "runs",
+        "operationId": "getRun",
+        "tags": [
+          "run"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The run object for the given runId",
+            "schema": {
+              "$ref": "#/definitions/Run"
+            }
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update the run name/description for a given client, app, account, project and run",
+        "x-swagger-router-controller": "runs",
+        "operationId": "updateRun",
+        "tags": [
+          "run"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "in": "body",
+            "name": "Run name",
+            "description": "The run to update",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "runName": {
+                  "type": "string",
+                  "minLength": 4,
+                  "maxLength": 50,
+                  "description": "The name of the run"
+                },
+                "runDescription": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 150,
+                  "description": "The run description"
+                },
+                "starred": {
+                  "description": "Describes if the run is starred",
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Updated the run",
+            "schema": {
+              "$ref": "#/definitions/Run"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletes a run",
+        "x-swagger-router-controller": "runs",
+        "operationId": "deleteRun",
+        "tags": [
+          "run"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Deleted a run",
+            "schema": {
+              "$ref": "#/definitions/RunAfterDeletion"
+            }
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}/results": {
+      "get": {
+        "summary": "Get download zip for a given run",
+        "x-swagger-router-controller": "download",
+        "operationId": "downloadResult",
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The result zip file will be returned",
+            "schema": {
+              "type": "file"
+            }
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}/clusters": {
+      "get": {
+        "summary": "Get all the clusters for a given run",
+        "x-swagger-router-controller": "clusters",
+        "operationId": "getAllClusters",
+        "tags": [
+          "cluster"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All the clusters for a given run",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Cluster"
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}/clusters/{clusterId}": {
+      "patch": {
+        "summary": "Update cluster data",
+        "x-swagger-router-controller": "clusters",
+        "operationId": "updateCluster",
+        "tags": [
+          "cluster"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          },
+          {
+            "in": "body",
+            "name": "Cluster ID",
+            "description": "The run to update",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "clusterName": {
+                  "type": "string",
+                  "minLength": 4,
+                  "maxLength": 50,
+                  "description": "New cluster name"
+                },
+                "clusterDescription": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 150,
+                  "description": "Cluster description"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Data was ingested to the datastore "
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}/clusters/{clusterId}/conversations": {
+      "get": {
+        "summary": "Get all the conversations of a cluster",
+        "x-swagger-router-controller": "conversations",
+        "operationId": "getClusterConversations",
+        "tags": [
+          "conversation"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          },
+          {
+            "in": "query",
+            "type": "string",
+            "name": "tId",
+            "description": "fetch all conversation for given transcript ID",
+            "required": false
+          },
+          {
+            "in": "query",
+            "type": "string",
+            "name": "search",
+            "description": "search keywords in conversations",
+            "required": false
+          },
+          {
+            "in": "query",
+            "type": "string",
+            "name": "similarity",
+            "description": "filter - fetch always greater than specified value",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All the conversations of a cluster",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Conversation"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}/clusters/{clusterId}/intents": {
+      "patch": {
+        "summary": "update given node",
+        "description": "400: MUST NOT create a cycle; response MUST match message type; MUST NOT use nodeId body parameter",
+        "x-swagger-router-controller": "nodes",
+        "operationId": "updateIntent",
+        "tags": [
+          "node"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          },
+          {
+            "$ref": "#/parameters/apiRequestBodyNode"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "new child node, or updated child node with additional parent id",
+            "schema": {
+              "$ref": "#/definitions/Node"
+            },
+            "headers": {
+              "ETag": {
+                "description": "identifier for a specific version of a node resource",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      },
+      "post": {
+        "summary": "create node, or connect existing node, as child of given node in path",
+        "description": "400: MUST NOT create a cycle; response MUST match message type; connecting uuid MUST exist; MUST NOT combine nodeId with non-nodeId body parameters",
+        "x-swagger-router-controller": "nodes",
+        "operationId": "createIntent",
+        "tags": [
+          "node"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          },
+          {
+            "$ref": "#/parameters/apiRequestBodyNode"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "updated node",
+            "schema": {
+              "$ref": "#/definitions/Node"
+            },
+            "headers": {
+              "ETag": {
+                "description": "identifier for a specific version of a node resource",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all the intents for a given app and client",
+        "x-swagger-router-controller": "nodes",
+        "operationId": "getIntents",
+        "tags": [
+          "node"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "list of nodes",
+            "schema": {
+              "$ref": "#/definitions/ApiResponsePagedGetNodes"
+            },
+            "headers": {
+              "ETag": {
+                "description": "identifier for a specific version of a node resource",
+                "type": "string"
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/clients/{clientId}/interfaces": {
+      "get": {
+        "summary": "get list of all interfaces for answers",
+        "description": "get list of all interfaces",
+        "x-swagger-router-controller": "answers",
+        "operationId": "getInterfaceList",
+        "tags": [
+          "answer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Getting Interface List successful"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+		    }
+      }
+    },
+    "/clients/{clientId}/accounts/{accountId}/applications/{applicationId}/projects/{projectId}/runs/{runId}/clusters/{clusterId}/interfaceId/{interfaceId}/addToAnswers": {
+      "post": {
+        "summary": "create faq for answers api",
+        "description": "create faq for answers api",
+        "x-swagger-router-controller": "answers",
+        "operationId": "createFAQ",
+        "tags": [
+          "faqs"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/interfaceId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "created successfully"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      },
+      "patch": {
+        "summary": "update response for answers",
+        "description": "update response for answers",
+        "x-swagger-router-controller": "answers",
+        "operationId": "updateFAQ",
+        "tags": [
+          "faqs"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/interfaceId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "created successfully"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get list of all FAQs for answers",
+        "description": "Get list of all FAQs for answers from Candidate Folder",
+        "x-swagger-router-controller": "answers",
+        "operationId": "getFAQs",
+        "tags": [
+          "faqs"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/clientId"
+          },
+          {
+            "$ref": "#/parameters/interfaceId"
+          },
+          {
+            "$ref": "#/parameters/projectId"
+          },
+          {
+            "$ref": "#/parameters/runId"
+          },
+          {
+            "$ref": "#/parameters/applicationId"
+          },
+          {
+            "$ref": "#/parameters/accountId"
+          },
+          {
+            "$ref": "#/parameters/clusterId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Getting FAQs List successful"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "500": {
+            "$ref": "#/responses/InternalServerError"
+          }
+        }
+      }
+     }
+  },
+  "definitions": {
+    "Client": {
+      "description": "Client Object",
+      "type": "object",
+      "required": [
+        "id",
+        "clientId"
+      ],
+      "properties": {
+        "id": {
+          "description": "The unique id of the client",
+          "type": "string",
+          "format": "uuid"
+        },
+        "clientId": {
+          "description": "A client id, e.g. \"247inc\".",
+          "type": "string"
+        },
+        "description": {
+          "description": "Client description",
+          "type": "string"
+        }
+      }
+    },
+    "RunAfterDeletion": {
+      "type": "object",
+      "properties": {
+        "runId": {
+          "description": "The run id of the run",
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    },
+    "RunCreationObject": {
+      "description": "The app publish params",
+      "required": [
+        "runName",
+        "numOfClusters",
+        "numOfTurns"
+      ],
+      "properties": {
+        "runName": {
+          "type": "string",
+          "minLength": 4,
+          "maxLength": 50,
+          "description": "The name of the run"
+        },
+        "runDescription": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150,
+          "description": "The run description"
+        },
+        "numOfClusters": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 900,
+          "description": "The number of clusters"
+        },
+        "numOfTurns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "The number of client turns"
+        },
+        "stopWords": {
+          "type": "string",
+          "description": "The stopwords"
+        }
+      }
+    },
+    "Run": {
+      "description": "A run for a project",
+      "properties": {
+        "runId": {
+          "type": "string",
+          "description": "The id of the run"
+        },
+        "projectId": {
+          "type": "string",
+          "description": "The id of the project to which the run is associated"
+        },
+        "runName": {
+          "type": "string",
+          "description": "The name of the run"
+        },
+        "runDescription": {
+          "type": "string",
+          "description": "The run description"
+        },
+        "numOfClusters": {
+          "type": "integer",
+          "description": "The number of clusters"
+        },
+        "numOfTurns": {
+          "type": "integer",
+          "description": "The number of client turns"
+        },
+        "stopWords": {
+          "type": "string",
+          "description": "The stopwords"
+        },
+        "modified": {
+          "description": "The UTC timestamp when the run was modified",
+          "type": "number"
+        },
+        "modifiedBy": {
+          "description": "The id of the person who modified the run",
+          "type": "string"
+        },
+        "created": {
+          "description": "The UTC timestamp when the run was created",
+          "type": "number"
+        },
+        "createdBy": {
+          "description": "The id of the person who created the run",
+          "type": "string"
+        },
+        "runStatus": {
+          "description": "The status of the project",
+          "type": "string"
+        },
+        "runStatusDescription": {
+          "description": "The run status description",
+          "type": "string"
+        },
+        "starred": {
+          "description": "Describes if the run is starred",
+          "type": "integer"
+        },
+        "resultURL": {
+          "description": "NFS Result URL of the run",
+          "type": "string"
+        }
+      }
+    },
+    "Cluster": {
+      "description": "A cluster for a run",
+      "properties": {
+        "SampleCluster": {
+          "description": "Sample Cluster",
+          "type": "string"
+        }
+      }
+    },
+    "Conversation": {
+      "description": "Conversations of a cluster",
+      "properties": {
+        "SampleConversation": {
+          "description": "Sample Conversation",
+          "type": "string"
+        }
+      }
+    },
+    "ProjectAfterCreation": {
+      "description": "Project Object just after creating a project",
+      "type": "object",
+      "properties": {
+        "applicationId": {
+          "description": "The app id of the Project",
+          "type": "string"
+        },
+        "clientId": {
+          "description": "The client id of the Project",
+          "type": "string"
+        },
+        "accountId": {
+          "description": "The account id of the Project",
+          "type": "string"
+        },
+        "projectName": {
+          "description": "The name of the project",
+          "type": "string"
+        },
+        "datasetName": {
+          "description": "The name of the project",
+          "type": "string"
+        },
+        "projectDescription": {
+          "description": "The description of the project",
+          "type": "string"
+        },
+        "createdBy": {
+          "description": "The id of the person who created the project",
+          "type": "string"
+        },
+        "status": {
+          "description": "The status of the project",
+          "type": "string"
+        }
+      }
+    },
+    "RunAfterCreation": {
+      "description": "Project Object just after creating a project",
+      "type": "object",
+      "properties": {
+        "applicationId": {
+          "description": "The app id of the Project",
+          "type": "string"
+        },
+        "clientId": {
+          "description": "The client id of the Project",
+          "type": "string"
+        },
+        "accountId": {
+          "description": "The account id of the Project",
+          "type": "string"
+        },
+        "projectId": {
+          "description": "The id of the project",
+          "type": "string"
+        },
+        "runName": {
+          "description": "The name of the run",
+          "type": "string"
+        },
+        "runId": {
+          "description": "The id of the run",
+          "type": "string"
+        },
+        "runDescription": {
+          "description": "The description of the run",
+          "type": "string"
+        },
+        "numOfClusters": {
+          "description": "The description of the run",
+          "type": "integer"
+        },
+        "numOfTurns": {
+          "description": "The number of client turns",
+          "type": "integer"
+        },
+        "stopWords": {
+          "description": "The stop words",
+          "type": "string"
+        },
+        "created": {
+          "description": "The UTC timestamp of time when the run was created",
+          "type": "string"
+        },
+        "createdBy": {
+          "description": "The id of the person who created the run",
+          "type": "string"
+        },
+        "modified": {
+          "description": "The UTC timestamp of time when the run was modified",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "description": "The id of the person who modified the run",
+          "type": "string"
+        },
+        "runStatus": {
+          "description": "The status of the run",
+          "type": "string"
+        },
+        "runStatusDescription": {
+          "description": "The status description of the run",
+          "type": "string"
+        },
+        "starred": {
+          "description": "Check to determine if the run is starred",
+          "type": "integer"
+        }
+      }
+    },
+    "Project": {
+      "description": "Project Object",
+      "type": "object",
+      "properties": {
+        "applicationId": {
+          "description": "The app id of the Project",
+          "type": "string"
+        },
+        "clientId": {
+          "description": "The client id of the Project",
+          "type": "string"
+        },
+        "accountId": {
+          "description": "The account id of the Project",
+          "type": "string"
+        },
+        "projectName": {
+          "description": "The name of the project",
+          "type": "string"
+        },
+        "datasetName": {
+          "description": "The name of the project",
+          "type": "string"
+        },
+        "projectDescription": {
+          "description": "The description of the project",
+          "type": "string"
+        },
+        "modified": {
+          "description": "The UTC timestamp when the project was modified",
+          "type": "number"
+        },
+        "modifiedBy": {
+          "description": "The id of the person who modified the project",
+          "type": "string"
+        },
+        "created": {
+          "description": "The UTC timestamp when the project was created",
+          "type": "number"
+        },
+        "createdBy": {
+          "description": "The id of the person who created the project",
+          "type": "string"
+        },
+        "projectStatus": {
+          "description": "The status of the project",
+          "type": "string"
+        },
+        "projectStatusDescription": {
+          "description": "The description of the status of the project",
+          "type": "string"
+        }
+      }
+    },
+    "Authentications": {
+      "description": "Authenticated Identity Object",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "OIDC logged-in user name",
+          "type": "string"
+        }
+      }
+    },
+    "Application": {
+      "description": "Application Object",
+      "type": "object",
+      "required": [
+        "id",
+        "applicationId",
+        "clientId"
+      ],
+      "properties": {
+        "id": {
+          "description": "The unique id of the Application",
+          "type": "string"
+        },
+        "applicationId": {
+          "description": "A Application id, e.g. \"ReferenceBot\".",
+          "type": "string"
+        },
+        "description": {
+          "description": "Application description",
+          "type": "string"
+        },
+        "clientId": {
+          "description": "UUID Reference to the client",
+          "type": "string"
+        }
+      }
+    },
+    "UIConfig": {
+      "description": "UIConfig Object",
+      "type": "object",
+      "required": [
+        "tools"
+      ],
+      "properties": {
+        "tools": {
+          "description": "Collection of tool-specific information",
+          "type": "object"
+        }
+      }
+    },
+    "ApiRequestBodyNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nodeId": {
+          "description": "id of existing node; USE ALONE, not in combination with other properties",
+          "type": "string",
+          "example": "12345678-abcd-1234-8765-fedcba987654"
+        },
+        "nodeName": {
+          "description": "user-defined node name; REQUIRED if not using nodeId for existing node",
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_]+$",
+          "example": "Cancel_reservation"
+        },
+        "intentModelMap": {
+          "$ref": "#/definitions/IntentModelMap"
+        },
+        "responses": {
+          "$ref": "#/definitions/Responses"
+        },
+        "utterances": {
+          "$ref": "#/definitions/Utterances"
+        }
+      }
+    },
+    "ApiResponsePagedGetNodes": {
+      "description": "add pagination to getNodes query",
+      "type": "object",
+      "properties": {
+        "paging": {
+          "$ref": "#/definitions/Pagination"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Node"
+          }
+        }
+      }
+    },
+    "Node": {
+      "type": "object",
+      "required": [
+        "nodeName"
+      ],
+      "properties": {
+        "nodeName": {
+          "description": "user-defined node name",
+          "type": "string",
+          "example": "Cancel_reservation"
+        },
+        "nodeId": {
+          "description": "system-generated node identifier",
+          "type": "string",
+          "readOnly": true,
+          "example": "420f9b81-450c-46d7-85d0-a23f5c4d9445"
+        },
+        "normalizedName": {
+          "description": "system-derived unique node name suitable for NL modeling",
+          "type": "string",
+          "readOnly": true,
+          "example": "Reservation_Cancel"
+        },
+        "operation": {
+          "description": "system-maintained record of change to this node since most recent build",
+          "type": "string",
+          "readOnly": true,
+          "enum": [
+            "noop",
+            "create",
+            "update",
+            "delete"
+          ]
+        },
+        "context": {
+          "$ref": "#/definitions/Context"
+        },
+        "intentModelMap": {
+          "$ref": "#/definitions/IntentModelMap"
+        },
+        "responses": {
+          "$ref": "#/definitions/Responses"
+        },
+        "utterances": {
+          "$ref": "#/definitions/Utterances"
+        },
+        "metadata": {
+          "$ref": "#/definitions/OptionsMetadata"
+        },
+        "defects": {
+          "$ref": "#/definitions/Defects"
+        }
+      }
+    },
+    "Context": {
+      "description": "system-maintained connection between nodes",
+      "type": "object",
+      "readOnly": true,
+      "properties": {
+        "inputContext": {
+          "description": "sorted list of parent nodes",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "outputContext": {
+          "description": "sorted list of child nodes",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "example": {
+        "inputContext": [
+          "420f9b81-450c-46d7-85d0-a23f5c4d944"
+        ],
+        "outputContext": [
+          "98ddaf3f-ce91-4d07-b1d0-cee12c7a9f55"
+        ]
+      }
+    },
+    "IntentModelMap": {
+      "description": "map from intent values to destination nodes",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "example": {
+        "app.match": "420f9b81-450c-46d7-85d0-a23f5c4d944",
+        "no.give": "98ddaf3f-ce91-4d07-b1d0-cee12c7a9f55"
+      }
+    },
+    "Responses": {
+      "description": "ordered list(s) of responses for all MIME types and locales",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/ResponseItem"
+      }
+    },
+    "ResponseItem": {
+      "description": "base item in responses array",
+      "type": "object",
+      "discriminator": "messageType",
+      "required": [
+        "event",
+        "messageType"
+      ],
+      "properties": {
+        "event": {
+          "description": "event when this response is relevant",
+          "type": "string",
+          "enum": [
+            "success",
+            "retry"
+          ],
+          "example": "success"
+        },
+        "messageType": {
+          "description": "rendering and handling pattern",
+          "type": "string",
+          "enum": [
+            "api",
+            "escalate",
+            "in.choose",
+            "in.form",
+            "in.nlu",
+            "out.form",
+            "out.msg",
+            "script",
+            "terminate"
+          ],
+          "example": "out.msg"
+        },
+        "mimeType": {
+          "description": "MIME type of response (default is text/html)",
+          "type": "string",
+          "enum": [
+            "text/html"
+          ],
+          "example": "text/html"
+        },
+        "locale": {
+          "description": "IETF language tag with hyphen (default is en-US)",
+          "type": "string",
+          "enum": [
+            "en-US"
+          ],
+          "example": "en-US"
+        },
+        "offset": {
+          "description": "zero-based index for sorting all items with same mimeType-locale",
+          "type": "integer",
+          "example": 0
+        }
+      }
+    },
+    "ResponseItemInChoose": {
+      "description": "in.choose response item",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ResponseItem"
+        },
+        {
+          "description": "custom properties for given message type",
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "description": "???",
+                    "type": "string"
+                  },
+                  "label": {
+                    "description": "???",
+                    "type": "string"
+                  },
+                  "value": {
+                    "description": "???",
+                    "type": "string"
+                  }
+                },
+                "example": {
+                  "name": "yes",
+                  "label": "YES",
+                  "value": "yes.give"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ResponseItemOutMsg": {
+      "description": "out.msg response item",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ResponseItem"
+        },
+        {
+          "description": "custom properties for given message type",
+          "type": "object",
+          "properties": {
+            "text": {
+              "description": "response text or html",
+              "type": "string",
+              "example": "<img src='http://froeberg.com/images/247/images/products/D500.jpeg'>"
+            }
+          }
+        }
+      ]
+    },
+    "Utterances": {
+      "description": "weighted NL text",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "utterance": {
+            "description": "NL text",
+            "type": "string",
+            "example": "i want to cancel a reservation"
+          },
+          "count": {
+            "description": "weight of utterance in NL model",
+            "type": "integer",
+            "example": 2
+          },
+          "utteranceId": {
+            "description": "utteranceId",
+            "type": "string",
+            "example": "utteranceId1"
+          }
+        }
+      }
+    },
+    "Defects": {
+      "description": "defects/warnings associated with the node",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "defectType": {
+            "description": "code for defect type, required for all defects",
+            "type": "string",
+            "enum": [
+              "MANDATORY_FIELDS_MISSING",
+              "DUPLICATE_UTTERANCE",
+              "RESPONSE_OFFSET_ERROR"
+            ]
+          },
+          "fields": {
+            "description": "field list of missing mandatory fields, used with MANDATORY_FIELDS_MISSING",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "utterances": {
+            "description": "utterances which are duplicated, used with DUPLICATE_UTTERANCE",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "responses": {
+            "description": "stringified responses with mimeType and offset values which are erroneous, used with RESPONSE_OFFSET_ERROR",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "OptionsMetadata": {
+      "description": "Usage constraints and guidelines on given node",
+      "type": "object",
+      "properties": {
+        "allow": {
+          "description": "http operations allowed on this node",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "GET",
+              "HEAD",
+              "OPTIONS",
+              "PATCH",
+              "POST"
+            ]
+          },
+          "default": [
+            "OPTIONS",
+            "GET",
+            "PATCH"
+          ]
+        },
+        "ETag": {
+          "description": "identifier for a specific version of a node resource",
+          "type": "string"
+        },
+        "x-tfs-readonly": {
+          "description": "properties defined as readOnly=false but cannot be modified",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "nodeName",
+              "intentModelMap",
+              "responses",
+              "utterances"
+            ]
+          },
+          "default": []
+        }
+      }
+    },
+    "Pagination": {
+      "description": "offset-based pagination of large collection",
+      "type": "object",
+      "properties": {
+        "offset": {
+          "description": "zero-based index into array of items (default is 0)",
+          "type": "integer",
+          "example": 0
+        },
+        "limit": {
+          "description": "maximum number of items in page response (default is 25)",
+          "type": "integer",
+          "example": 25
+        },
+        "total": {
+          "description": "size of collection",
+          "type": "integer",
+          "example": 59
+        }
+      }
+    }
+  }
+}

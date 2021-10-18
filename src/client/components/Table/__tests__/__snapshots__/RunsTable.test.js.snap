@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RunsTable /> Snapshots renders correctly for the given props 1`] = `
+<EnhancedTable
+  columns={
+    Array [
+      Object {
+        "Cell": [Function],
+        "Header": <div
+          className="link-text-run"
+        >
+          Name
+        </div>,
+        "accessor": "runName",
+        "minWidth": 140,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Modified on",
+        "accessor": "modified",
+        "minWidth": 110,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Status",
+        "accessor": "runStatus",
+        "minWidth": 140,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Clusters",
+        "accessor": "numOfClusters",
+        "minWidth": 100,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Header": "Turns",
+        "accessor": "numOfTurns",
+        "minWidth": 85,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Header": "Modified By",
+        "accessor": "modifiedBy",
+        "minWidth": 150,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Header": "Description",
+        "accessor": "runDescription",
+        "minWidth": 120,
+        "show": true,
+        "sortable": true,
+      },
+      Object {
+        "Cell": [Function],
+        "Header": "Actions",
+        "accessor": "actions",
+        "minWidth": 110,
+        "sortable": false,
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "created": 1564166348680,
+        "createdBy": "abc@test.com",
+        "modified": 1564166848680,
+        "modifiedBy": "abc@test.com",
+        "numOfClusters": 400,
+        "numOfTurns": 4,
+        "projectId": "pro-be2a948f-3a0d-4c30-fd6e-5157f9278bc2",
+        "runDescription": "trial",
+        "runId": "run-59da2519-ed17-46ad-8294-1367e287589d",
+        "runName": "test-1564166348646",
+        "runStatus": "QUEUED",
+        "runStatusDescription": "The run is queued",
+        "starred": 0,
+        "stopWords": "[\\"hello\\",\\"hilton\\"]",
+      },
+      Object {
+        "created": 1564159900153,
+        "createdBy": "abc@test.com",
+        "modified": 1564159930153,
+        "modifiedBy": "abc@test.com",
+        "numOfClusters": 400,
+        "numOfTurns": 4,
+        "projectId": "pro-be2a948f-3a0d-4c30-fd6e-5157f9278bc2",
+        "runDescription": "trial",
+        "runId": "run-9dd719a7-4670-4198-5bde-82477be2c5a5",
+        "runName": "test-1564159900138",
+        "runStatus": "QUEUED",
+        "runStatusDescription": "The run is queued",
+        "starred": 1,
+        "stopWords": "[\\"hello\\",\\"hilton\\"]",
+      },
+    ]
+  }
+  defaultPageSize={10}
+  filterEnabled={false}
+  minRows={0}
+  resizable={true}
+  tableIndentifier="CFD_Runs_Table"
+  tableStyle={
+    Object {
+      "maxHeight": "calc(95vh - 150px)",
+    }
+  }
+/>
+`;
+
+exports[`<RunsTable /> Snapshots renders the status in the table  1`] = `
+<div>
+   
+  <GenericTooltip
+    content="desc"
+    direction="bottom"
+    type="info"
+  >
+    <div
+      style={
+        Object {
+          "margin": "0px -5px",
+        }
+      }
+    >
+      <withTheme(StatusBadge)
+        category="secondary"
+        label="QUEUED"
+        onHover={[Function]}
+        progress={Object {}}
+        type="badge"
+      />
+    </div>
+  </GenericTooltip>
+   
+</div>
+`;
+
+exports[`<RunsTable /> Snapshots renders the status in the table  2`] = `
+<div>
+   
+  <GenericTooltip
+    content="desc"
+    direction="bottom"
+    type="info"
+  >
+    <div
+      style={
+        Object {
+          "margin": "0px -5px",
+        }
+      }
+    >
+      <withTheme(StatusBadge)
+        category="primary"
+        label="IN PROGRESS"
+        onHover={[Function]}
+        progress={
+          Object {
+            "type": "spinner",
+          }
+        }
+        type="badge"
+      />
+    </div>
+  </GenericTooltip>
+   
+</div>
+`;
+
+exports[`<RunsTable /> Snapshots renders the status in the table  3`] = `
+<div>
+   
+  <GenericTooltip
+    content="desc"
+    direction="bottom"
+    type="error"
+  >
+    <div
+      style={
+        Object {
+          "margin": "0px -5px",
+        }
+      }
+    >
+      <withTheme(StatusBadge)
+        category="danger"
+        label="FAILED"
+        onHover={[Function]}
+        progress={Object {}}
+        type="badge"
+      />
+    </div>
+  </GenericTooltip>
+   
+</div>
+`;
+
+exports[`<RunsTable /> Snapshots renders the status in the table  4`] = `
+<div>
+   
+  <GenericTooltip
+    content="desc"
+    direction="bottom"
+    type="info"
+  >
+    <div
+      style={
+        Object {
+          "margin": "0px -5px",
+        }
+      }
+    >
+      <withTheme(StatusBadge)
+        category="primary"
+        label="READY"
+        onHover={[Function]}
+        progress={Object {}}
+        type="badge"
+      />
+    </div>
+  </GenericTooltip>
+   
+</div>
+`;

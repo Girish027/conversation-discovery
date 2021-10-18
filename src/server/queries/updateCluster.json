@@ -1,0 +1,50 @@
+{
+  "index": "idt_cluster",
+  "body": {
+    "script": {
+      "source": "",
+      "lang": "painless",
+      "params": ""
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "bool": {
+              "must": [
+                {
+                  "term": {
+                    "project_id": {
+                      "value": "Project-Test",
+                      "boost": 1.0
+                    }
+                  }
+                },
+                {
+                  "term": {
+                    "run_id": {
+                      "value": "R-ts-01",
+                      "boost": 1.0
+                    }
+                  }
+                },
+                {
+                  "term": {
+                    "cluster_id": {
+                      "value": "clust-0",
+                      "boost": 1.0
+                    }
+                  }
+                }
+              ],
+              "adjust_pure_negative": true,
+              "boost": 1.0
+            }
+          }
+        ],
+        "adjust_pure_negative": true,
+        "boost": 1.0
+      }
+    }
+  }
+}

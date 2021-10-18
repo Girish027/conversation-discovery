@@ -1,0 +1,612 @@
+{
+	"info": {
+		"_postman_id": "bebf28d2-fed1-46fc-a9b5-1de3cf182909",
+		"name": "API-tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Runs",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Create Run",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"runName\": \"runh12\",\n\t\"numOfClusters\": 300,\n\t\"numOfTurns\": 3\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0/runs",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0",
+										"runs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Run - run already exists",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"runName\": \"runh7\",\n\t\"numOfClusters\": 300,\n\t\"numOfTurns\": 3\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0/runs",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0",
+										"runs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Run - project not found",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"runName\": \"runh7\",\n\t\"numOfClusters\": 300,\n\t\"numOfTurns\": 3\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0d/runs",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0d",
+										"runs"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get all Runs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0/runs",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0",
+										"runs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Runs - Wrong projectId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0d/runs",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0d",
+										"runs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a single Run",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0/runs/run-725f3b9a-c079-49f6-e251-8f2ab18d8a90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0",
+										"runs",
+										"run-725f3b9a-c079-49f6-e251-8f2ab18d8a90"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PATCH",
+					"item": [
+						{
+							"name": "Mark as starred",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"runDescription\": \"changeRun1description\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0/runs/run-725f3b9a-c079-49f6-e251-8f2ab18d8a90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0",
+										"runs",
+										"run-725f3b9a-c079-49f6-e251-8f2ab18d8a90"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Run description - Wrong project ID - Not modified",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"runDescription\": \"changeRun1de\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0d/runs/run-725f3b9a-c079-49f6-e251-8f2ab18d8a90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0d",
+										"runs",
+										"run-725f3b9a-c079-49f6-e251-8f2ab18d8a90"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Run Status- no authentication",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"runStatus\": \"SUCCESS\",\n\t\"runStatusDescription\": \"Sample\",\n    \"resultURL\": \"SampleResultURL3\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/clients/247ai/accounts/tfscorp/applications/referencebot/projects/pro-b5d3d236-7264-4b62-8ef8-2665fa011013/runs/run-03cced70-8dd3-4b4a-47cb-059fa9a198a3/status",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clients",
+										"247ai",
+										"accounts",
+										"tfscorp",
+										"applications",
+										"referencebot",
+										"projects",
+										"pro-b5d3d236-7264-4b62-8ef8-2665fa011013",
+										"runs",
+										"run-03cced70-8dd3-4b4a-47cb-059fa9a198a3",
+										"status"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete a run",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0/runs/run-47eb8190-e1b4-4059-e15b-0d45305b3590",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-e58bf69d-f9ac-4df3-c699-9d4d60e9b1d0",
+										"runs",
+										"run-47eb8190-e1b4-4059-e15b-0d45305b3590"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get all projects",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get projects No projects found",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdiw/projects/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdiw",
+										"projects",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Create a project - project name already exists",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "upfile",
+											"type": "file",
+											"src": "/Users/abhiram.salammagari/Desktop/projects/chat_flow/chat_flow_data/2019/doordash/output/101/0.csv"
+										},
+										{
+											"key": "datasetName",
+											"value": "dataset1",
+											"type": "text"
+										},
+										{
+											"key": "projectName",
+											"value": "projectName45",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create project success",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "upfile",
+											"type": "file",
+											"src": "/Users/abhiram.salammagari/Desktop/projects/chat_flow/chat_flow_data/2019/doordash/output/101/8.csv"
+										},
+										{
+											"key": "datasetName",
+											"value": "sample",
+											"type": "text"
+										},
+										{
+											"key": "projectName",
+											"value": "realProject3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcde/accounts/fghij/applications/klmn/projects/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcde",
+										"accounts",
+										"fghij",
+										"applications",
+										"klmn",
+										"projects",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PATCH",
+					"item": [
+						{
+							"name": "Update a project description",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"projectDescription\": \"project description new changed13\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/conversation-discovery/clients/abcdsd/accounts/dsdef/applications/ghsdi/projects/pro-d731d314-a99c-4f0b-94ce-4f251edd5d27",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"conversation-discovery",
+										"clients",
+										"abcdsd",
+										"accounts",
+										"dsdef",
+										"applications",
+										"ghsdi",
+										"projects",
+										"pro-d731d314-a99c-4f0b-94ce-4f251edd5d27"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DELETE",
+					"item": [],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

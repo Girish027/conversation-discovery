@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state/globalActions: downloadResults should download File 1`] = `
+Array [
+  Object {
+    "locationUrl": "//localhost:8080/conversationdiscovery/clients/undefined/accounts/undefined/applications/undefined/projects/getActiveProjectId/runs/run-1/results?type=original",
+    "type": "all/DOWNLOAD_FILE",
+  },
+]
+`;

@@ -1,0 +1,1529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Conversations /> Snapshots renders correctly 1`] = `
+<Conversations
+  data={
+    Array [
+      Object {
+        "currentCluster": "current-cluster-id",
+        "modified": 1554930400000,
+        "modifiedBy": "user1@247.ai",
+        "originalCluster": "original-cluster-Id",
+        "originalSimilarity": 0.67,
+        "previousCluster": "previous-cluster-id",
+        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+        "transcriptId": "qwe-qwe",
+      },
+    ]
+  }
+  selectedConversations={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Array [
+            Object {
+              "currentCluster": "current-cluster-id",
+              "modified": 1554930400000,
+              "modifiedBy": "user1@247.ai",
+              "originalCluster": "original-cluster-Id",
+              "originalSimilarity": 0.67,
+              "previousCluster": "previous-cluster-id",
+              "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+              "transcriptId": "qwe-qwe",
+            },
+          ],
+        ],
+        Array [
+          Array [
+            Object {
+              "currentCluster": "current-cluster-id",
+              "modified": 1554930400000,
+              "modifiedBy": "user1@247.ai",
+              "originalCluster": "original-cluster-Id",
+              "originalSimilarity": 0.67,
+              "previousCluster": "previous-cluster-id",
+              "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+              "transcriptId": "qwe-qwe",
+            },
+          ],
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <EnhancedTable
+    columns={
+      Array [
+        Object {
+          "Cell": [Function],
+          "Header": [Function],
+          "accessor": "",
+          "id": "checkbox",
+          "maxWidth": 80,
+          "resizable": false,
+          "show": true,
+          "sortable": false,
+        },
+        Object {
+          "Header": "Utterances",
+          "accessor": "sentenceSet",
+          "minWidth": 80,
+          "show": true,
+          "sortable": true,
+        },
+      ]
+    }
+    data={
+      Array [
+        Object {
+          "currentCluster": "current-cluster-id",
+          "modified": 1554930400000,
+          "modifiedBy": "user1@247.ai",
+          "originalCluster": "original-cluster-Id",
+          "originalSimilarity": 0.67,
+          "previousCluster": "previous-cluster-id",
+          "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+          "transcriptId": "qwe-qwe",
+        },
+      ]
+    }
+    defaultPageSize={10}
+    filterEnabled={false}
+    minRows={0}
+    resizable={true}
+    tableIndentifier="CFD_Conversations_Table"
+    tableStyle={
+      Object {
+        "maxHeight": "425px",
+        "maxWidth": "835x",
+      }
+    }
+  >
+    <div
+      className="table-container"
+    >
+      <withTheme(Table)
+        columns={
+          Array [
+            Object {
+              "Cell": [Function],
+              "Header": [Function],
+              "accessor": "",
+              "id": "checkbox",
+              "maxWidth": 80,
+              "resizable": false,
+              "show": true,
+              "sortable": false,
+            },
+            Object {
+              "Header": "Utterances",
+              "accessor": "sentenceSet",
+              "minWidth": 80,
+              "show": true,
+              "sortable": true,
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "currentCluster": "current-cluster-id",
+              "modified": 1554930400000,
+              "modifiedBy": "user1@247.ai",
+              "originalCluster": "original-cluster-Id",
+              "originalSimilarity": 0.67,
+              "previousCluster": "previous-cluster-id",
+              "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+              "transcriptId": "qwe-qwe",
+            },
+          ]
+        }
+        data-qa="CFD_Conversations_Table"
+        defaultPageSize={10}
+        minRows={0}
+        onResizedChange={[Function]}
+        pageSizeOptions={
+          Array [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            50,
+            100,
+          ]
+        }
+        resizable={true}
+        style={
+          Object {
+            "maxHeight": "425px",
+            "maxWidth": "835x",
+          }
+        }
+      >
+        <Table
+          cellStyle={Object {}}
+          columns={
+            Array [
+              Object {
+                "Cell": [Function],
+                "Header": [Function],
+                "accessor": "",
+                "id": "checkbox",
+                "maxWidth": 80,
+                "resizable": false,
+                "show": true,
+                "sortable": false,
+              },
+              Object {
+                "Header": "Utterances",
+                "accessor": "sentenceSet",
+                "minWidth": 80,
+                "show": true,
+                "sortable": true,
+              },
+            ]
+          }
+          data={
+            Array [
+              Object {
+                "currentCluster": "current-cluster-id",
+                "modified": 1554930400000,
+                "modifiedBy": "user1@247.ai",
+                "originalCluster": "original-cluster-Id",
+                "originalSimilarity": 0.67,
+                "previousCluster": "previous-cluster-id",
+                "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                "transcriptId": "qwe-qwe",
+              },
+            ]
+          }
+          data-qa="CFD_Conversations_Table"
+          defaultPageSize={10}
+          minRows={0}
+          onResizedChange={[Function]}
+          pageSizeOptions={
+            Array [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              50,
+              100,
+            ]
+          }
+          resizable={true}
+          style={
+            Object {
+              "maxHeight": "425px",
+              "maxWidth": "835x",
+            }
+          }
+          tfsStyle={
+            Object {
+              "table": Object {
+                "cell": Object {
+                  "borderRight": "1px solid #E6E6E6",
+                  "color": "#313F54",
+                  "fontSize": "13px",
+                  "fontWeight": "normal",
+                  "paddingBottom": "15px",
+                  "paddingLeft": "20px",
+                  "paddingRight": "10px",
+                  "paddingTop": "17px",
+                },
+                "header": Object {
+                  "borderRight": "1px solid #E6E6E6",
+                  "boxShadow": "none",
+                  "color": "#313F54",
+                  "cursor": "pointer",
+                  "fontSize": "13px",
+                  "fontWeight": "bold",
+                  "paddingBottom": "15px",
+                  "paddingRight": "10px",
+                  "paddingTop": "17px",
+                },
+              },
+            }
+          }
+        >
+          <ReactTable
+            AggregatedComponent={[Function]}
+            ExpanderComponent={[Function]}
+            FilterComponent={[Function]}
+            LoadingComponent={[Function]}
+            NoDataComponent={[Function]}
+            PadRowComponent={[Function]}
+            PaginationComponent={[Function]}
+            PivotValueComponent={[Function]}
+            ResizerComponent={[Function]}
+            TableComponent={[Function]}
+            TbodyComponent={[Function]}
+            TdComponent={[Function]}
+            TfootComponent={[Function]}
+            ThComponent={[Function]}
+            TheadComponent={[Function]}
+            TrComponent={[Function]}
+            TrGroupComponent={[Function]}
+            aggregatedKey="_aggregated"
+            className="-striped -highlight"
+            collapseOnDataChange={true}
+            collapseOnPageChange={true}
+            collapseOnSortingChange={true}
+            column={
+              Object {
+                "Aggregated": undefined,
+                "Cell": undefined,
+                "Expander": undefined,
+                "Filter": undefined,
+                "Footer": undefined,
+                "Header": undefined,
+                "Pivot": undefined,
+                "PivotValue": undefined,
+                "Placeholder": undefined,
+                "aggregate": undefined,
+                "className": "",
+                "filterAll": false,
+                "filterMethod": undefined,
+                "filterable": undefined,
+                "footerClassName": "",
+                "footerStyle": Object {},
+                "getFooterProps": [Function],
+                "getHeaderProps": [Function],
+                "getProps": [Function],
+                "headerClassName": "",
+                "headerStyle": Object {},
+                "minResizeWidth": 11,
+                "minWidth": 100,
+                "resizable": undefined,
+                "show": true,
+                "sortMethod": undefined,
+                "sortable": undefined,
+                "style": Object {},
+              }
+            }
+            columns={
+              Array [
+                Object {
+                  "Cell": [Function],
+                  "Header": [Function],
+                  "accessor": "",
+                  "headerStyle": Object {
+                    "borderRight": "1px solid #E6E6E6",
+                    "boxShadow": "none",
+                    "color": "#313F54",
+                    "cursor": "pointer",
+                    "fontSize": "13px",
+                    "fontWeight": "bold",
+                    "paddingBottom": "15px",
+                    "paddingRight": "10px",
+                    "paddingTop": "17px",
+                  },
+                  "id": "checkbox",
+                  "maxWidth": 80,
+                  "resizable": false,
+                  "show": true,
+                  "sortable": false,
+                  "style": Object {
+                    "borderRight": "1px solid #E6E6E6",
+                    "color": "#313F54",
+                    "fontSize": "13px",
+                    "fontWeight": "normal",
+                    "paddingBottom": "15px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "10px",
+                    "paddingTop": "17px",
+                  },
+                },
+                Object {
+                  "Header": "Utterances",
+                  "accessor": "sentenceSet",
+                  "headerStyle": Object {
+                    "borderRight": "1px solid #E6E6E6",
+                    "boxShadow": "none",
+                    "color": "#313F54",
+                    "cursor": "pointer",
+                    "fontSize": "13px",
+                    "fontWeight": "bold",
+                    "paddingBottom": "15px",
+                    "paddingRight": "10px",
+                    "paddingTop": "17px",
+                  },
+                  "minWidth": 80,
+                  "show": true,
+                  "sortable": true,
+                  "style": Object {
+                    "borderRight": "1px solid #E6E6E6",
+                    "color": "#313F54",
+                    "fontSize": "13px",
+                    "fontWeight": "normal",
+                    "paddingBottom": "15px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "10px",
+                    "paddingTop": "17px",
+                  },
+                },
+              ]
+            }
+            data={
+              Array [
+                Object {
+                  "currentCluster": "current-cluster-id",
+                  "modified": 1554930400000,
+                  "modifiedBy": "user1@247.ai",
+                  "originalCluster": "original-cluster-Id",
+                  "originalSimilarity": 0.67,
+                  "previousCluster": "previous-cluster-id",
+                  "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                  "transcriptId": "qwe-qwe",
+                },
+              ]
+            }
+            data-qa="CFD_Conversations_Table"
+            defaultExpanded={Object {}}
+            defaultFilterMethod={[Function]}
+            defaultFiltered={Array []}
+            defaultPage={0}
+            defaultPageSize={10}
+            defaultResized={Array []}
+            defaultSortDesc={false}
+            defaultSortMethod={[Function]}
+            defaultSorted={Array []}
+            expanderDefaults={
+              Object {
+                "filterable": false,
+                "resizable": false,
+                "sortable": false,
+                "width": 35,
+              }
+            }
+            filterable={false}
+            freezeWhenExpanded={false}
+            getLoadingProps={[Function]}
+            getNoDataProps={[Function]}
+            getPaginationProps={[Function]}
+            getProps={[Function]}
+            getResizerProps={[Function]}
+            getTableProps={[Function]}
+            getTbodyProps={[Function]}
+            getTdProps={[Function]}
+            getTfootProps={[Function]}
+            getTfootTdProps={[Function]}
+            getTfootTrProps={[Function]}
+            getTheadFilterProps={[Function]}
+            getTheadFilterThProps={[Function]}
+            getTheadFilterTrProps={[Function]}
+            getTheadGroupProps={[Function]}
+            getTheadGroupThProps={[Function]}
+            getTheadGroupTrProps={[Function]}
+            getTheadProps={[Function]}
+            getTheadThProps={[Function]}
+            getTheadTrProps={[Function]}
+            getTrGroupProps={[Function]}
+            getTrProps={[Function]}
+            groupedByPivotKey="_groupedByPivot"
+            indexKey="_index"
+            loading={false}
+            loadingText="Loading..."
+            minRows={0}
+            multiSort={true}
+            nestingLevelKey="_nestingLevel"
+            nextText="Next"
+            noDataText="No rows found"
+            ofText="of"
+            onFetchData={[Function]}
+            onResizedChange={[Function]}
+            originalKey="_original"
+            pageJumpText="jump to page"
+            pageSizeOptions={
+              Array [
+                5,
+                10,
+                15,
+                20,
+                25,
+                30,
+                50,
+                100,
+              ]
+            }
+            pageText="Page"
+            pivotDefaults={Object {}}
+            pivotIDKey="_pivotID"
+            pivotValKey="_pivotVal"
+            previousText="Previous"
+            resizable={true}
+            resolveData={[Function]}
+            rowsSelectorText="rows per page"
+            rowsText="rows"
+            showPageJump={true}
+            showPageSizeOptions={true}
+            showPagination={false}
+            showPaginationBottom={true}
+            showPaginationTop={false}
+            sortable={true}
+            style={
+              Object {
+                "maxHeight": "425px",
+                "maxWidth": "835x",
+              }
+            }
+            subRowsKey="_subRows"
+          >
+            <div
+              className="ReactTable -striped -highlight"
+              style={
+                Object {
+                  "maxHeight": "425px",
+                  "maxWidth": "835x",
+                }
+              }
+            >
+              <TableComponent
+                className=""
+              >
+                <div
+                  className="rt-table"
+                  role="grid"
+                >
+                  <Thead
+                    className="-header"
+                    style={
+                      Object {
+                        "minWidth": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="rt-thead -header"
+                      style={
+                        Object {
+                          "minWidth": "160px",
+                        }
+                      }
+                    >
+                      <TrComponent>
+                        <div
+                          className="rt-tr"
+                          role="row"
+                        >
+                          <THComponent
+                            className=""
+                            key="0-checkbox"
+                            style={
+                              Object {
+                                "borderRight": "1px solid #E6E6E6",
+                                "boxShadow": "none",
+                                "color": "#313F54",
+                                "cursor": "pointer",
+                                "flex": "80 0 auto",
+                                "fontSize": "13px",
+                                "fontWeight": "bold",
+                                "maxWidth": "80px",
+                                "paddingBottom": "15px",
+                                "paddingRight": "10px",
+                                "paddingTop": "17px",
+                                "width": "80px",
+                              }
+                            }
+                            toggleSort={[Function]}
+                          >
+                            <div
+                              onClick={[Function]}
+                              onKeyDown={[Function]}
+                              onMouseDown={[Function]}
+                              role="button"
+                              style={
+                                Object {
+                                  "borderRight": "1px solid #E6E6E6",
+                                  "boxShadow": "none",
+                                  "color": "#313F54",
+                                  "cursor": "pointer",
+                                  "flex": "80 0 auto",
+                                  "fontSize": "13px",
+                                  "fontWeight": "bold",
+                                  "maxWidth": "80px",
+                                  "paddingBottom": "15px",
+                                  "paddingRight": "10px",
+                                  "paddingTop": "17px",
+                                  "position": "relative",
+                                  "width": "80px",
+                                }
+                              }
+                              tabIndex="0"
+                            >
+                              <div
+                                style={
+                                  Object {
+                                    "float": "left",
+                                    "paddingLeft": "20px",
+                                    "paddingRight": "10px",
+                                    "textAlign": "left",
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <div
+                                  className=""
+                                >
+                                  <Header
+                                    column={
+                                      Object {
+                                        "Aggregated": undefined,
+                                        "Cell": [Function],
+                                        "Expander": undefined,
+                                        "Filter": undefined,
+                                        "Footer": undefined,
+                                        "Header": [Function],
+                                        "Pivot": undefined,
+                                        "PivotValue": undefined,
+                                        "Placeholder": undefined,
+                                        "accessor": [Function],
+                                        "aggregate": undefined,
+                                        "className": "",
+                                        "filterAll": false,
+                                        "filterMethod": undefined,
+                                        "filterable": undefined,
+                                        "footerClassName": "",
+                                        "footerStyle": Object {},
+                                        "getFooterProps": [Function],
+                                        "getHeaderProps": [Function],
+                                        "getProps": [Function],
+                                        "headerClassName": "",
+                                        "headerStyle": Object {
+                                          "borderRight": "1px solid #E6E6E6",
+                                          "boxShadow": "none",
+                                          "color": "#313F54",
+                                          "cursor": "pointer",
+                                          "fontSize": "13px",
+                                          "fontWeight": "bold",
+                                          "paddingBottom": "15px",
+                                          "paddingRight": "10px",
+                                          "paddingTop": "17px",
+                                        },
+                                        "id": "checkbox",
+                                        "maxWidth": 80,
+                                        "minResizeWidth": 11,
+                                        "minWidth": 80,
+                                        "resizable": false,
+                                        "show": true,
+                                        "sortMethod": undefined,
+                                        "sortable": false,
+                                        "style": Object {
+                                          "borderRight": "1px solid #E6E6E6",
+                                          "color": "#313F54",
+                                          "fontSize": "13px",
+                                          "fontWeight": "normal",
+                                          "paddingBottom": "15px",
+                                          "paddingLeft": "20px",
+                                          "paddingRight": "10px",
+                                          "paddingTop": "17px",
+                                        },
+                                      }
+                                    }
+                                    data={
+                                      Array [
+                                        Object {
+                                          "_index": 0,
+                                          "_nestingLevel": 0,
+                                          "_original": Object {
+                                            "currentCluster": "current-cluster-id",
+                                            "modified": 1554930400000,
+                                            "modifiedBy": "user1@247.ai",
+                                            "originalCluster": "original-cluster-Id",
+                                            "originalSimilarity": 0.67,
+                                            "previousCluster": "previous-cluster-id",
+                                            "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                            "transcriptId": "qwe-qwe",
+                                          },
+                                          "_subRows": undefined,
+                                          "checkbox": Object {
+                                            "currentCluster": "current-cluster-id",
+                                            "modified": 1554930400000,
+                                            "modifiedBy": "user1@247.ai",
+                                            "originalCluster": "original-cluster-Id",
+                                            "originalSimilarity": 0.67,
+                                            "previousCluster": "previous-cluster-id",
+                                            "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                            "transcriptId": "qwe-qwe",
+                                          },
+                                          "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                        },
+                                      ]
+                                    }
+                                  >
+                                    <withTheme(Checkbox)
+                                      checked={true}
+                                      onChange={[Function]}
+                                      styleOverride={
+                                        Object {
+                                          "paddingLeft": "10px",
+                                        }
+                                      }
+                                    >
+                                      <Checkbox
+                                        checked={true}
+                                        disabled={false}
+                                        onChange={[Function]}
+                                        styleOverride={
+                                          Object {
+                                            "paddingLeft": "10px",
+                                          }
+                                        }
+                                        tfsStyle={
+                                          Object {
+                                            "checkbox": Object {
+                                              "container": Object {
+                                                "active": Object {
+                                                  "alignItems": "center",
+                                                  "cursor": "pointer",
+                                                  "display": "flex",
+                                                  "lineHeight": "20px",
+                                                },
+                                                "disabled": Object {
+                                                  "alignItems": "center",
+                                                  "cursor": "not-allowed",
+                                                  "display": "flex",
+                                                  "lineHeight": "20px",
+                                                },
+                                              },
+                                              "icon": Object {
+                                                "activeChecked": Object {
+                                                  "borderColor": "#004C97",
+                                                },
+                                                "activeUnchecked": Object {
+                                                  "borderColor": "#999999",
+                                                },
+                                                "disabled": Object {
+                                                  "borderColor": "#003467",
+                                                },
+                                              },
+                                              "input": Object {
+                                                "active": Object {
+                                                  "cursor": "pointer",
+                                                  "opacity": 0,
+                                                  "position": "absolute",
+                                                  "visibility": "hidden",
+                                                },
+                                                "disabled": Object {
+                                                  "cursor": "not-allowed",
+                                                  "opacity": 0,
+                                                  "position": "absolute",
+                                                  "visibility": "hidden",
+                                                },
+                                              },
+                                              "label": Object {
+                                                "color": "#727272",
+                                                "fontSize": "14px",
+                                                "fontWeight": "normal",
+                                                "lineHeight": "20px",
+                                                "padding": "0px 0px 0px 10px",
+                                              },
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <label
+                                          data-radium={true}
+                                          onBlur={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseOut={[Function]}
+                                          onMouseOver={[Function]}
+                                          style={
+                                            Object {
+                                              "alignItems": "center",
+                                              "cursor": "pointer",
+                                              "display": "flex",
+                                              "lineHeight": "20px",
+                                              "paddingLeft": "10px",
+                                            }
+                                          }
+                                        >
+                                          <input
+                                            checked={true}
+                                            data-radium={true}
+                                            key=".0"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            style={
+                                              Object {
+                                                "cursor": "pointer",
+                                                "opacity": 0,
+                                                "position": "absolute",
+                                                "visibility": "hidden",
+                                              }
+                                            }
+                                            type="checkbox"
+                                          />
+                                          <CheckboxIcon
+                                            checked={true}
+                                            disabled={false}
+                                            focus={false}
+                                            hover={false}
+                                            key=".1"
+                                            style={
+                                              Object {
+                                                "activeChecked": Object {
+                                                  "borderColor": "#004C97",
+                                                },
+                                                "activeUnchecked": Object {
+                                                  "borderColor": "#999999",
+                                                },
+                                                "disabled": Object {
+                                                  "borderColor": "#003467",
+                                                },
+                                              }
+                                            }
+                                          >
+                                            <svg
+                                              height="16px"
+                                              viewBox="0 0 16 16"
+                                              width="16px"
+                                            >
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                                stroke="none"
+                                                strokeWidth="1"
+                                              >
+                                                <g
+                                                  fill="#FFFFFF"
+                                                  stroke="#004C97"
+                                                  transform="translate(-204.000000, -186.000000)"
+                                                >
+                                                  <g
+                                                    transform="translate(204.000000, 96.000000)"
+                                                  >
+                                                    <g
+                                                      transform="translate(0.000000, 90.000000)"
+                                                    >
+                                                      <g>
+                                                        <rect
+                                                          fill="#004C97"
+                                                          height="16"
+                                                          rx="1"
+                                                          width="16"
+                                                          x="0"
+                                                          y="0"
+                                                        />
+                                                        <path
+                                                          d="M5.58617431,10.6458332 L13.3229166,2.90909091 L14.5454545,4.13162885 L6.19744328,12.4796401 L5.58617431,13.0909091 L1.8136833,9.31841808 L3.03622124,8.09588014 L5.58617431,10.6458332 Z"
+                                                          fill="#FFFFFF"
+                                                        />
+                                                      </g>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </svg>
+                                          </CheckboxIcon>
+                                          <span
+                                            data-radium={true}
+                                            key=".2"
+                                            style={
+                                              Object {
+                                                "color": "#727272",
+                                                "fontSize": "14px",
+                                                "fontWeight": "normal",
+                                                "lineHeight": "20px",
+                                                "padding": "0px 0px 0px 10px",
+                                              }
+                                            }
+                                          />
+                                        </label>
+                                      </Checkbox>
+                                    </withTheme(Checkbox)>
+                                  </Header>
+                                </div>
+                              </div>
+                              <div
+                                style={
+                                  Object {
+                                    "float": "right",
+                                    "paddingLeft": "10px",
+                                    "paddingRight": "10px",
+                                    "position": "absolute",
+                                    "right": "0",
+                                  }
+                                }
+                              />
+                            </div>
+                          </THComponent>
+                          <THComponent
+                            className="rt-resizable-header -cursor-pointer"
+                            key="1-sentenceSet"
+                            style={
+                              Object {
+                                "borderRight": "1px solid #E6E6E6",
+                                "boxShadow": "none",
+                                "color": "#313F54",
+                                "cursor": "pointer",
+                                "flex": "80 0 auto",
+                                "fontSize": "13px",
+                                "fontWeight": "bold",
+                                "maxWidth": null,
+                                "paddingBottom": "15px",
+                                "paddingRight": "10px",
+                                "paddingTop": "17px",
+                                "width": "80px",
+                              }
+                            }
+                            toggleSort={[Function]}
+                          >
+                            <div
+                              onClick={[Function]}
+                              onKeyDown={[Function]}
+                              onMouseDown={[Function]}
+                              role="button"
+                              style={
+                                Object {
+                                  "borderRight": "1px solid #E6E6E6",
+                                  "boxShadow": "none",
+                                  "color": "#313F54",
+                                  "cursor": "pointer",
+                                  "flex": "80 0 auto",
+                                  "fontSize": "13px",
+                                  "fontWeight": "bold",
+                                  "maxWidth": null,
+                                  "paddingBottom": "15px",
+                                  "paddingRight": "10px",
+                                  "paddingTop": "17px",
+                                  "position": "relative",
+                                  "width": "80px",
+                                }
+                              }
+                              tabIndex="0"
+                            >
+                              <div
+                                style={
+                                  Object {
+                                    "float": "left",
+                                    "paddingLeft": "20px",
+                                    "paddingRight": "10px",
+                                    "textAlign": "left",
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <div
+                                  className="rt-resizable-header-content"
+                                >
+                                  Utterances
+                                </div>
+                                <Resizer
+                                  onMouseDown={[Function]}
+                                  onTouchStart={[Function]}
+                                >
+                                  <div
+                                    className="rt-resizer"
+                                    onMouseDown={[Function]}
+                                    onTouchStart={[Function]}
+                                  />
+                                </Resizer>
+                              </div>
+                              <div
+                                style={
+                                  Object {
+                                    "float": "right",
+                                    "paddingLeft": "10px",
+                                    "paddingRight": "10px",
+                                    "position": "absolute",
+                                    "right": "0",
+                                  }
+                                }
+                              >
+                                <TableSorter
+                                  classname="rt-resizable-header -cursor-pointer"
+                                  height="13px"
+                                  highLightColor="#666"
+                                  nonHighLightColor="#d4d4d4"
+                                  sortOrder="pointer"
+                                >
+                                  <svg
+                                    height="13px"
+                                    viewBox="0 0 8 15"
+                                  >
+                                    <path
+                                      d="M0 6h8L4 0 0 6z"
+                                      fill="#d4d4d4"
+                                    />
+                                    <path
+                                      d="M8 9H0l4 6 4-6z"
+                                      fill="#d4d4d4"
+                                    />
+                                  </svg>
+                                </TableSorter>
+                              </div>
+                            </div>
+                          </THComponent>
+                        </div>
+                      </TrComponent>
+                    </div>
+                  </Thead>
+                  <Tbody
+                    className=""
+                    style={
+                      Object {
+                        "minWidth": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="rt-tbody"
+                      style={
+                        Object {
+                          "minWidth": "160px",
+                        }
+                      }
+                    >
+                      <TrGroupComponent
+                        key="0"
+                      >
+                        <div
+                          className="rt-tr-group"
+                          role="rowgroup"
+                        >
+                          <TrComponent
+                            className="-odd"
+                          >
+                            <div
+                              className="rt-tr -odd"
+                              role="row"
+                            >
+                              <TdComponent
+                                className=""
+                                key="0-checkbox"
+                                onClick={[Function]}
+                                style={
+                                  Object {
+                                    "borderRight": "1px solid #E6E6E6",
+                                    "color": "#313F54",
+                                    "flex": "80 0 auto",
+                                    "fontSize": "13px",
+                                    "fontWeight": "normal",
+                                    "maxWidth": "80px",
+                                    "paddingBottom": "15px",
+                                    "paddingLeft": "20px",
+                                    "paddingRight": "10px",
+                                    "paddingTop": "17px",
+                                    "width": "80px",
+                                  }
+                                }
+                              >
+                                <div
+                                  className="rt-td"
+                                  onClick={[Function]}
+                                  role="gridcell"
+                                  style={
+                                    Object {
+                                      "borderRight": "1px solid #E6E6E6",
+                                      "color": "#313F54",
+                                      "flex": "80 0 auto",
+                                      "fontSize": "13px",
+                                      "fontWeight": "normal",
+                                      "maxWidth": "80px",
+                                      "paddingBottom": "15px",
+                                      "paddingLeft": "20px",
+                                      "paddingRight": "10px",
+                                      "paddingTop": "17px",
+                                      "width": "80px",
+                                    }
+                                  }
+                                >
+                                  <Cell
+                                    classes={
+                                      Array [
+                                        undefined,
+                                        "",
+                                        undefined,
+                                      ]
+                                    }
+                                    column={
+                                      Object {
+                                        "Aggregated": undefined,
+                                        "Cell": [Function],
+                                        "Expander": undefined,
+                                        "Filter": undefined,
+                                        "Footer": undefined,
+                                        "Header": [Function],
+                                        "Pivot": undefined,
+                                        "PivotValue": undefined,
+                                        "Placeholder": undefined,
+                                        "accessor": [Function],
+                                        "aggregate": undefined,
+                                        "className": "",
+                                        "filterAll": false,
+                                        "filterMethod": undefined,
+                                        "filterable": undefined,
+                                        "footerClassName": "",
+                                        "footerStyle": Object {},
+                                        "getFooterProps": [Function],
+                                        "getHeaderProps": [Function],
+                                        "getProps": [Function],
+                                        "headerClassName": "",
+                                        "headerStyle": Object {
+                                          "borderRight": "1px solid #E6E6E6",
+                                          "boxShadow": "none",
+                                          "color": "#313F54",
+                                          "cursor": "pointer",
+                                          "fontSize": "13px",
+                                          "fontWeight": "bold",
+                                          "paddingBottom": "15px",
+                                          "paddingRight": "10px",
+                                          "paddingTop": "17px",
+                                        },
+                                        "id": "checkbox",
+                                        "maxWidth": 80,
+                                        "minResizeWidth": 11,
+                                        "minWidth": 80,
+                                        "resizable": false,
+                                        "show": true,
+                                        "sortMethod": undefined,
+                                        "sortable": false,
+                                        "style": Object {
+                                          "borderRight": "1px solid #E6E6E6",
+                                          "color": "#313F54",
+                                          "fontSize": "13px",
+                                          "fontWeight": "normal",
+                                          "paddingBottom": "15px",
+                                          "paddingLeft": "20px",
+                                          "paddingRight": "10px",
+                                          "paddingTop": "17px",
+                                        },
+                                      }
+                                    }
+                                    columnProps={
+                                      Object {
+                                        "className": undefined,
+                                        "rest": Object {},
+                                        "style": undefined,
+                                      }
+                                    }
+                                    index={0}
+                                    level={0}
+                                    maxWidth={80}
+                                    nestingPath={
+                                      Array [
+                                        0,
+                                      ]
+                                    }
+                                    original={
+                                      Object {
+                                        "currentCluster": "current-cluster-id",
+                                        "modified": 1554930400000,
+                                        "modifiedBy": "user1@247.ai",
+                                        "originalCluster": "original-cluster-Id",
+                                        "originalSimilarity": 0.67,
+                                        "previousCluster": "previous-cluster-id",
+                                        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                        "transcriptId": "qwe-qwe",
+                                      }
+                                    }
+                                    page={0}
+                                    pageSize={10}
+                                    resized={Array []}
+                                    row={
+                                      Object {
+                                        "_index": 0,
+                                        "_nestingLevel": 0,
+                                        "_original": Object {
+                                          "currentCluster": "current-cluster-id",
+                                          "modified": 1554930400000,
+                                          "modifiedBy": "user1@247.ai",
+                                          "originalCluster": "original-cluster-Id",
+                                          "originalSimilarity": 0.67,
+                                          "previousCluster": "previous-cluster-id",
+                                          "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                          "transcriptId": "qwe-qwe",
+                                        },
+                                        "_subRows": undefined,
+                                        "_viewIndex": 0,
+                                        "checkbox": Object {
+                                          "currentCluster": "current-cluster-id",
+                                          "modified": 1554930400000,
+                                          "modifiedBy": "user1@247.ai",
+                                          "originalCluster": "original-cluster-Id",
+                                          "originalSimilarity": 0.67,
+                                          "previousCluster": "previous-cluster-id",
+                                          "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                          "transcriptId": "qwe-qwe",
+                                        },
+                                        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                      }
+                                    }
+                                    show={true}
+                                    styles={
+                                      Object {
+                                        "borderRight": "1px solid #E6E6E6",
+                                        "color": "#313F54",
+                                        "fontSize": "13px",
+                                        "fontWeight": "normal",
+                                        "paddingBottom": "15px",
+                                        "paddingLeft": "20px",
+                                        "paddingRight": "10px",
+                                        "paddingTop": "17px",
+                                      }
+                                    }
+                                    tdProps={
+                                      Object {
+                                        "className": undefined,
+                                        "rest": Object {},
+                                        "style": undefined,
+                                      }
+                                    }
+                                    value={
+                                      Object {
+                                        "currentCluster": "current-cluster-id",
+                                        "modified": 1554930400000,
+                                        "modifiedBy": "user1@247.ai",
+                                        "originalCluster": "original-cluster-Id",
+                                        "originalSimilarity": 0.67,
+                                        "previousCluster": "previous-cluster-id",
+                                        "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                        "transcriptId": "qwe-qwe",
+                                      }
+                                    }
+                                    viewIndex={0}
+                                    width={80}
+                                  >
+                                    <withTheme(Checkbox)
+                                      checked={
+                                        Object {
+                                          "currentCluster": "current-cluster-id",
+                                          "modified": 1554930400000,
+                                          "modifiedBy": "user1@247.ai",
+                                          "originalCluster": "original-cluster-Id",
+                                          "originalSimilarity": 0.67,
+                                          "previousCluster": "previous-cluster-id",
+                                          "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                          "transcriptId": "qwe-qwe",
+                                        }
+                                      }
+                                      onChange={[Function]}
+                                      styleOverride={
+                                        Object {
+                                          "marginTop": "5px",
+                                          "paddingLeft": "10px",
+                                        }
+                                      }
+                                    >
+                                      <Checkbox
+                                        checked={
+                                          Object {
+                                            "currentCluster": "current-cluster-id",
+                                            "modified": 1554930400000,
+                                            "modifiedBy": "user1@247.ai",
+                                            "originalCluster": "original-cluster-Id",
+                                            "originalSimilarity": 0.67,
+                                            "previousCluster": "previous-cluster-id",
+                                            "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                            "transcriptId": "qwe-qwe",
+                                          }
+                                        }
+                                        disabled={false}
+                                        onChange={[Function]}
+                                        styleOverride={
+                                          Object {
+                                            "marginTop": "5px",
+                                            "paddingLeft": "10px",
+                                          }
+                                        }
+                                        tfsStyle={
+                                          Object {
+                                            "checkbox": Object {
+                                              "container": Object {
+                                                "active": Object {
+                                                  "alignItems": "center",
+                                                  "cursor": "pointer",
+                                                  "display": "flex",
+                                                  "lineHeight": "20px",
+                                                },
+                                                "disabled": Object {
+                                                  "alignItems": "center",
+                                                  "cursor": "not-allowed",
+                                                  "display": "flex",
+                                                  "lineHeight": "20px",
+                                                },
+                                              },
+                                              "icon": Object {
+                                                "activeChecked": Object {
+                                                  "borderColor": "#004C97",
+                                                },
+                                                "activeUnchecked": Object {
+                                                  "borderColor": "#999999",
+                                                },
+                                                "disabled": Object {
+                                                  "borderColor": "#003467",
+                                                },
+                                              },
+                                              "input": Object {
+                                                "active": Object {
+                                                  "cursor": "pointer",
+                                                  "opacity": 0,
+                                                  "position": "absolute",
+                                                  "visibility": "hidden",
+                                                },
+                                                "disabled": Object {
+                                                  "cursor": "not-allowed",
+                                                  "opacity": 0,
+                                                  "position": "absolute",
+                                                  "visibility": "hidden",
+                                                },
+                                              },
+                                              "label": Object {
+                                                "color": "#727272",
+                                                "fontSize": "14px",
+                                                "fontWeight": "normal",
+                                                "lineHeight": "20px",
+                                                "padding": "0px 0px 0px 10px",
+                                              },
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <label
+                                          data-radium={true}
+                                          onBlur={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseOut={[Function]}
+                                          onMouseOver={[Function]}
+                                          style={
+                                            Object {
+                                              "alignItems": "center",
+                                              "cursor": "pointer",
+                                              "display": "flex",
+                                              "lineHeight": "20px",
+                                              "marginTop": "5px",
+                                              "paddingLeft": "10px",
+                                            }
+                                          }
+                                        >
+                                          <input
+                                            checked={
+                                              Object {
+                                                "currentCluster": "current-cluster-id",
+                                                "modified": 1554930400000,
+                                                "modifiedBy": "user1@247.ai",
+                                                "originalCluster": "original-cluster-Id",
+                                                "originalSimilarity": 0.67,
+                                                "previousCluster": "previous-cluster-id",
+                                                "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                                "transcriptId": "qwe-qwe",
+                                              }
+                                            }
+                                            data-radium={true}
+                                            key=".0"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            style={
+                                              Object {
+                                                "cursor": "pointer",
+                                                "opacity": 0,
+                                                "position": "absolute",
+                                                "visibility": "hidden",
+                                              }
+                                            }
+                                            type="checkbox"
+                                          />
+                                          <CheckboxIcon
+                                            checked={
+                                              Object {
+                                                "currentCluster": "current-cluster-id",
+                                                "modified": 1554930400000,
+                                                "modifiedBy": "user1@247.ai",
+                                                "originalCluster": "original-cluster-Id",
+                                                "originalSimilarity": 0.67,
+                                                "previousCluster": "previous-cluster-id",
+                                                "sentenceSet": "Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much",
+                                                "transcriptId": "qwe-qwe",
+                                              }
+                                            }
+                                            disabled={false}
+                                            focus={false}
+                                            hover={false}
+                                            key=".1"
+                                            style={
+                                              Object {
+                                                "activeChecked": Object {
+                                                  "borderColor": "#004C97",
+                                                },
+                                                "activeUnchecked": Object {
+                                                  "borderColor": "#999999",
+                                                },
+                                                "disabled": Object {
+                                                  "borderColor": "#003467",
+                                                },
+                                              }
+                                            }
+                                          >
+                                            <svg
+                                              height="16px"
+                                              viewBox="0 0 16 16"
+                                              width="16px"
+                                            >
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                                stroke="none"
+                                                strokeWidth="1"
+                                              >
+                                                <g
+                                                  fill="#FFFFFF"
+                                                  stroke="#004C97"
+                                                  transform="translate(-204.000000, -186.000000)"
+                                                >
+                                                  <g
+                                                    transform="translate(204.000000, 96.000000)"
+                                                  >
+                                                    <g
+                                                      transform="translate(0.000000, 90.000000)"
+                                                    >
+                                                      <g>
+                                                        <rect
+                                                          fill="#004C97"
+                                                          height="16"
+                                                          rx="1"
+                                                          width="16"
+                                                          x="0"
+                                                          y="0"
+                                                        />
+                                                        <path
+                                                          d="M5.58617431,10.6458332 L13.3229166,2.90909091 L14.5454545,4.13162885 L6.19744328,12.4796401 L5.58617431,13.0909091 L1.8136833,9.31841808 L3.03622124,8.09588014 L5.58617431,10.6458332 Z"
+                                                          fill="#FFFFFF"
+                                                        />
+                                                      </g>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </svg>
+                                          </CheckboxIcon>
+                                          <span
+                                            data-radium={true}
+                                            key=".2"
+                                            style={
+                                              Object {
+                                                "color": "#727272",
+                                                "fontSize": "14px",
+                                                "fontWeight": "normal",
+                                                "lineHeight": "20px",
+                                                "padding": "0px 0px 0px 10px",
+                                              }
+                                            }
+                                          />
+                                        </label>
+                                      </Checkbox>
+                                    </withTheme(Checkbox)>
+                                  </Cell>
+                                </div>
+                              </TdComponent>
+                              <TdComponent
+                                className=""
+                                key="1-sentenceSet"
+                                onClick={[Function]}
+                                style={
+                                  Object {
+                                    "borderRight": "1px solid #E6E6E6",
+                                    "color": "#313F54",
+                                    "flex": "80 0 auto",
+                                    "fontSize": "13px",
+                                    "fontWeight": "normal",
+                                    "maxWidth": null,
+                                    "paddingBottom": "15px",
+                                    "paddingLeft": "20px",
+                                    "paddingRight": "10px",
+                                    "paddingTop": "17px",
+                                    "width": "80px",
+                                  }
+                                }
+                              >
+                                <div
+                                  className="rt-td"
+                                  onClick={[Function]}
+                                  role="gridcell"
+                                  style={
+                                    Object {
+                                      "borderRight": "1px solid #E6E6E6",
+                                      "color": "#313F54",
+                                      "flex": "80 0 auto",
+                                      "fontSize": "13px",
+                                      "fontWeight": "normal",
+                                      "maxWidth": null,
+                                      "paddingBottom": "15px",
+                                      "paddingLeft": "20px",
+                                      "paddingRight": "10px",
+                                      "paddingTop": "17px",
+                                      "width": "80px",
+                                    }
+                                  }
+                                >
+                                  Hello! Is it possible to refund an order I canceled through the restaurant $$I was not able to cancel it through door dash but was able to cancel
+  through the restaurant . Yes I am. Yes that would be perfect! Thank you so much
+                                </div>
+                              </TdComponent>
+                            </div>
+                          </TrComponent>
+                        </div>
+                      </TrGroupComponent>
+                    </div>
+                  </Tbody>
+                </div>
+              </TableComponent>
+              <LoadingComponent
+                loading={false}
+                loadingText="Loading..."
+              >
+                <div
+                  className="-loading"
+                >
+                  <div
+                    className="-loading-inner"
+                  >
+                    Loading...
+                  </div>
+                </div>
+              </LoadingComponent>
+            </div>
+          </ReactTable>
+        </Table>
+      </withTheme(Table)>
+    </div>
+  </EnhancedTable>
+</Conversations>
+`;

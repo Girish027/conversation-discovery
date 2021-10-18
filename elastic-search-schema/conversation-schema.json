@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "index.requests.cache.enable": true,
+    "analysis": {
+      "analyzer": {
+        "analyzer_keyword": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+
+      "cluster_id":{
+        "type":  "keyword"
+      },
+      "sequence":{
+        "type":  "integer"
+      },
+      "turn":{
+        "type":  "integer"
+      },
+      "interaction_id":{
+        "type":  "keyword"
+      },
+      "processed_body":{
+        "type":  "text"
+      },
+      "created_at":{
+        "type": "date"
+      },
+      "created_by":{
+        "type": "keyword"
+      },
+      "modified_at":{
+        "type": "date"
+      },
+      "modified_by":{
+        "type": "keyword"
+      }
+    }
+  }
+}

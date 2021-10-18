@@ -1,0 +1,228 @@
+{
+    "swagger": "2.0",
+    "produces": [
+      "application/json"
+    ],
+    "info": {
+      "title": "conversationdiscovery",
+      "description": "An API",
+      "version": "1.0"
+    },
+    "basePath": "/conversationdiscovery",
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "parameters": {
+      "clientId": {
+        "name": "clientId",
+        "in": "path",
+        "description": "A client id, e.g. \"247inc\".",
+        "required": true,
+        "type": "string",
+        "default": "247inc"
+      },
+      "applicationId": {
+        "name": "applicationId",
+        "in": "path",
+        "description": "A app id, e.g. \"ReferenceBot\".",
+        "required": true,
+        "type": "string",
+        "default": "ReferenceBot"
+      },
+      "self": {
+        "name": "self",
+        "in": "query",
+        "description": "whether to filter on caller identity",
+        "required": false,
+        "type": "boolean",
+        "default": false
+      },
+      "configName": {
+        "name": "configName",
+        "in": "path",
+        "description": "type of configuration",
+        "required": true,
+        "type": "string"
+      },
+      "includeApps": {
+        "name": "includeApps",
+        "description": "Indicates whether the response should include client applications",
+        "in": "query",
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "responses": {
+      "BadRequest": {
+        "description": "The request was invalid. For example, the value of the initial parameter was invalid",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "NotFound": {
+        "description": "The resource was not found",
+        "schema": {
+          "type": "string"
+        }
+      }
+    },
+    "paths": {
+      "/authentications": {
+        "get": {
+          "summary": "Retrieves all authenticated identities",
+          "x-swagger-router-controller": "authentications",
+          "operationId": "getAuthentications",
+          "parameters": [
+            {
+              "$ref": "#/parameters/self"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Retrieved list of authentications",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Authentications"
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/responses/BadRequest"
+            },
+            "404": {
+              "$ref": "#/responses/NotFound"
+            }
+          }
+        }
+      },
+      "/clients/{clientId}/applications": {
+        "get": {
+          "summary": "Retrieves all applications for a client",
+          "x-swagger-router-controller": "applications",
+          "operationId": "getApplications",
+          "parameters": [
+            {
+              "$ref": "#/parameters/clientId"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Retrieved list of applications for a client",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Application"
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/responses/BadRequest"
+            },
+            "404": {
+              "$ref": "#/responses/NotFound"
+            }
+          }
+        }
+      },
+      "/clients/{clientId}/applications/{applicationId}": {
+        "get": {
+          "summary": "Retrieves the application",
+          "x-swagger-router-controller": "applications",
+          "operationId": "getApplication",
+          "parameters": [
+            {
+              "$ref": "#/parameters/clientId"
+            },
+            {
+              "$ref": "#/parameters/applicationId"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Retrieved Application",
+              "schema": {
+                "$ref": "#/definitions/Application"
+              }
+            },
+            "400": {
+              "$ref": "#/responses/BadRequest"
+            },
+            "404": {
+              "$ref": "#/responses/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Authentications": {
+        "description": "Authenticated Identity Object",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "OIDC logged-in user name",
+            "type": "string"
+          }
+        }
+      },
+      "Client": {
+        "description": "Client Object",
+        "type": "object",
+        "required": [
+          "id",
+          "clientId"
+        ],
+        "properties": {
+          "id": {
+            "description": "The unique id of the client",
+            "type": "string",
+            "format": "uuid"
+          },
+          "clientId": {
+            "description": "A client id, e.g. \"247inc\".",
+            "type": "string"
+          },
+          "description": {
+            "description": "Client description",
+            "type": "string"
+          }
+        }
+      },
+      "Application": {
+        "description": "Application Object",
+        "type": "object",
+        "required": [
+          "id",
+          "applicationId",
+          "clientId",
+          "stateId"
+        ],
+        "properties": {
+          "id": {
+            "description": "The unique id of the Application",
+            "type": "string",
+            "format": "uuid"
+          },
+          "applicationId": {
+            "description": "A Application id, e.g. \"ReferenceBot\".",
+            "type": "string"
+          },
+          "description": {
+            "description": "Application description",
+            "type": "string"
+          },
+          "clientId": {
+            "description": "UUID Reference to the client",
+            "type": "string"
+          },
+          "stateId": {
+            "description": "UUID Reference to the state",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+  

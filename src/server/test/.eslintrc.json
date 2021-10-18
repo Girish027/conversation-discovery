@@ -1,0 +1,62 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "function-paren-newline": "off",
+    "func-names": ["error", "as-needed"],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": 0,
+    "no-console": 1,
+    "prefer-arrow-callback": 0,
+    "keyword-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    "space-before-blocks": "error",
+    "no-multi-spaces": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "quote-props": ["error", "as-needed"],
+    "func-names": "off",
+    "class-methods-use-this": "off",
+    "no-unused-vars": "warn"
+  }
+}

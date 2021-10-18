@@ -1,0 +1,92 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true,
+    "mocha": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "react-hooks"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-use-before-define": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "function-paren-newline": "off",
+    "func-names": ["error", "as-needed"],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": 0,
+    "no-console": 1,
+    "import/no-unresolved": "off",
+    "react/forbid-prop-types": 0,
+    "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
+    "react/jsx-curly-brace-presence": "off",
+    "react/jsx-first-prop-new-line": [
+      2,
+      "multiline"
+    ],
+    "react/jsx-filename-extension": 0,
+    "react/require-default-props": 0,
+    "react/self-closing-comp": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-access-state-in-setstate": 0,
+    "prefer-arrow-callback": 0,
+    "keyword-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    "space-before-blocks": "error",
+    "no-multi-spaces": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "jsx-quotes": ["error", "prefer-single"],
+    "quote-props": ["error", "as-needed"],
+    "class-methods-use-this": "off",
+    "jsx-a11y/href-no-hash": [0],
+    "no-unused-vars": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/order": ["off", "warn", "parent", "error"]
+  }
+}
